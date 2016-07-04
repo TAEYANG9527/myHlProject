@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="emoji-java-1.1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/emoji-java-1.1.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

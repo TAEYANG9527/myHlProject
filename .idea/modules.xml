@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HeLiaoAndroidLibrary/Android-ViewPagerIndicator-master/Android-ViewPagerIndicator-master.iml" filepath="$PROJECT_DIR$/../HeLiaoAndroidLibrary/Android-ViewPagerIndicator-master/Android-ViewPagerIndicator-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hl5.5.1.iml" filepath="$PROJECT_DIR$/Hl5.5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HeLiaoAndroidLibrary/OneSDK/OneSDK.iml" filepath="$PROJECT_DIR$/../HeLiaoAndroidLibrary/OneSDK/OneSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HeLiaoAndroidLibrary/ShortcutLib/ShortcutLib.iml" filepath="$PROJECT_DIR$/../HeLiaoAndroidLibrary/ShortcutLib/ShortcutLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HeLiaoAndroidLibrary/HlEmojiLibrary/emojiLibrary.iml" filepath="$PROJECT_DIR$/../HeLiaoAndroidLibrary/HlEmojiLibrary/emojiLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../heliao-idl/heliao-idl.iml" filepath="$PROJECT_DIR$/../heliao-idl/heliao-idl.iml" />
+    </modules>
+  </component>
+</project>

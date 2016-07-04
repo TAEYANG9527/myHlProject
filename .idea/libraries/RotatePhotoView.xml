@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RotatePhotoView">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/RotatePhotoView.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

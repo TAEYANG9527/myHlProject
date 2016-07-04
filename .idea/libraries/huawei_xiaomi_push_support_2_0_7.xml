@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="huawei-xiaomi-push-support-2.0.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/huawei-xiaomi-push-support-2.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="alicloud-android-session-sdk-2.0.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../HeLiaoAndroidLibrary/OneSDK/libs/alicloud-android-session-sdk-2.0.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
