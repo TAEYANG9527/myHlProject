@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <!-- 通用设置 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/add_friend_rl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/add_friend_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="从手机相册选择"
+                        android:textColor="@color/blog_item_nickname_text"
+                        android:textSize="@dimen/setting_item_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/add_friend_rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/add_friend_tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="拍一张"
+                        android:textColor="@color/blog_item_nickname_text"
+                        android:textSize="@dimen/setting_item_textsize" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 直接联系设置 -->
+
+            <RelativeLayout
+                android:id="@+id/contact_rl1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/flag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/search_flag" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/contact_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/flag_iv"
+                    android:gravity="left"
+                    android:text="会员作品"
+                    android:textColor="@color/blog_item_nickname_text"
+                    android:textSize="@dimen/setting_item_textsize" />
+            </RelativeLayout>
+            <!-- 隐私设置 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

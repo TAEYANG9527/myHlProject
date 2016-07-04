@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/settingbt_selected"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/edit_margin"
+            android:layout_weight="10"
+            android:gravity="left">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/valueTv"
+                style="@style/titleTextSizeWithSmallBlack"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textColorLink="@color/room_at_color"
+                android:textSize="@dimen/new_archive_job_textsize" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/bindPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/unbind_phone_small"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/provide_get_textcolor"
+                android:textSize="@dimen/provide_get_textsize"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/contact_seperate"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/separate_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

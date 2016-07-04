@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootrl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:id="@+id/archive_more_add_into_contacts_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_add_into_contacts"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+            <!--人脉秘书-->
+            <RelativeLayout
+                android:id="@+id/secretary_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/secretary_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_secretary"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <include
+                    android:id="@+id/secretary_new_flag_tv"
+                    layout="@layout/new_flag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/secretary_title_tv" />
+
+
+                <ImageView
+                    android:id="@+id/flag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/secretary_sended_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/flag_iv"
+                    android:text="已邀请"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_share"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collect_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_collect"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/collect_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/grade_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/grade_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_grade"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <include
+                    android:id="@+id/new_flag_tv"
+                    layout="@layout/new_flag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/grade_title_tv" />
+
+                <ImageView
+                    android:id="@+id/right_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/grade_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/right_arrow_iv"
+                    android:text="@string/archive_more_grade_tip"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/black_list_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_blacklist"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/blacklist_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/BC_2" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/report_divider_view"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/report_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_report"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/delete_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_bacg"
+                android:paddingLeft="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/archive_more_delete"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

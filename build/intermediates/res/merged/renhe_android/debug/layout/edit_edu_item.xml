@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/school_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:clickable="true"
+                android:paddingLeft="@dimen/edit_margin"
+                android:paddingRight="@dimen/edit_margin"
+                android:paddingTop="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/school_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:text="学校"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/school_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/edit_margin"
+                    android:layout_toRightOf="@id/school_label"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/school_tip"
+                    android:maxLength="32"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/BC_1"
+                    android:textSize="@dimen/S4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/school_tv"
+                    android:layout_below="@id/school_tv"
+                    android:layout_marginTop="@dimen/edit_margin"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/study_field_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:paddingLeft="@dimen/edit_margin"
+                android:paddingRight="@dimen/edit_margin"
+                android:paddingTop="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/study_field_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:text="专业"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/study_field_et"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/edit_margin"
+                    android:layout_toRightOf="@id/study_field_label"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/major_tip"
+                    android:maxLength="32"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/BC_1"
+                    android:textSize="@dimen/S4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/study_field_et"
+                    android:layout_below="@id/study_field_et"
+                    android:layout_marginTop="@dimen/edit_margin"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/degrees_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:clickable="true"
+                android:paddingLeft="@dimen/edit_margin"
+                android:paddingRight="@dimen/edit_margin"
+                android:paddingTop="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/degrees_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:text="学历"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/degrees_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/edit_margin"
+                    android:layout_toRightOf="@id/degrees_label"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/degrees_tip"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/BC_1"
+                    android:textSize="@dimen/S4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/degrees_tv"
+                    android:layout_below="@id/degrees_tv"
+                    android:layout_marginTop="@dimen/edit_margin"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/description_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:paddingLeft="@dimen/edit_margin"
+                android:paddingRight="@dimen/edit_margin"
+                android:paddingTop="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/description_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:text="描述"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/description_et"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/edit_margin"
+                    android:layout_toRightOf="@id/description_label"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/description_edu_tip"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLength="320"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/BC_1"
+                    android:textSize="@dimen/S4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/description_et"
+                    android:layout_below="@id/description_et"
+                    android:layout_marginTop="@dimen/edit_margin"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:padding="@dimen/edit_margin">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/time_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="时间"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/start_time_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/edit_margin"
+                    android:layout_toRightOf="@id/time_label"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/edit_margin"
+                    android:text="请选择"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/separate_label"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/start_time_tv"
+                    android:background="@android:color/transparent"
+                    android:text="至"
+                    android:textColor="@color/BC_1"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/end_time_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/separate_label"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/edit_margin"
+                    android:text="请选择"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+            </RelativeLayout>
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/delete_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_margin"
+                android:layout_marginTop="@dimen/edit_margin"
+                android:background="@drawable/edit_archieve_sub_item_bacg"
+                android:paddingBottom="@dimen/edit_margin"
+                android:paddingTop="@dimen/edit_margin"
+                android:text="删除此教育经历"
+                android:textColor="@color/BC_6"
+                android:textSize="@dimen/S5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

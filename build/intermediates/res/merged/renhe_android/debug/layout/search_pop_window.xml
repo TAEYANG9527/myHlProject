@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.itcalf.widget.slidingmenu.lib.app.SlidingActivity">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg_up_corner_style"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contactAvatar_imgFl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="@dimen/renhe_room_image_wh"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:src="@drawable/avatar" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/avatar_txt"
+                android:layout_width="@dimen/renhe_room_image_wh"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bg_color6670bf_circular_solid_style"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello world"
+                android:textColor="@color/C1"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_down_corner_style"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tx_im"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="聊天"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tx_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="通话"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hall_list_bacg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chat_context_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/bottom_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/bottom_expression_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/hall_list_bacg"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/im_chat_bottom_bg"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivPopUp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/chat_bottom_audio_bg" />
+
+                        <RelativeLayout
+                            android:id="@+id/btn_bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/ivPopUp">
+
+                            <RelativeLayout
+                                android:id="@+id/btn_send_bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true">
+
+                                <RelativeLayout
+                                    android:id="@+id/btn_send_img_rl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <com.itcalf.renhe.view.Button
+                                        android:id="@+id/btn_send_img"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/chat_bottom_add_bg" />
+
+                                    <ImageView
+                                        android:id="@+id/newfeather_icon_iv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignRight="@id/btn_send_img"
+                                        android:background="@drawable/unread_90tran_red_circle_shape"
+                                        android:visibility="gone" />
+
+                                </RelativeLayout>
+
+                                <com.itcalf.renhe.view.Button
+                                    android:id="@+id/btn_send"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/red_archieve_edit_bt_selected"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/chat_send_text"
+                                    android:textColor="@drawable/archive_editbt_textcolor_selected"
+                                    android:textSize="13sp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <com.itcalf.renhe.view.EditText
+                                android:id="@+id/et_sendmessage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toLeftOf="@id/btn_send_bottom"
+                                android:background="@drawable/im_chat_edittext_selector"
+                                android:hint="@string/chat_hint_text"
+                                android:maxHeight="100dp"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="36dp"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/image_face"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_alignBottom="@id/et_sendmessage"
+                                android:layout_alignRight="@id/et_sendmessage"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginRight="5dp"
+                                android:paddingRight="3dp"
+                                android:src="@drawable/chat_emo_normal"
+                                android:visibility="visible" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:id="@+id/btn_rcd"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/btn_send_bottom"
+                                android:background="@drawable/im_chat_speak_bt_selected"
+                                android:gravity="center"
+                                android:text="按住 说话"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_silent_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/im_chat_bcg"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_silent_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/im_chat_bcg"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/silent_ivPopUp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:clickable="false"
+                            android:focusable="true"
+                            android:src="@drawable/chat_bottom_audi_press"
+                            android:visibility="invisible" />
+
+                        <RelativeLayout
+                            android:id="@+id/silent_btn_bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/silent_ivPopUp">
+
+
+                            <com.itcalf.renhe.view.Button
+                                android:id="@+id/silent_send_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/chat_bottom_add_press"
+                                android:enabled="false"
+                                android:visibility="invisible" />
+
+
+                            <com.itcalf.renhe.view.TextView
+                                android:id="@+id/silent_tip_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/silent_send_img"
+                                android:background="@drawable/im_chat_speak_bt_selected"
+                                android:clickable="false"
+                                android:gravity="center"
+                                android:text="@string/chat_silent_state_tip"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/separate_line" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_rl"
+                android:background="@color/im_chat_bcg">
+
+                <include
+                    layout="@layout/base_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chat_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/im_chat_bcg" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/rcChat_popup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/voice_rcd_hint_window"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

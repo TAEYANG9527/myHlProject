@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tk_drop_list_bg1"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tx_add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="添加朋友"
+        android:textColor="#ffffff" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_margin="5dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/tx_created_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="创建圈子"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tx_join_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="加入圈子"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupons_more_Ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/coupon_none_tip_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coupons_no_more" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/overdue_coupons_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coupons_overdue"
+        android:textColor="@color/CF" />
+
+</LinearLayout>

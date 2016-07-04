@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_archieve_bcg">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/self_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/company_tel_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/telCk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:text="开放"
+                    android:textColor="@color/C1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/company_tel_subll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/telCk"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/archieve_edit_item_editview_padding">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:text="固定电话"
+                        android:textColor="@color/new_archieve_fourbt_textcolor"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                    <com.itcalf.renhe.view.ClearableEditText
+                        android:id="@+id/company_tel_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext"
+                        android:maxLength="30"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/company_tel_subll"
+                    android:background="@color/separate_line"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/company_qq_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/qqCk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:text="开放"
+                    android:textColor="@color/C1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/company_qq_subll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/qqCk"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/archieve_edit_item_editview_padding">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:text="QQ"
+                        android:textColor="@color/new_archieve_fourbt_textcolor"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/company_qq_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext"
+                        android:maxLength="30"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/company_qq_subll"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/company_weichat_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/weichatCk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:text="开放"
+                    android:textColor="@color/C1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/company_weichat_subll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/weichatCk"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/archieve_edit_item_editview_padding">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:text="微信"
+                        android:textColor="@color/new_archieve_fourbt_textcolor"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/company_weichat_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:maxLength="30"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/archieve_edit_item_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/company_weichat_subll"
+                    android:background="@color/separate_line" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

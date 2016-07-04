@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_archieve_bcg"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/sign_everyday_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task0_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/task0_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日签到"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="一周内连续每天签到，获得的金币将逐日递增。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.GalleryReduceSpeed
+                android:id="@+id/sign_Gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:spacing="10dp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/sign_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_bg_red_rectangle_corner_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="签到 "
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task1_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task1_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task1_tv"
+                    android:layout_toRightOf="@id/task1_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_1"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="累计完成100次签到。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task1_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已签到1次，加油~"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task2_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task2_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task2_tv"
+                    android:layout_toRightOf="@id/task2_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_2"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="资料完整度达到100%"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task2_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您的资料完整度已达到80%，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task2_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="马上完善 "
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task3_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task3_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task3_tv"
+                    android:layout_toRightOf="@id/task3_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_3"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="添加10个手机通讯录好友。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task3_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已添加3个手机好友，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task3_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="添加好友"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task4_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task4_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task4_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task4_tv"
+                    android:layout_toRightOf="@id/task4_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_4"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="添加10个邮箱通讯录好友。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task4_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已添5个邮箱好友，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task4_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="添加好友"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task5_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task5_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task5_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task5_tv"
+                    android:layout_toRightOf="@id/task5_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_5"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="累计发表100条评论。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task5_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已发表35条评论，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task5_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="发表评论"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task6_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task6_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task6_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task6_tv"
+                    android:layout_toRightOf="@id/task6_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_6"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="主动与10个好友发起聊天并获得回复。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task6_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已与3个好友发起聊天并获得回复，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task6_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="发起聊天"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task7_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task7_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task7_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task7_tv"
+                    android:layout_toRightOf="@id/task7_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_7"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="邀请10个好友注册人和。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task7_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已添5个好友，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task7_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="邀请好友"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task8_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task8_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task8_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task8_tv"
+                    android:layout_toRightOf="@id/task8_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_8"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="新发布10个动态并获得至少3个评论。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task8_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已发布6个动态并获得1个用户评论，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task8_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="发布动态"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task9_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task9_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task9_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task9_tv"
+                    android:layout_toRightOf="@id/task9_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_9"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="发表的动态获得10个赞。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task9_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您已获得8个赞，加油~"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/task10_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.RoundCornerImageView
+                    android:id="@+id/task10_img"
+                    android:layout_width="@dimen/renhe_new_room_image_wh"
+                    android:layout_height="@dimen/renhe_new_room_image_wh"
+                    android:src="@drawable/wifi"
+                    attr:radiusXY="@dimen/list_item_round_image_radius" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/task10_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100金币"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/task10_tv"
+                    android:layout_toRightOf="@id/task10_img"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_10"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="创建的圈子获得50个成员。"
+                        android:textColor="@color/color_868b98"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/divider" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/task10_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="您创建的成员已有35个成员，加油~"
+                android:textSize="12sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/task10_Btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/renhetask_btn_style"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="添加成员"
+                android:textColor="#ec6c45" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider" />
+    </LinearLayout>
+
+</ScrollView>

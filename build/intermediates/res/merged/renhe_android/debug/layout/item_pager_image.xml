@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.widget.photoview.PhotoView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!--<com.itcalf.renhe.imageUtil.GestureImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.75"
+        gesture-image:strict="false" />-->
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/saveImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/icon_save"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/update_cover_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#bebebe"
+        android:visibility="gone">
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/editBt"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_bt_selected"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="设为档案封面"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

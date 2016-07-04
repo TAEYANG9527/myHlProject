@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.EditText
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:hint=""
+        android:maxLines="10"
+        android:minLines="2"
+        android:textColor="#000000"
+        android:textSize="@dimen/S4" />
+
+    <LinearLayout
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/BC_2" />
+
+        <RelativeLayout
+            android:id="@+id/rb_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LH2"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/rb_one_compile_content"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S3" />
+
+            <ImageView
+                android:id="@+id/rb_one_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/industry_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/BC_2" />
+
+        <RelativeLayout
+            android:id="@+id/rb_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LH2"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/rb_two_compile_content"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S3" />
+
+            <ImageView
+                android:id="@+id/rb_two_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/industry_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/BC_2" />
+
+        <RelativeLayout
+            android:id="@+id/rb_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LH2"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/rb_three_compile_content"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S3" />
+
+            <ImageView
+                android:id="@+id/rb_three_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/industry_checked"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/BC_2" />
+    </LinearLayout>
+
+</LinearLayout>

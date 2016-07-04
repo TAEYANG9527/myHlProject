@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/registerBtn"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_archieve_edit_bt_selected"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/registerBtnStr"
+            android:textColor="@color/add_btn_textcolor_selector"
+            android:textSize="@dimen/S3" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/loginBtn"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_archieve_edit_bt_selected"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/loginBtnStr"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S3" />
+    </LinearLayout>
+
+</RelativeLayout>

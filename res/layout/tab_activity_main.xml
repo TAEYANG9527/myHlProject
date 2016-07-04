@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/main_activity_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/bottomLl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/BC_1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_bacg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/id_indicator_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/tab_icon_feed_on"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/tab_room"
+                    android:textColor="@color/renhe_theme_color"
+                    android:textSize="12sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/room_numb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_conversation_list_unread_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:gravity="center"
+                    android:minWidth="@dimen/im_conversation_list_unread_wh"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/room_newicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/id_indicator_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/tab_icon_im"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/tab_dialog"
+                    android:textColor="@color/main_tab_item_normal_color"
+                    android:textSize="12sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/newdig_numb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_conversation_list_unread_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:minWidth="@dimen/im_conversation_list_unread_wh"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/id_indicator_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/tab_icon_search"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/tab_maillist"
+                    android:textColor="@color/main_tab_item_normal_color"
+                    android:textSize="12sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/search_numb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_conversation_list_unread_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:gravity="center"
+                    android:minWidth="@dimen/im_conversation_list_unread_wh"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_newicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/id_indicator_four"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/tab_icon_me"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/tab_me"
+                    android:textColor="@color/main_tab_item_normal_color"
+                    android:textSize="12sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/me_numb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/im_conversation_list_unread_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:gravity="center"
+                    android:minWidth="@dimen/im_conversation_list_unread_wh"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/data_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/menu_unread_red_circle_shape"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomLl"
+        android:layout_below="@id/toolbarLayout"/>
+</RelativeLayout>

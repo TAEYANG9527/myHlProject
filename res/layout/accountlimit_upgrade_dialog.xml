@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dialog_update_bg_up_corner_style" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_update_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1"
+        android:minLines="2"
+        android:padding="15dp"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cbcbcb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_update_bg_bottom_left_corner_style"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="知道了"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S3" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#cbcbcb" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_update_bg_bottom_right_corner_style"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="立即开通"
+            android:textColor="@color/BS_1"
+            android:textSize="@dimen/S3" />
+    </LinearLayout>
+
+</LinearLayout>

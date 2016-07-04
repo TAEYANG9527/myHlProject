@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/auth_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/top_bacg_red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/auth_des_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_desc1"
+                android:textColor="@color/new_register_tel"
+                android:textSize="16sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/auth_des_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_desc2"
+                android:textColor="@color/auth_desc"
+                android:textSize="16sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/auth_des_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_desc3"
+                android:textColor="@color/new_register_tel"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/auth_tel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/C1"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.itcalf.renhe.view.ClearableEditText
+            android:id="@+id/auth_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/csearch_selector"
+            android:gravity="left"
+            android:hint="请输入验证码"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingRight="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/renhe_login_edittext_textsize" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/auth_code_notreceive"
+            android:textColor="@color/auth_desc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/sureBt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/red_archieve_edit_bt_selected"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/renhe_login_button_textsize" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/retryBt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/auth_retry_bt_pre_shape"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_login_button_textsize"
+            android:visibility="gone"></com.itcalf.renhe.view.Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!--事件统计id-->
+<resources>
+    <!-- 阿里云数据统计事件 -->
+    <string name="android_menu_menu1_click">android_menu_menu1_click</string>
+    <string name="android_menu_menu2_click">android_menu_menu2_click</string>
+    <string name="android_menu_menu3_click">android_menu_menu3_click</string>
+    <string name="android_menu_menu4_click">android_menu_menu4_click</string>
+    <string name="android_btn_menu1_scan_card_click">android_btn_menu1_scan_card_click</string>
+    <string name="android_btn_menu4_upgrade_vip_click">android_btn_menu4_upgrade_vip_click</string>
+    <!--第一个菜单，顶上条目栏搜索点击-->
+    <string name="android_btn_menu1_search_click">android_btn_menu1_search_click</string>
+    <!--搜索关键字填写后进行搜索的触发-->
+    <string name="android_btn_search_process_click">android_btn_search_process_click</string>
+    <!--搜索关键字的高级搜索功能触发-->
+    <string name="android_btn_more_search_click">android_btn_more_search_click</string>
+    <!--搜索结果中高级搜索功能触发-->
+    <string name="android_btn_result_more_search_click">android_btn_result_more_search_click</string>
+    <!--人脉列表高级搜索点击-->
+    <string name="android_btn_result_list_more_search_click">android_btn_result_list_more_search_click</string>
+    <!--查看更多人脉功能触发-->
+    <string name="android_btn_result_more_renmai_click">android_btn_result_more_renmai_click</string>
+    <!--高级搜索搜索的触发-->
+    <string name="android_btn_result_more_search_process_click">android_btn_result_more_search_process_click</string>
+    <!--第一个菜单，发布人脉圈点击-->
+    <string name="android_btn_menu1_publish_notice_click">android_btn_menu1_publish_notice_click</string>
+    <!--发布人脉圈点击后，成功发布的点击次数-->
+    <string name="android_btn_menu1_publish_notice_process_click">android_btn_menu1_publish_notice_process_click</string>
+    <!--1.11 第一个菜单点击 “ + ” 的次数-->
+    <string name="android_btn_menu1_addbtn_click">android_btn_menu1_addbtn_click</string>
+    <!--1.12 第一个菜单点击 “ + ” 之后点击创建圈子的次数-->
+    <string name="android_btn_menu1_create_circle_click">android_btn_menu1_create_circle_click</string>
+    <!-- 2.4 第二个菜单，+号点击之后点击创建圈子的次数-->
+    <string name="android_btn_menu2_add_circle_click">android_btn_menu2_add_circle_click</string>
+    <!-- 2.5 第二个菜单，+号点击之后点击加入圈子的次数-->
+    <string name="android_btn_menu2_join_circle_click">android_btn_menu2_join_circle_click</string>
+    <!--4.2 进入我的页面的次数-->
+    <string name="android_btn_menu4_in_me">android_btn_menu4_in_me</string>
+    <!--4.3 进入升级付费会员页面后，点击某个付费按钮的次数--><!--这地方有个自定义参数： type ： 1代表vip 2代表黄金 3代表铂金-->
+    <string name="android_btn_menu4_vip_pay_click">android_btn_menu4_vip_pay_click</string>
+    <!--4.4 进入升级付费会员页面后，选择支付渠道后点击的次数--><!--这地方有个自定义参数： type ： 1代表微信支付 2代表支付宝支付 3代表苹果支付-->
+    <string name="android_btn_menu4_vip_pay_channel_click">android_btn_menu4_vip_pay_channel_click</string>
+
+    <!-- 2.6 第二个菜单，行业头条点击的次数-->
+    <string name="android_btn_menu2_hytt_click">android_btn_menu2_hytt_click</string>
+    <!--2.7 第二个菜单，行业头条点击后再次点击某条资讯详情的次数-->
+    <string name="android_btn_menu2_hyttdetail_click">android_btn_menu2_hyttdetail_click</string>
+    <!--2.8 第二个菜单，和聊助手点击的次数-->
+    <string name="android_btn_menu2_hlzs_click">android_btn_menu2_hlzs_click</string>
+    <!--2.10 第二个菜单，和聊助手详情点击的次数--><!--这地方有个自定义参数： bizType ： 把和聊助手每条消息中的bizType传过来-->
+    <string name="android_btn_menu2_hlzsdetail_click">android_btn_menu2_hlzsdetail_click</string>
+
+
+    <!--2.11 每一个vip升级的弹框增加一个点击次数的统计--><!--这地方有个自定义参数： type：1 代表人脉圈中点击xxx升级付费会员的入口；2 代表和聊助手中点击升级的入口；3 代表当⼈脉数量达到上限时，还要执⾏添加好友的动作时的入口；
+    4代表当要查看⼀个陌⽣会员的’⼈脉’列表时，出现收费会员引导的入口；5 代表连续添加了5个好友之后出现付费会员引导的入口;7 代表添加好友时，对方设置了只允许付费会员联系的引导入口-->
+    <string name="android_btn_pop_upgrade_click">android_btn_pop_upgrade_click</string>
+
+    <!-- 2.12 实名认证点击次数的统计--><!--这地方有个自定义参数： type：1 代表第四个菜单“我”的左上角，点击实名认证 ；type : 2 代表添加好友时，对方设置了只允许实名认证会员联系的引导入口-->
+    <string name="android_btn_pop_realname_click">android_btn_pop_realname_click</string>
+    <!-- 2.12  实名认证点击下一步的统计-->
+    <string name="android_btn_pop_realname_next_click">android_btn_pop_realname_next_click</string>
+    <!-- 2.13  实名认证点击立即拍照的统计-->
+    <string name="android_btn_pop_realname_photo_click">android_btn_pop_realname_photo_click</string>
+    <!-- 2.14  实名认证点击权威认证的统计-->
+    <string name="android_btn_pop_realname_pay_click">android_btn_pop_realname_pay_click</string>
+    <!-- 2.15  实名认证点击拍照之后提交审核的统计-->
+    <string name="android_btn_pop_realname_photo_commit_click">android_btn_pop_realname_photo_commit_click</string>
+    <!-- 5.1 创建会话失败时候打点-->
+    <string name="android_create_conversation_fail">android_create_conversation_fail</string>
+
+    <!--名片识别-->
+    <string name="ocr_indenting_cards">ocr_indenting_cards</string>
+    <string name="ocl_cards_delete">ocl_cards_delete</string>
+    <string name="ocl_card_detail_delete">ocl_card_detail_delete</string>
+    <string name="ocl_card_detail_save">ocl_card_detail_save</string>
+    <string name="ocl_cards_see_detail">ocl_cards_see_detail</string>
+    <!--新的好友相关-->
+    <string name="newFriend_search">newFriend_search</string>
+    <string name="newFriend_nearby">newFriend_nearby</string>
+    <string name="newFriend_guessInterest">newFriend_guessInterest</string>
+    <string name="newFriend_item_add">newFriend_item_add</string>
+    <string name="newFriend_item_received">newFriend_item_received</string>
+    <string name="newFriend_guessInterest_item_received">newFriend_guessInterest_item_received</string>
+    <string name="newFriend_guessInterest_item_add">newFriend_guessInterest_item_add</string>
+</resources>

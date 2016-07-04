@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/notice_list_item_bacg"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.itcalf.renhe.view.TextViewFixTouchConsume
+            android:id="@+id/rawcontent_txt"
+            android:layout_width="@dimen/notice_content_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/notice_list_sourcecontent_color"
+            android:textSize="@dimen/room_new_username_textsize" />
+
+        <RelativeLayout
+            android:id="@+id/hall_item_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/rawcontent_txt">
+
+            <!--  <com.itcalf.renhe.view.RoundCornerImageView
+                 android:id="@+id/avatar_img"
+                 android:layout_width="@dimen/renhe_room_image_wh"
+                 android:layout_height="@dimen/renhe_room_image_wh"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginRight="5dp"
+                 android:src="@drawable/avatar"
+                 attr:radiusXY="@dimen/list_item_round_image_radius" /> -->
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="@dimen/renhe_room_image_wh"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/avatar" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/username_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/avatar_img"
+                android:layout_toRightOf="@+id/avatar_img"
+                android:textColor="@color/notice_list_name_color"
+                android:textSize="@dimen/room_new_username_textsize" />
+
+            <ImageView
+                android:id="@+id/vipImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username_txt"
+                android:layout_alignTop="@id/username_txt"
+                android:layout_marginBottom="@dimen/vip_margin"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/img_margintop"
+                android:layout_toRightOf="@id/username_txt" />
+
+            <ImageView
+                android:id="@+id/realnameImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username_txt"
+                android:layout_alignTop="@id/username_txt"
+                android:layout_marginBottom="@dimen/realname_margin"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/img_margintop"
+                android:layout_toRightOf="@id/vipImage" />
+
+            <com.itcalf.renhe.view.TextViewFixTouchConsume
+                android:id="@+id/content_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_txt"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/avatar_img"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/blog_item_content_text"
+                android:textSize="@dimen/room_new_username_textsize" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/datetime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_txt"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/avatar_img"
+                android:textColor="@color/new_room_item_time_textcolor"
+                android:textSize="@dimen/room_format_time_textsize" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/client_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/datetime_txt"
+                android:textColor="@color/blog_item_date_text"
+                android:textSize="@dimen/room_format_time_textsize"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/main_rl"
+        android:background="@color/separate_line" />
+
+</RelativeLayout>

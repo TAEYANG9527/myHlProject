@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/editLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/search_city_edit_bacg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/acctount_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.ClearableEditText
+                android:id="@+id/searchEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_search"
+                android:drawablePadding="5dp"
+                android:hint="输入拼音首字母查询"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/renhe_login_edittext_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/C6_1" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.PinnedSectionListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editLl"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/letter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color000"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <com.itcalf.renhe.view.AdvanceSearchCitySideBar
+        android:id="@+id/city_sidebar"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editLl"
+        android:layout_marginRight="5dp"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:longClickable="false"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

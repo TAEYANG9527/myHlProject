@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_myfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hall_list_bacg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ly_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qch_settingbt_selfinfo_selected"
+            android:paddingBottom="10dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/avatarRl"
+                android:layout_width="62dp"
+                android:layout_height="62dp">
+
+                <com.itcalf.renhe.view.RoundImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/avatar" />
+
+                <ImageView
+                    android:id="@+id/vip_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/archive_vip_2_2x" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/ly_qrcode"
+                android:layout_toRightOf="@+id/avatarRl"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S3" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_companytitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S6" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_self_two_dimencode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/self_two_dimencode" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5px"
+            android:background="@color/BC_3" />
+        <!--升级-->
+        <RelativeLayout
+            android:id="@+id/ly_upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bacg"
+            android:paddingBottom="@dimen/edit_margin"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/edit_margin">
+
+            <ImageView
+                android:id="@+id/me_user_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_user" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_upgrade_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/me_user_iv"
+                android:text="@string/title_account_upgrade"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_upgrade_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/tv_upgrade_label"
+                android:text="@string/title_account_upgrade_tip"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_membertype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/twoDimencode_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.itcalf.renhe.view.NoScrollGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:numColumns="2"
+            android:scrollbars="none" />
+
+        <com.itcalf.renhe.view.NoScrollGridView
+            android:id="@+id/other_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:numColumns="2"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</ScrollView>

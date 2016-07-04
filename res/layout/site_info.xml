@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_archieve_sub_item_bacg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/keyTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="@dimen/archive_info_title_width"
+            android:text="网站"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/valueTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:lineSpacingExtra="@dimen/lineSpacing"
+            android:textColor="@color/C1"
+            android:textColorLink="@color/room_at_color"
+            android:textSize="@dimen/new_archive_job_textsize" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/contact_seperate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

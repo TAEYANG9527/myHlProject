@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/seperate_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/search_bacg" />
+
+    <RelativeLayout
+        android:id="@+id/item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/book_friend_item_selector"
+        android:clickable="true">
+
+        <View
+            android:id="@+id/belowkeword_sepera"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <RelativeLayout
+            android:id="@+id/advance_area_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/belowkeword_sepera"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:id="@+id/item_sb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:checked="false" />
+
+            <LinearLayout
+                android:id="@+id/advance_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_sb"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/advance_area_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/area_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/renhe_listview_item_name_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperateline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/separate_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/advance_industry_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/advance_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/C4"
+                        android:textSize="14sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/advance_industry_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/advance_city_tv"
+                        android:textColor="@color/C4"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/belowkeword_sepera1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/advance_area_ll"
+            android:background="@color/separate_line" />
+    </RelativeLayout>
+
+</LinearLayout>

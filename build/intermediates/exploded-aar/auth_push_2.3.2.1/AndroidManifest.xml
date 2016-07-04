@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alibaba.base" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+
+        <!-- <uses-library android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher" android:required="false"/> -->
+        <meta-data
+            android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher"
+            android:value="" />
+    </application>
+
+</manifest>

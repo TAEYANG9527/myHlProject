@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.widget.emojitextview.AisenReplyTextView
+        android:id="@+id/reply_tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rmq_reply_item_margin"
+        android:background="@drawable/room_reply_list_item_bacg"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="@dimen/S6" />
+
+    <com.itcalf.renhe.widget.emojitextview.AisenReplyTextView
+        android:id="@+id/reply_tv_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/room_reply_list_item_bacg"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="@dimen/S6" />
+
+    <com.itcalf.renhe.widget.emojitextview.AisenReplyTextView
+        android:id="@+id/reply_tv_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/room_reply_list_item_bacg"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="@dimen/S6" />
+
+    <com.itcalf.renhe.widget.emojitextview.AisenReplyTextView
+        android:id="@+id/reply_tv_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/room_reply_list_item_bacg"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="@dimen/S6" />
+
+    <com.itcalf.renhe.widget.emojitextview.AisenReplyTextView
+        android:id="@+id/reply_tv_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/room_reply_list_item_bacg"
+        android:clickable="true"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="@dimen/S6" />
+</LinearLayout>

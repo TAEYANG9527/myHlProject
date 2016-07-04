@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <!--  <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bacg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_bar_back" />
+
+            <ImageView
+                android:id="@+id/menu_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_logo" />
+        </LinearLayout>
+        <ImageView
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:src="@drawable/logo_selector" >
+    </ImageView>
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backBt"
+            android:background="@drawable/unread_homepage"
+            android:textColor="@color/top_bacg_red"
+            android:textSize="@dimen/unread_textsize"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_txt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/unread_homepage_margin_left"
+            android:layout_toRightOf="@+id/unread"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/advanced_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/renhe_hall_title_bt_marginright"
+            android:background="@android:color/transparent"
+            android:text="高级搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/searchBt"
+            style="@style/titleTextSizeWithOutColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="@color/C1"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.EditText
+            android:id="@+id/keyword_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchBt"
+            android:background="@drawable/csearch_selector"
+            android:gravity="center_vertical"
+            android:hint="搜索和聊"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/color999"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!--
+    <LinearLayout 
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:background="@drawable/search_bg"
+        android:orientation="horizontal"
+         >
+
+     
+
+        <com.itcalf.renhe.view.EditText
+            android:id="@+id/keyword_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_edt"
+            android:layout_gravity="center_vertical"
+            android:hint="搜索人和网"
+            android:paddingLeft="40dp"
+            android:textColor="@color/color999"
+            android:textSize="16sp"
+            android:layout_weight="2" />
+           <com.itcalf.renhe.view.Button
+            android:id="@+id/searchBt"
+            style="@style/titleTextSizeWithOutColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relationship_btn_search_selected"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingTop=""
+            android:visibility="visible"
+             android:layout_weight="8" />
+    </LinearLayout>
+    -->
+
+    <ListView
+        android:id="@+id/relationship_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" />
+
+</RelativeLayout>

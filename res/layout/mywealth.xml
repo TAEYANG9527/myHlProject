@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/gold_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="192"
+            android:textColor="#ff9900"
+            android:textSize="22sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="金币" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/exchange_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/mywealth_btn_style"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="兑换人和币"
+            android:textColor="#ff9900" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg" />
+
+    <RelativeLayout
+        android:id="@+id/use_renhe_icon_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/renhebi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人和币" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/renhe_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/renhebi"
+            android:singleLine="true"
+            android:text="1250"
+            android:textColor="#ff9900" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/search_flag"
+            android:text="如何使用"
+            android:textColor="@color/gray2" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg" />
+
+</LinearLayout>

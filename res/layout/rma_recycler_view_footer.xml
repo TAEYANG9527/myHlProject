@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/BC_3"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/rmq_item_divider_height"
+    >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:paddingRight="10dp" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/progress"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:text="@string/xlistview_header_hint_loading"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+         />
+
+</RelativeLayout>

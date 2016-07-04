@@ -1,0 +1,254 @@
+[
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_bottom_in_2.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_bottom_in_2.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\in_from_right.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\in_from_right.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_popup_exit.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\cancel_rc.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\cancel_rc.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\share_push_bottom_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\share_push_bottom_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\hold.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\hold.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\rotate.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\rotate.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\base_slide_remain.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\base_slide_remain.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_up_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\avatar_animation_right_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\avatar_animation_right_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\fade_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\fadein.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\fadein.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\update_loading_progressbar_anim.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\update_loading_progressbar_anim.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\zoom_enter.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\zoom_enter.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\fadeout.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\fadeout.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\fade_ins.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\fade_ins.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_bottom_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\zoom_animation.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\zoom_animation.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_up_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\room_tab_in_from_right.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\room_tab_in_from_right.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_right_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_right_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\chat_audio_play_right_frame.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\chat_audio_play_right_frame.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\good_scale.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\good_scale.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\room_tab_in_from_left.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\room_tab_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\imageselector_in_from_left.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\imageselector_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\alpha.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\alpha.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_down_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_down_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_fab_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_fab_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\zoom_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\zoom_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\popup_anim_enter.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\popup_anim_enter.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\base_slide_right_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\base_slide_right_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\decelerate_cubic.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\anim\\decelerate_cubic.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_left_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_left_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\in_from_left.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\in_from_left.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\out_to_left.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\out_to_left.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\popup_enter.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\anim\\popup_enter.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\chat_audio_play_left_frame.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\chat_audio_play_left_frame.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\out_to_right.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\out_to_right.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_snackbar_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\back_scale_action.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\back_scale_action.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\base_slide_right_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\base_slide_right_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\design_snackbar_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_fade_out.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\push_bottom_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\avatar_animation_right_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\avatar_animation_right_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_popup_enter.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\imageselector_out_to_right.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\imageselector_out_to_right.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\cancel_rc2.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\cancel_rc2.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\room_tab_out_to_left.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\room_tab_out_to_left.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\abc_fade_in.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\popup_exit.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\anim\\popup_exit.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\slide_top_to_bottom.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\slide_top_to_bottom.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\room_tab_out_to_right.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\room_tab_out_to_right.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\anim\\popup_anim_exit.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\anim\\popup_anim_exit.xml"
+    }
+]

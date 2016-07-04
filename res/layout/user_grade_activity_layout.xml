@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/archive_more_grade_behaviour"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <RatingBar
+                android:id="@+id/behaviour_ratingBar"
+                style="@style/custom_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/archive_more_grade_resource"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <RatingBar
+                android:id="@+id/resource_ratingBar"
+                style="@style/custom_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/archive_more_grade_power"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <RatingBar
+                android:id="@+id/power_ratingBar"
+                style="@style/custom_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.EditText
+        android:id="@+id/contentEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="@string/archive_more_grade_appraise"
+        android:padding="10dp"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4" />
+</LinearLayout>

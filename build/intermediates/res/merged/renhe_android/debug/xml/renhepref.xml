@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="通用设置">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="fastscroll"
+            android:selectable="true"
+            android:summary="浏览列表时可使用拖动条快速拖动"
+            android:title="开启快速拖动" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="提醒设置">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="warnmsg"
+            android:selectable="true"
+            android:summary="在收到站内信时提醒"
+            android:title="消息提醒" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="warnshake"
+            android:selectable="true"
+            android:summary="收到提醒时震动"
+            android:title="震动" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="led"
+            android:selectable="true"
+            android:summary="收到提醒时点亮LED灯"
+            android:title="LED" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="流量设置">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="showpic"
+            android:selectable="true"
+            android:title="客厅图片显示" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="缓存设置">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:enabled="true"
+            android:key="exitcache"
+            android:selectable="true"
+            android:title="退出时清除缓存" />
+
+        <com.itcalf.renhe.view.TextPreference
+            android:key="clearcache"
+            android:title="立即清除缓存" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其它设置">
+        <com.itcalf.renhe.view.TextPreference
+            android:key="about"
+            android:summary=""
+            android:title="关于" />
+        <com.itcalf.renhe.view.TextPreference
+            android:key="update"
+            android:title="升级更新" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

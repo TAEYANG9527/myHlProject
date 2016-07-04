@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- <gradient android:startColor="@color/achieve_item_bacg" android:endColor="@color/achieve_item_bacg"></gradient> -->
+    <solid android:color="@color/hall_list_bacg"/>
+</shape>

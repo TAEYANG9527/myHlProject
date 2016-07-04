@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_list_item_bacg"
+        android:orientation="vertical"
+        android:padding="@dimen/rmq_item_padding">
+
+        <include layout="@layout/renmaiquan_item_top_layout" />
+
+        <RelativeLayout
+            android:id="@+id/content_Rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rmq_content_margin_top"
+            android:background="@drawable/renmai_item_content_selector"
+            android:clickable="true">
+
+            <com.itcalf.renhe.widget.emojitextview.AisenTextView
+                android:id="@+id/content_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/lineSpacing"
+                android:maxLines="7"
+                android:singleLine="false"
+                android:textColor="@color/new_room_item_job_textcolor"
+                android:textSize="@dimen/S3" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/circle_item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_txt"
+                android:paddingTop="@dimen/rmq_see_full_msg_margin_top"
+                android:text="@string/rmq_see_full_msg"
+                android:textColor="@color/new_room_item_username_textcolor"
+                android:textSize="@dimen/S3"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forward_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rmq_content_margin_pic"
+            android:background="@drawable/raw_selector"
+            android:padding="@dimen/rmq_forward_padding">
+
+            <com.itcalf.renhe.widget.emojitextview.AisenRmqForwardTextView
+                android:id="@+id/forward_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/lineSpacing"
+                android:maxLines="4"
+                android:textColor="@color/new_room_item_job_textcolor"
+                android:textSize="@dimen/S6" />
+
+            <RelativeLayout
+                android:id="@+id/single_pic_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forward_tv"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/rmq_content_margin_pic"
+                android:maxHeight="@dimen/addmsg_grid_width"
+                android:maxWidth="@dimen/addmsg_grid_width">
+
+                <ImageView
+                    android:id="@+id/forward_single_pic_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="false"
+                    android:maxHeight="@dimen/addmsg_grid_width"
+                    android:maxWidth="@dimen/addmsg_grid_width"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/room_pic_default_bcg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/forward_single_pic_iv"
+                    android:layout_alignLeft="@+id/forward_single_pic_iv"
+                    android:layout_alignRight="@+id/forward_single_pic_iv"
+                    android:layout_alignTop="@+id/forward_single_pic_iv"
+                    android:background="@drawable/room_pic_grid_item_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/renmaiquan_item_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rmq_item_divider_height"
+        android:background="@color/BC_3" />
+</LinearLayout>

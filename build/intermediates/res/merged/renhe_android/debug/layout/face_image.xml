@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/face_img"
+        android:layout_width="@dimen/expression_width"
+        android:layout_height="@dimen/expression_width"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/face_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

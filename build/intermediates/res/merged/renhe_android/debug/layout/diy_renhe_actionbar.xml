@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/diyactionbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/renhe_actionbar_bcg"
+    android:gravity="center_vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/actionbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_action_previous_item_selector"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@drawable/hl_actionbar_textcolor_selected"
+        android:textSize="@dimen/textSize18" />
+
+</RelativeLayout>

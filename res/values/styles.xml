@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="titleTextSizeWithBlack">
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/C1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="titleTextSizeWithFillBlack">
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/C1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="titleTextSizeWithSmallBlack">
+        <item name="android:textColor">@color/C1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="titleTextSizeWithOutColor">
+        <item name="android:textSize">28px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--红色按钮（一般是红包）style-->
+    <style name="luckyMoneyBtStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/luckymoney_bt_selected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@drawable/archive_editbt_textcolor_selected</item>
+        <item name="android:textSize">@dimen/S2</item>
+    </style>
+    <!--普通按钮（一般是蓝色）style-->
+    <style name="normalBtStyle" parent="luckyMoneyBtStyle">
+        <item name="android:background">@drawable/red_archieve_edit_bt_selected</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme" />
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBar.Solid.Apptheme</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Apptheme</item>
+        <!--指定按鈕的樣式-->
+        <item name="android:actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton.AppTheme</item>
+        <item name="android:actionButtonStyle">@style/Widget.AppCompat.ActionButton.AppTheme</item>
+        <item name="android:selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+    </style>
+
+    <style name="Widget.AppCompat.ActionButton.AppTheme" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:background">@drawable/custom_action_bar_item_bcg</item>
+        <item name="background">@drawable/custom_action_bar_item_bcg</item>
+    </style>
+
+    <style name="ActionBar.Solid.Apptheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton.AppTheme</item>
+        <item name="android:actionButtonStyle">@style/Widget.AppCompat.ActionButton.AppTheme</item>
+    </style>
+
+    <style name="Theme.RENHE.Login.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/my_actionbar_style</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!--指定menu文字的樣式-->
+        <item name="android:actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <item name="actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <!--<item name="homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>-->
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="buttonStyle">@android:style/Widget.Button</item>
+        <!--指定按鈕的樣式-->
+        <item name="android:actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/hl_button_color</item>
+    </style>
+
+    <style name="Theme.RENHE.ActionBar" parent="Theme.RENHE.Login.ActionBar">
+        <!--指定主题的颜色-->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/renhe_actionbar_bcg</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/renhe_actionbar_bcg</item>
+    </style>
+
+    <style name="StyledIndicators" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+        <!-- Support library compatibility -->
+        <item name="buttonStyle">@android:style/Widget.Button</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionBarStyle">@style/my_actionbar_style</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+        <!--指定按鈕的樣式-->
+        <item name="android:actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <!--指定menu文字的樣式-->
+        <item name="android:actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <item name="actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <!--指定主题的颜色-->
+        <item name="colorPrimary">@color/renhe_actionbar_bcg</item>
+        <item name="colorPrimaryDark">@color/renhe_actionbar_bcg</item>
+        <item name="colorAccent">@color/hl_button_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="MyDropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">#4e4e4e</item>
+        <item name="android:dividerHeight">0.5dp</item>
+        <item name="android:listSelector">@drawable/actionbar_bg_selector</item>
+        <item name="android:background">@drawable/actionbar_item_normal</item>
+
+    </style>
+
+    <style name="ActionBarOverflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#f3f3f3</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:background">@drawable/custom_action_bar_item_bcg</item>
+        <item name="background">@drawable/custom_action_bar_item_bcg</item>
+    </style>
+
+    <style name="my_actionbar_style" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/renhe_actionbar_bcg</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/renhe_actionbar_bcg</item>
+        <item name="titleTextStyle">@style/AcBar_titleStyle</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="Theme.Archive.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:actionBarStyle">@style/archive_my_actionbar_style</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>
+        <item name="android:actionBarItemBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <!-- Support library compatibility -->
+        <item name="buttonStyle">@android:style/Widget.Button</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionBarStyle">@style/archive_my_actionbar_style</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>
+        <item name="actionBarItemBackground">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+
+        <!--指定按鈕的樣式-->
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <!--指定按鈕的樣式-->
+        <item name="android:selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <!--指定menu文字的樣式-->
+        <item name="android:actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <item name="actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <!--指定主题的颜色-->
+        <item name="colorPrimary">@color/renhe_actionbar_bcg</item>
+        <item name="colorPrimaryDark">@color/renhe_actionbar_bcg</item>
+        <item name="colorAccent">@color/hl_button_color</item>
+    </style>
+
+    <style name="archive_my_actionbar_style" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/renhe_actionbar_bcg</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="Theme.ActionBar.WithoutUpIndicator" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_previous_item_selector</item>-->
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <!-- Support library compatibility -->
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!--指定menu文字的樣式-->
+        <item name="android:actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <item name="actionMenuTextColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <!--指定按鈕的樣式-->
+        <item name="android:actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionBarItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <item name="selectableItemBackground">@drawable/custom_action_bar_item_bcg</item>
+        <!--指定主题的颜色-->
+        <item name="colorPrimary">@color/renhe_actionbar_bcg</item>
+        <item name="colorPrimaryDark">@color/renhe_actionbar_bcg</item>
+        <item name="colorAccent">@color/hl_button_color</item>
+    </style>
+
+    <style name="archive_AcBar_titleStyle">
+        <item name="android:textColor">@drawable/actionbar_home_textcolor_selected</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="pulsActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_actionbar_add</item>
+    </style>
+
+    <style name="AcBar_titleStyle">
+        <item name="android:textColor">@drawable/hl_actionbar_textcolor_selected</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AcBar_luckymoney_titleStyle">
+        <item name="android:textColor">@color/luckymoney_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AcBar_luckymoney_sub_titleStyle">
+        <item name="android:textColor">@color/luckymoney_text_color</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/actionbar_menu_textcolor_selected</item>
+        <item name="android:background">@color/renhe_theme_color</item>
+    </style>
+
+    <style name="MenuButtonStyle">
+        <item name="android:background">@drawable/custom_action_bar_item_bcg</item>
+    </style>
+
+    <style name="TranslucentUnfullwidthWinStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TranslucentAndNoTitleStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--指定主题的颜色-->
+        <item name="colorPrimary">@color/renhe_actionbar_bcg</item>
+        <item name="colorPrimaryDark">@color/renhe_actionbar_bcg</item>
+        <item name="colorAccent">@color/hl_button_color</item>
+    </style>
+
+    <style name="dialog_fullscreen">
+
+        <!--
+        <item name="android:windowFullscreen">true</item>
+		<item name="android:windowNoTitle">true</item>
+        -->
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/top_bacg</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="MyGuideStyle" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AdvanceSearchDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/select_window_bg</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 设置里checkbox样式 -->
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:width">@dimen/exit_checkbox_dimen</item>
+    </style>
+    <!-- autoCompleteTextView -->
+    <style name="myAutoCompletestyle" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:popupBackground">@drawable/autocomplete_shape</item>
+        <item name="android:dropDownVerticalOffset">5dip</item>
+    </style>
+
+    <style name="TimePickedStyleBottom" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- //设置背景 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- //去掉边框 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- //设置是否背景模糊 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- //设置半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- //设置无标题 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item>activity不变暗 -->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="actionbarlogobcg">
+        <item name="android:background">@drawable/actionbar_logo_bacg_selector</item>
+    </style>
+
+    <!-- IM -->
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:textColor">@color/C2</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_navigation_more_selector</item>
+    </style>
+
+    <style name="cricleBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/avatar_animation_right_in</item>
+        <item name="android:windowExitAnimation">@anim/avatar_animation_right_out</item>
+    </style>
+
+    <style name="VCardMenuDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#FFE1E8EB</item>
+    </style>
+    <!--下载进度条样式-->
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal</item>
+        <!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="mProgress_horizontal_color_cl">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_color_cl</item>
+        <!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+    <!--cursom rating bar-->
+    <style name="custom_ratingbar_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>
+        <item name="android:minHeight">21dip</item>
+        <item name="android:maxHeight">42dip</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="MyTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <!--&lt;!&ndash;tab的最大的宽度&ndash;&gt;-->
+        <item name="tabMaxWidth">500dp</item>
+        <!--tab指示标的颜色-->
+        <item name="tabIndicatorColor">@color/white</item>
+        <!--tab 指示标的高度-->
+        <item name="tabIndicatorHeight">3dp</item>
+        <!--tab字体的样式-->
+        <item name="tabTextAppearance">@style/MyTabTextStyle</item>
+        <!--tab 选中时的颜色-->
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabBackground">@color/transparent</item>
+    </style>
+
+    <style name="MyTabTextStyle" parent="TextAppearance.Design.Tab">
+        <!--Tab字体的大小-->
+        <item name="android:textSize">14sp</item>
+        <!--Tab字体的默认的颜色-->
+        <item name="android:textColor">@drawable/upgrade_tab_textcolor_selected</item>
+        <!--Tab字体是否为大写-->
+        <item name="textAllCaps">true</item>
+    </style>
+    <!--
+       Base application theme, dependent on API level. This theme is replaced
+       by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+   -->
+    <style name="BaseHLThemeWithToolBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- 公用theme -->
+    <style name="HLThemeWithToolBar" parent="Theme.RENHE.ActionBar">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!--档案页theme-->
+    <style name="HLArchiveThemeWithToolBar" parent="Theme.Archive.ActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- 公用webview theme -->
+    <style name="HLWebViewThemeWithToolBar" parent="HLThemeWithToolBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_navigation_close_selector</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_close_selector</item>
+    </style>
+
+    <!-- 登录页theme -->
+    <style name="HLThemeLogin" parent="Theme.RENHE.Login.ActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- 红包相关theme -->
+    <style name="HLThemeLuckyMoney" parent="Theme.RENHE.ActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:homeAsUpIndicator">
+            @drawable/ic_luckymoney_action_previous_item_selector
+        </item>
+        <item name="homeAsUpIndicator">@drawable/ic_luckymoney_action_previous_item_selector</item>
+        <!--指定主题的颜色-->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/luckymoney_toolbar_bg_color</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/luckymoney_toolbar_bg_color</item>
+    </style>
+    <!-- 企业查询 webview theme -->
+    <style name="HLCompanyAuthTheme" parent="Theme.RENHE.ActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--指定主题的颜色-->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/CL</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/CL</item>
+    </style>
+
+    <style name="NotificationContent" parent="android:TextAppearance.StatusBar.EventContent" />
+
+    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+</resources>

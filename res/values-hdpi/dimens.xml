@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="renhe_title_height">40dp</dimen>
+    <dimen name="renhe_title_textsize">22sp</dimen>
+    <dimen name="renhe_menu_title_textsize">16sp</dimen>
+    <dimen name="renhe_register_content_linearlayout_item_margintop">20dp</dimen>
+    <dimen name="renhe_listview_item_date_textsize">13sp</dimen>
+    <dimen name="renhe_listview_item_content_textsize">17sp</dimen>
+    <dimen name="renhe_listview_item_from_textsize">13sp</dimen>
+    <dimen name="renhe_hall_bottom_image_wh">80dp</dimen>
+    <dimen name="renhe_archieve_image_wh">70dp</dimen>
+    <dimen name="renhe_room_showmsg_image_wh">60dp</dimen>
+    <dimen name="renhe_room_showmsg_reply_image_wh">38dp</dimen>
+    <dimen name="renhe_archieve_image_wh1">100dp</dimen>
+    <dimen name="renhe_contact_between_name_job">5dp</dimen>
+
+    <!-- 档案 -->
+    <dimen name="archievs_fourbt_textsize">16sp</dimen>
+    <dimen name="archievs_fourbt_padding">5dp</dimen>
+    <!-- 客厅详情 -->
+    <dimen name="room_detail_name_textsize">13sp</dimen>
+    <dimen name="room_detail_company_textsize">10sp</dimen>
+    <dimen name="room_detail_industry_textsize">10sp</dimen>
+    <dimen name="room_detail_time_textsize">9sp</dimen>
+    <dimen name="about_renhe_textsize">22sp</dimen>
+    <!-- 退出 -->
+    <dimen name="exit_checkbox_dimen">100px</dimen>
+    <dimen name="renhe_room_thumpic_image_wh">80dp</dimen>
+
+    <!-- 左侧菜单通知角标 -->
+    <dimen name="icon_margin_imageview">10dp</dimen>
+    <dimen name="icon_margin_imageview_large">12dp</dimen>
+    <dimen name="icon_margin_imageview_small">5dp</dimen>
+    <dimen name="icon_margin_icon_V">5px</dimen>
+    <dimen name="menu_icon_margin_icon_V">1px</dimen>
+    <dimen name="icon_size">6sp</dimen>
+    <dimen name="room_item_forward_padding">2dp</dimen>
+    <dimen name="notice_content_width">60dp</dimen>
+    <dimen name="notice_content_textsize">13sp</dimen>
+    <dimen name="notice_time_textsize">11sp</dimen>
+    <dimen name="room_pic_thumbnail_height">100dp</dimen>
+    <dimen name="room_tab_bottom_item_text_size">10sp</dimen>
+    <dimen name="bottom_item_text_size">12sp</dimen>
+    <dimen name="forward_item_text_size">11sp</dimen>
+    <dimen name="renhe_hall_title_searchbt_marginright">20dp</dimen>
+
+    <!-- round iamgeview 圆角弧度 -->
+    <dimen name="round_image_radius">2dp</dimen>
+
+    <!-- 新档案 -->
+    <dimen name="archieve_name_size">17sp</dimen>
+    <dimen name="archieve_job_size">14sp</dimen>
+    <dimen name="archieve_contact_size">12sp</dimen>
+
+    <!-- 联系人界面vip logo相对名字的偏移量 -->
+    <dimen name="vip_margin">3dp</dimen>
+    <dimen name="realname_margin">3dp</dimen>
+    <dimen name="img_margintop">4dp</dimen>
+    <dimen name="list_item_round_image_radius">100dp</dimen>
+
+    <!-- 客厅字体统一 -->
+    <dimen name="room_new_username_textsize">15sp</dimen>
+    <dimen name="room_new_userjob_textsize">13sp</dimen>
+    <dimen name="room_format_time_textsize">12sp</dimen>
+    <dimen name="renhe_format_logo_textsize">16sp</dimen>
+    <dimen name="renhe_format_tab_textsize">15sp</dimen>
+    <dimen name="room_format_username_textsize">16sp</dimen>
+    <dimen name="room_format_userjob_textsize">13sp</dimen>
+    <dimen name="room_format_content_textsize">16sp</dimen>
+    <dimen name="room_format_goodorreply_textsize">13sp</dimen>
+
+    <!-- 站内信字体统一 -->
+    <dimen name="innermsg_format_username_textsize">16sp</dimen>
+    <dimen name="innermsg_format_time_textsize">13sp</dimen>
+    <dimen name="innermsg_format_title_textsize">16sp</dimen>
+    <dimen name="innermsg_format_content_textsize">13sp</dimen>
+
+    <!-- 档案页面字体统一 -->
+    <dimen name="archieve_format_username_textsize">17sp</dimen>
+    <dimen name="archievee_item_between_margin">5dp</dimen>
+    <!-- 客厅详情回复列表name -->
+    <dimen name="room_reply_name">13sp</dimen>
+    <!-- 客厅详情回复列表footer margin -->
+    <dimen name="room_reply_footer">5dp</dimen>
+    <dimen name="advance_search_selectcity_item_padding">10dp</dimen>
+    <dimen name="advance_search_selectcity_item_section_padding">5dp</dimen>
+    <dimen name="unread_textsize">13sp</dimen>
+    <dimen name="unread_homepage_margin_top_bottom">3dp</dimen>
+    <dimen name="unread_homepage_margin_left">5dp</dimen>
+
+    <!-- 档案编辑 -->
+    <dimen name="archieve_edit_item_text_size">16sp</dimen>
+    <dimen name="archieve_edit_item_editview_padding">15dp</dimen>
+    <dimen name="archieve_edit_item_sex_editview_padding">10dp</dimen>
+    <dimen name="search_eidt_text_padding">5dp</dimen>
+    <dimen name="checkbox_padding">25dp</dimen>
+    <dimen name="lineSpacing">4dp</dimen>
+    <dimen name="xlistview_refresh_need_height">95px</dimen>
+
+    <!-- 联系人字体 -->
+    <dimen name="contact_format_name_textsize">15sp</dimen>
+    <dimen name="contact_format_company_textsize">13sp</dimen>
+
+    <!-- 注册 -->
+    <dimen name="renhe_register_edittext_textsize">15sp</dimen>
+    <dimen name="personal_msg_date_textsize1">40px</dimen>
+    <dimen name="personal_msg_date_textsize2">16px</dimen>
+    <dimen name="provide_get_textsize">13sp</dimen>
+    <dimen name="corver_margin_tom">-30dp</dimen>
+
+    <!-- 推荐人脉 好友数量字体 -->
+    <dimen name="rencommend_friends_textsize">10.5sp</dimen>
+    <dimen name="rencommend_image_wh">40dp</dimen>
+    <dimen name="rencommend_vipicon_hh">15dp</dimen>
+    <dimen name="rencommend_vipicon_wh">12dp</dimen>
+    <dimen name="new_register_tel_marginleft">-9dp</dimen>
+
+    <!-- IM -->
+    <dimen name="chat_audio_length">20px</dimen>
+
+    <!-- 表情的大小 -->
+    <dimen name="expression_width">32dp</dimen>
+
+    <!-- IM -->
+    <dimen name="im_chat_item_imageview_maxwidth">63dp</dimen>
+
+    <dimen name="progresswebview">-6dp</dimen>
+    <!--我的页面 item padding-->
+    <dimen name="my_fragment_padding">10dp</dimen>
+</resources>

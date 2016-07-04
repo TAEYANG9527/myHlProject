@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BC_3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pay_way_logo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/upgrade_pt_bcg_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/pay_way_logo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upgrade_pay_way_pt" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/pay_way_fee_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1999/年"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/vouchers_Rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/fragment_vouchers_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/upgrade_pay_current_vip_last_money"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/balance_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical"
+                        android:text="-￥10.0"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignLeft="@id/fragment_vouchers_tv"
+                        android:layout_below="@id/fragment_vouchers_tv"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/separate_line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="12dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/fragment_choose_pay_way_tv_goodname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/upgrade_pay_need_pay_money"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/fragment_choose_pay_way_tv_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="￥1999.0"
+                        android:textColor="@color/CF"
+                        android:textSize="@dimen/S1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="选择支付方式"
+                android:textColor="@color/C3"
+                android:textSize="@dimen/S4" />
+
+            <RelativeLayout
+                android:id="@+id/rl_zhifubao_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_alipay"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="支付宝"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/archieve_goto" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_weixin_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_wx_pay"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="微信"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_other_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_pay_other"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="其它支付方式"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/archieve_goto" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_transparent_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

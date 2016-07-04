@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_contacts" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_arrows" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/import_maillist_tip1"
+            android:textColor="@color/C3"
+            android:textSize="@dimen/S3" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/import_maillist_tip2"
+            android:textColor="@color/C3"
+            android:textSize="@dimen/S3" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/import_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/import_btn_shape"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="15dp"
+            android:text="@string/renmaiquan_guide_import_contact_bt_text"
+            android:textColor="@drawable/import_text_selector"
+            android:textSize="@dimen/S2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading_dig"
+        layout="@layout/request_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

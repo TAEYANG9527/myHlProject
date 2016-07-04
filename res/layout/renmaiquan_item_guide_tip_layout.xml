@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/rmq_item_padding">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S3" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rmq_item_padding"
+            android:background="@drawable/import_btn_shape"
+            android:padding="@dimen/rmq_item_padding"
+            android:textColor="@drawable/import_text_selector"
+            android:textSize="@dimen/S4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rmq_item_divider_height"
+        android:background="@color/BC_3" />
+</LinearLayout>

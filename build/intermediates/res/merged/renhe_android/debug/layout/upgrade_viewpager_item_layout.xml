@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3">
+
+    <LinearLayout
+        android:id="@+id/upgrade_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hl_button_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/upgrade_ll_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upgrade_upgrade_now"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S2" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/upgrade_ll_sub_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S9"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/upgrade_ll"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BC_3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/upgrade_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="13dp"
+                    android:text="更高等级，更多特权"
+                    android:textColor="@color/C1"
+                    android:textSize="15sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/upgrade_title_more_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:padding="13dp"
+                    android:text="更多>"
+                    android:textColor="@color/C1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_line_bcg_shape_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/badge_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/badge_pt" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/badge_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="专属"
+                        android:textColor="@color/C1"
+                        android:textSize="13sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/badge_sub_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="徽章档案"
+                        android:textColor="@color/C2"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_line_bcg_shape_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/contact_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/contact_pt" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contact_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="人脉数"
+                        android:textColor="@color/C1"
+                        android:textSize="13sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contact_sub_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="不设限"
+                        android:textColor="@color/C2"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_line_bcg_shape_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/invite_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/invite_pt" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/invite_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="每日发送"
+                        android:textColor="@color/C1"
+                        android:textSize="13sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/invite_sub_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="300好友邀请"
+                        android:textColor="@color/C2"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/square_line_bcg_shape_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/view_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/view_pt" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/view_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="最优先推荐"
+                        android:textColor="@color/C1"
+                        android:textSize="13sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/view_sub_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="30倍提升曝光率"
+                        android:textColor="@color/C2"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/latest_upgraded_member_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="13dp"
+                android:text="最新升级的铂金会员"
+                android:textColor="@color/C1"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+            <!--最新升级的会员列表，暂时是3个人-->
+            <LinearLayout
+                android:id="@+id/latest_upgraded_member_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

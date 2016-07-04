@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/BC_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="行    业"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/textSize16" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/industry_tv"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@null"
+            android:drawableRight="@drawable/archieve_goto"
+            android:gravity="center_vertical"
+            android:hint="选择行业"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textColorHint="@color/C2"
+            android:textSize="@dimen/textSize16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/BC_2" />
+
+    <RelativeLayout
+        android:id="@+id/location_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH2"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/locationPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="地    区"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/textSize16" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LH2"
+            android:layout_toRightOf="@id/locationPre"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/archieve_goto"
+            android:gravity="center_vertical"
+            android:hint="选择地区"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textColorHint="@color/C3"
+            android:textSize="@dimen/S4" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/BC_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="能提供"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/textSize16" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/provide_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/archieve_goto"
+            android:hint="请填写"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textColorHint="@color/C3"
+            android:textSize="@dimen/S4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/BC_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="想得到"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/textSize16" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/get_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/archieve_goto"
+            android:hint="请填写"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textColorHint="@color/C3"
+            android:textSize="@dimen/S4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/BC_2" />
+
+</LinearLayout>

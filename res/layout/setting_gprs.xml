@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- 流量设置 -->
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/room_showpic_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="客厅图片显示"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_textsize" />
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:id="@+id/room_showpic_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

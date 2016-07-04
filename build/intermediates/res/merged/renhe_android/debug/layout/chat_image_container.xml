@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageselectLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/imageLl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/imageRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:id="@+id/imageFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_image_select" />
+            </FrameLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageFl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="图片"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cameraRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/cameraFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_camera_select" />
+            </FrameLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cameraFl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="照一张"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vcardRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/vcardFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_vcard_select" />
+            </FrameLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vcardFl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="名片"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/luckymoneyRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <FrameLayout
+                android:id="@+id/luckymoneyFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_lucky_select" />
+            </FrameLayout>
+
+            <include
+                android:id="@+id/new_lucky_flag_tv"
+                layout="@layout/chat_new_flag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/luckymoneyFl"
+                android:layout_alignRight="@id/luckymoneyFl"
+                android:layout_below="@+id/luckymoneyFl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="红包"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/luckymoney_ad_Rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <FrameLayout
+                android:id="@+id/luckymoney_ad_Fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_lucky_ad_select" />
+            </FrameLayout>
+
+            <include
+                android:id="@+id/new_lucky_ad_flag_tv"
+                layout="@layout/chat_new_flag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/luckymoney_ad_Fl"
+                android:layout_alignRight="@id/luckymoney_ad_Fl"
+                android:layout_below="@+id/luckymoney_ad_Fl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="红包广告"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fileRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fileFl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/im_chat_select_image_item_selected"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat_image_select" />
+            </FrameLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fileFl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="文件"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH3"
+        android:background="@null"
+        android:hint="添加标题"
+        android:gravity="center_vertical"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/BC_2" />
+
+    <com.itcalf.renhe.view.EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="添加内容"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S3" />
+</LinearLayout>

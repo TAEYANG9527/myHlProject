@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/new_archieve_bcg">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/self_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="@dimen/archieve_edit_item_editview_padding">
+
+        <com.itcalf.renhe.view.EditText
+            android:id="@+id/contentEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:maxLength="100"
+            android:textSize="@dimen/archieve_edit_item_text_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/personal_sl"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/profession_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/profession_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/personal_expertise_square_bg"
+                android:orientation="vertical"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/add_profession_IB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profession_group"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/add_one_more"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/add_profession_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/search_city_edit_bacg"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/add_profession_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/archieve_edit_bt_selected"
+            android:padding="@dimen/search_eidt_text_padding"
+            android:text="添加"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/archieve_job_textsize" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/profession_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/add_profession_btn"
+            android:text="15"
+            android:textColor="@color/new_archieve_fourbt_textcolor" />
+
+        <LinearLayout
+            android:id="@+id/editLl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/profession_numb"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/acctount_pwd_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_edit_shape"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/profession_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:hint="输入技能专长"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/renhe_login_edittext_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

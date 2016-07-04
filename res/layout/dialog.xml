@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#59C3EF"
+                android:textSize="20sp"
+                android:text="分享"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#59C3EF" />
+    </LinearLayout>
+
+    <!-- Button
+         android:id="@+id/cancle"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginTop="15dp"
+         android:text="取         消" /> -->
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pop_layout"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"></GridView>
+
+
+</RelativeLayout>

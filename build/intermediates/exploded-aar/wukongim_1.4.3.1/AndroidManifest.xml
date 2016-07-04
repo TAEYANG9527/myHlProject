@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alibaba.wukong.im"
+    android:versionCode="13"
+    android:versionName="1.4.3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- ut权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application android:allowBackup="false" >
+        <meta-data
+            android:name="TRACE:com.alibaba.doraemon.impl.trace.TraceFetcher"
+            android:value="THREAD" />
+        <meta-data
+            android:name="STATISTICS:com.alibaba.doraemon.impl.statistics.StatisticsFetcher"
+            android:value="THREAD;LIFECYCLE;EVENTBUTLER" />
+        <meta-data
+            android:name="MONITOR:com.alibaba.doraemon.impl.monitor.MonitorFetcher"
+            android:value="" /> <!-- <uses-library android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher" android:required="false"/> -->
+        <meta-data
+            android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="REQDEFCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="REQTTMPCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="THREAD:com.alibaba.doraemon.impl.threadpool.ThreadFetcher"
+            android:value="LIFECYCLE" />
+        <meta-data
+            android:name="REQUEST:com.alibaba.doraemon.impl.request.VollyRequestFetcher"
+            android:value="CACHE" />
+        <meta-data
+            android:name="NAVIGATOR:com.alibaba.doraemon.impl.navigator.NavigatorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="EVENTBUTLER:com.alibaba.doraemon.impl.eventbus.EventButlerFetcher"
+            android:value="LIFECYCLE" />
+
+        <service
+            android:name="com.laiwang.protocol.android.LWPService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.laiwang.protocol.android.LWPService$KernelService"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

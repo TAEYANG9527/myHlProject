@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.itcalf.renhe.view.RoundImageView
+        android:id="@+id/name"
+        android:layout_width="@dimen/circle_good_height"
+        android:layout_height="@dimen/circle_good_height" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/dou"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/new_room_item_username_textcolor"
+        android:textSize="@dimen/room_new_userjob_textsize" />
+
+</LinearLayout>

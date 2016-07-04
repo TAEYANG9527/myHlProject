@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/xlistview_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/xlistview_header_hint_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脉成就事业"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xlistview_frest_iv"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:visibility="gone">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xlistview_header_last_time"
+                    android:textSize="12sp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/xlistview_header_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/xlistview_header_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-15dp"
+            android:src="@drawable/default_ptr_rotate" />
+
+        <ProgressBar
+            android:id="@+id/xlistview_header_progressbar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-20dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

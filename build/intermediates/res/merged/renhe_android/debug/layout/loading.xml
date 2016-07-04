@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ProgressBar
+        android:id="@+id/loadingPb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/loading_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/loadingPb"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/loadingPb"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

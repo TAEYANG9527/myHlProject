@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH4"
+        android:background="@drawable/list_item_bacg"
+        android:paddingLeft="5dp">
+
+        <com.itcalf.renhe.view.RoundImageView
+            android:id="@+id/headImage"
+            android:layout_width="@dimen/renhe_room_image_wh"
+            android:layout_height="@dimen/renhe_room_image_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/avatar" />
+
+        <RelativeLayout
+            android:id="@+id/contentRl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/headImage">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/nameTv"
+                style="@style/titleTextSizeWithBlack"
+                android:textColor="@color/_C1"
+                android:textSize="@dimen/S3" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/titleTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_below="@id/nameTv"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S6" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/separatorTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_alignTop="@id/titleTv"
+                android:layout_toRightOf="@id/titleTv"
+                android:singleLine="true"
+                android:text="@string/separator"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S6" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/infoTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_alignTop="@id/titleTv"
+                android:layout_toRightOf="@id/separatorTv"
+                android:singleLine="true"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S6" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@id/contentRl"
+            android:layout_alignParentBottom="true"
+            android:background="@color/BC_2" />
+    </RelativeLayout>
+
+</RelativeLayout>

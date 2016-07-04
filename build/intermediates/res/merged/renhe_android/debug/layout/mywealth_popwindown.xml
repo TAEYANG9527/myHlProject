@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mywealth_pop_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/mywealth_pop_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/relationship_input_del" />
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/popwindown_bg_black_corner_style"
+            android:gravity="center">
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/mywealth_pop_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_bg_orange_rectangle_corner_style"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="马上兑换"
+                android:textColor="#ffffff" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/mywealth_pop_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/mywealth_pop_btn"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="人和币使用说明"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

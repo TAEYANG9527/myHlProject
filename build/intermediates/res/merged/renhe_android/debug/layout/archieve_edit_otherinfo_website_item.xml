@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding" >
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/selectedTv"
+            android:layout_width="@dimen/archive_info_title_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <Spinner
+            android:id="@+id/webspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/remove_provide_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/remove_one_more"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.EditText
+            android:id="@+id/canprovide_item_ET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/remove_provide_ib"
+            android:layout_toRightOf="@+id/selectedTv"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textColorLink="@color/room_at_color"
+            android:textSize="@dimen/new_archive_job_textsize" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

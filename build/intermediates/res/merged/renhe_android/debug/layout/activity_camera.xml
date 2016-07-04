@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_bottom" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#40000000">
+
+        <ImageView
+            android:id="@+id/iv_flicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_richscan_flicker_open" />
+
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_richscan_picture" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH4"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/S4" />
+
+        <ImageView
+            android:id="@+id/iv_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_scan_takepicture" />
+    </RelativeLayout>
+
+</RelativeLayout>

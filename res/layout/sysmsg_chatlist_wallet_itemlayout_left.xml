@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:id="@+id/user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/iv_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/sysmsg" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#818181"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_content"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/user_layout"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:minHeight="40dp">
+
+            <LinearLayout
+                android:id="@+id/wallet_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tv_chatcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:lineSpacingExtra="2dp"
+                    android:maxWidth="@dimen/im_chat_item_maxlength"
+                    android:text="余额提现申请"
+                    android:textColor="@color/C1"
+                    android:textColorLink="@color/CL"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/wallet_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="3月25日"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S7" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/wallet_cashmoney_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="提现金额"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S7" />
+
+                <TextView
+                    android:id="@+id/wallet_cashmoney_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="$100"
+                    android:textColor="@color/C1"
+                    android:textSize="24sp" />
+
+                <View
+                    android:id="@+id/wallet_seperate_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/separate_line" />
+
+                <LinearLayout
+                    android:id="@+id/wallet_cashmoney_ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_label1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="提现银行:"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="招商银行"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wallet_cashmoney_ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_label2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="提现时间:"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="2016-05-12 19:37:47"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wallet_cashmoney_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_label3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="提现银行:"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="招商银行"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wallet_cashmoney_ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_label4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="提现银行:"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="招商银行"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wallet_cashmoney_ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_label5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="提现银行:"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/wallet_cashmoney_content5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="招商银行"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S7" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperate_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/wallet_ll"
+                android:layout_marginTop="10dp"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:id="@+id/link_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/wallet_ll"
+                android:layout_below="@+id/seperate_view"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/link_title_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/search_flag" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/link_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="查看详情"
+                    android:textColor="@color/CL"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iv_imgcontent_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_imgcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxHeight="@dimen/im_chat_item_imageview_maxwidth"
+                    android:maxWidth="@dimen/im_chat_item_imageview_maxwidth"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/iv_imgcontent"
+                    android:layout_alignLeft="@+id/iv_imgcontent"
+                    android:layout_alignRight="@+id/iv_imgcontent"
+                    android:layout_alignTop="@+id/iv_imgcontent"
+                    android:background="@drawable/room_pic_grid_item_selector" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_audiocontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/chatfrom_voice_playing_f3"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

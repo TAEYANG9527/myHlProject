@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/face_dots_container"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/face_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/face_dots_container"
+        android:layout_gravity="center"
+        android:padding="1dip" />
+
+    <include
+        android:id="@+id/chat_imageselect_container"
+        layout="@layout/chat_image_container"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/closeRH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/exit_dialog_selector"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/exit" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/closeRH"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/close_title_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/closeRH_sub"
+                    android:textColor="@color/exitRH_item_sub"
+                    android:textSize="@dimen/close_item_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- <View 
+            android:layout_width="match_parent"
+       		android:layout_height="1px"
+       		android:background="@color/separate_line"
+       		/> -->
+        <LinearLayout
+            android:id="@+id/closeRH_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="1px"
+            android:paddingTop="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/exit_dialog_selector"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/exit_avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/closeLoginRH"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/close_title_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/closeLoginRH_sub"
+                    android:textColor="@color/exitRH_item_sub"
+                    android:textSize="@dimen/close_item_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

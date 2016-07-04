@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_archieve_bcg">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/self_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/interestLl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/archieve_edit_item_bacg">
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/interestEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="兴趣爱好"
+                    android:maxLength="200"
+                    android:minHeight="200dp"
+                    android:padding="@dimen/archieve_edit_item_editview_padding"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/organizationLl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/archieve_edit_item_bacg">
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/organizationEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="协会组织"
+                    android:maxLength="200"
+                    android:minHeight="200dp"
+                    android:padding="@dimen/archieve_edit_item_editview_padding"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/awardLl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/archieve_edit_item_bacg">
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/awardEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="荣誉奖励"
+                    android:maxLength="200"
+                    android:minHeight="200dp"
+                    android:padding="@dimen/archieve_edit_item_editview_padding"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/website_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/website_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/add_website_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/website_group"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add_one_more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

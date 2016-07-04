@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/edu_tv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="教育经历"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/desc_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edit_margin"
+            android:layout_toRightOf="@id/edu_tv"
+            android:layout_weight="10"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="5dp">
+
+            <LinearLayout
+                android:id="@+id/school_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/school_name_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:text="宁波大学后大后期我"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/new_archive_job_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/time_info_tv"
+                    style="@style/titleTextSizeWithSmallBlack"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="10"
+                    android:gravity="right"
+                    android:text="2013.09-2016.06"
+                    android:textColor="@color/provide_get_textcolor"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/study_field_tv"
+                style="@style/titleTextSizeWithSmallBlack"
+                android:layout_below="@id/school_ll"
+                android:layout_marginTop="5dp"
+                android:text="计算机技术"
+                android:textColor="@color/provide_get_textcolor"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/separate_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/study_field_tv"
+                android:layout_marginTop="20dp"
+                android:background="@color/separate_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

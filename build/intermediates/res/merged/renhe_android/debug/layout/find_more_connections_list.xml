@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/title_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/LH1"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/BC_3"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:textColor="@color/contact_separate_char"
+        android:textSize="@dimen/contact_format_company_textsize"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/findconnections_item_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_txt"
+        android:background="@drawable/toutiao_item_shape"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/loadmore_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findconnections_item_listview"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/loadmore_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="查看更多"
+            android:textColor="@color/contact_separate_char"
+            android:textSize="@dimen/contact_format_company_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

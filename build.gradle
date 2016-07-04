@@ -1,0 +1,167 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        flatDir {
+            dirs 'aars'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'aars'
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
+apply plugin: 'com.android.application'
+//def releaseTime() {
+//    return new Date().format("yyyy-MM-dd HH-mm-ss", TimeZone.getTimeZone("GMT+8"))
+//}
+apply plugin: 'com.neenbedankt.android-apt'
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile(name: 'wukongim_1.4.3.1', ext: 'aar')/*悟空IM相关aar包*/
+    compile(name: 'auth_push_2.3.2.1', ext: 'aar')/*悟空IM相关aar包*/
+    compile(name: 'doraemon-multimedia-1.9.9.6', ext: 'aar')/*悟空IM相关aar包*/
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'/*使用23.0及以上版本，会导致人脉圈SwipeRefreshLayout出现卡住的情况*/
+    compile('com.github.afollestad.material-dialogs:commons:0.8.5.7@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.orhanobut:logger:1.11'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'org.litepal.android:core:1.3.1'
+//    compile 'com.coolerfall:android-app-daemon:1.2.0'/*守护进程*/
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.jungly:gridPasswordView:0.3'
+    compile project(':Android-ViewPagerIndicator-master')
+    compile project(':emojiLibrary')
+    compile project(':OneSDK')
+    compile project(':heliao-idl')
+    compile project(':ShortcutLib')
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    dexOptions {
+        jumboMode true
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.itcalf.renhe"
+        minSdkVersion 14
+        targetSdkVersion 22    /*如果还没支持新运行时权限，建议首先把targetSdkVersion 降级到22*/
+        multiDexEnabled true
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src\\main\\java']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']  //add .so file
+        }
+
+    }
+
+//签名
+    signingConfigs {
+        release {
+            //storeFile file("../yourapp.keystore")
+            storeFile file("whzf.keystore")
+            storePassword "000000"
+            keyAlias "whzf"
+            keyPassword "000000"
+        }
+    }
+
+    buildTypes {
+
+        release {
+            // 不显示Log
+            //buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            minifyEnabled true //混淆
+            zipAlignEnabled true //内存对齐
+            shrinkResources true //移除无用的resource文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            android.applicationVariants.all { variant ->
+                def stringsFile = new File(variant.outputs[0].processResources.assetsDir, "abc.txt")
+                stringsFile.mkdir()
+            }
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        //def fileName = "HeLiao#${releaseTime()}#${variant.productFlavors[0].name}.apk"
+                        def fileName = "HeLiaoDebug.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+
+        debug {
+            // 显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+
+// 友盟多渠道打包
+    productFlavors {
+        renhe_android {}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}

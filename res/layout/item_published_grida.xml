@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_grida_image"
+        android:layout_width="@dimen/addmsg_grid_item_width"
+        android:layout_height="@dimen/addmsg_grid_item_width"
+        android:scaleType="centerCrop"></ImageView>
+
+    <View
+        android:layout_width="@dimen/addmsg_grid_item_width"
+        android:layout_height="@dimen/addmsg_grid_item_width"
+        android:background="@drawable/room_pic_grid_item_selector" />
+</RelativeLayout>

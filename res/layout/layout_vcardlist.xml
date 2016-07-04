@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_vcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/ly_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/icon_card" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/vcard_listempty"
+            android:textColor="@color/C3"
+            android:textSize="@dimen/S4" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/btn_takevcard"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/import_btn_shape"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/vcard_takevcard_now"
+            android:textColor="@drawable/import_text_selector"
+            android:textSize="@dimen/S4"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

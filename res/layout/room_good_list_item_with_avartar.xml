@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     android:paddingBottom="5dp"
+     >
+
+    <com.itcalf.renhe.view.RoundCornerImageView
+        android:id="@+id/avartarIv"
+        android:layout_width="@dimen/renhe_room_showmsg_reply_image_wh"
+        android:layout_height="@dimen/renhe_room_showmsg_reply_image_wh"
+        android:src="@drawable/room_pic_default_bcg"
+        android:layout_marginLeft="5dp"
+        attr:radiusXY="@dimen/list_item_round_image_radius_mini"
+         />
+
+  <com.itcalf.renhe.view.TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avartarIv"
+        android:textColor="@color/new_room_item_job_textcolor"
+        android:textSize="15sp" 
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+</RelativeLayout>

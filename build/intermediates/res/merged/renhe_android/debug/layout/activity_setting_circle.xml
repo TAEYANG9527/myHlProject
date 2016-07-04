@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/root_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/ly_add1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="圈子成员"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/tx_circle_count1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="1/50人"
+                        android:textColor="@color/C4"
+                        android:textSize="@dimen/archieve_job_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/search_flag" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="5"
+                android:padding="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/ly_recommend1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp">
+
+                <View
+                    android:id="@+id/ly_recommend1_divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#D9D9D9" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/add_circle_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ly_recommend1_divider"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.0"
+                    android:text="添加成员"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/renhe_format_tab_textsize"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ly_recommend1_divider"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/search_flag"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:background="#D9D9D9"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ly_circle_apply1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_selector"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#D9D9D9"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="入圈申请"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/tx_circle_join_request"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/room_format_time_textsize"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/search_flag"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#D9D9D9"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="圈号"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/tx_circleId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="98"
+                            android:textColor="@color/C4"
+                            android:textSize="@dimen/archieve_job_size" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#D9D9D9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_circle_name1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="圈名"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/tx_circle_name1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:textColor="@color/C4"
+                        android:textSize="@dimen/archieve_job_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search_flag" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_circle_scan1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="分享圈子"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C4"
+                            android:textSize="@dimen/archieve_job_size" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/self_two_dimencode" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/search_flag" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_circle_join1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="加入方式"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/tx_circle_join1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/C4"
+                        android:textSize="@dimen/archieve_job_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search_flag" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_circle_notice1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="圈子公告"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/tx_circle_notice1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:textColor="@color/C4"
+                        android:textSize="@dimen/archieve_job_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search_flag" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_selector">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/message_avoid_bother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="消息免打扰"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/message_avoid_bother_toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:checked="false" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_below="@id/message_avoid_bother" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_selector">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/message_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="收藏"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/message_collect_toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:checked="false" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_below="@id/message_collect" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_circle_dissolve1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_selector"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/tx_circle_dissolve1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/BP_1"
+                        android:textSize="@dimen/S2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#D9D9D9" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

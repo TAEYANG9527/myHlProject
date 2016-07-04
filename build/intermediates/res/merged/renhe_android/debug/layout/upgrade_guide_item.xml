@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_guide_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/guide_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/upgrade_guide_item1_title"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/S3" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/guide_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guide_title_tv"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/upgrade_guide_item1_tip"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4" />
+</RelativeLayout>

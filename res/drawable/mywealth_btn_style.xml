@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_bg_color36d67b_rectangle_corner_style" android:state_focused="true"></item>
+    <item android:drawable="@drawable/btn_bg_color36d67b_rectangle_corner_style" android:state_selected="true"></item>
+    <item android:drawable="@drawable/btn_bg_color36d67b_rectangle_corner_style" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/btn_bg_orange_rectangle_empty_corner_style"></item>
+
+</selector>

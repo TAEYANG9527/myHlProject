@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/LH2"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/industry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/_C1"
+        android:textSize="@dimen/S4" />
+
+    <ImageView
+        android:id="@+id/selected_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/auth_add_friend"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/BC_2"></View>
+
+</RelativeLayout>

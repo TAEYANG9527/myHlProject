@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_flag_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_flag_shape"
+    android:gravity="center_horizontal|center_vertical"
+    android:minWidth="@dimen/im_conversation_list_unread_wh"
+    android:paddingBottom="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="3dp"
+    android:text="new"
+    android:textColor="#FFFFFF"
+    android:textSize="12sp"
+    android:visibility="gone" />

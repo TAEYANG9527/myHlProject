@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BC_1"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/btn_savetocontact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH2"
+        android:text="@string/vcard_savetocontact"
+        android:textColor="@color/_C1"
+        android:textSize="@dimen/S2"
+        android:background="#f4f4f4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH2"
+        android:text="@string/vcard_delete"
+        android:textColor="@color/_C1"
+        android:textSize="@dimen/S2"
+        android:background="#f4f4f4" />
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH2"
+        android:layout_marginTop="10dp"
+        android:text="@string/vcard_cancel"
+        android:textColor="@color/_C1"
+        android:textSize="@dimen/S2"
+        android:background="#f4f4f4" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<resources>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="radiusX" format="dimension" />
+        <attr name="radiusY" format="dimension" />
+        <attr name="radiusXY" format="dimension" />
+        <attr name="isRound" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="aspectRatio" format="float" />
+        <attr name="adjustWidth" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="tabicon" format="reference" />
+        <attr name="tabcolor" format="color" />
+        <attr name="tabtext" format="string" />
+        <attr name="tabtext_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MyExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MakeupImageView">
+        <attr name="makeupHeight" format="dimension" />
+        <attr name="makeupDirection">
+            <flag name="normal" value="0x0" />
+            <flag name="left" value="0x1" />
+            <flag name="right" value="0x2" />
+        </attr>
+        <attr name="colorSelection">
+            <flag name="white" value="0x0" />
+            <flag name="yellow" value="0x1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+</resources>

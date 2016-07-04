@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="versionname">5.5.1.9</string>
+    <string name="renhe_copyright">Copyright © 2004-2015 renhe.cn</string>
+    <string name="renhe_copyright2">Copyright © Renhe.cn</string>
+    <string name="renhe_copyright_line2">All rights reserved.</string>
+    <string name="app_name">和聊</string>
+    <!--和聊-人脉生意-->
+    <string name="passwordnotnull">密码不能为空</string>
+    <string name="passwordrule">密码为6-16位字母或数字组合</string>
+    <string name="passwordrule_count">密码为6-16位字母或数字组合</string>
+    <string name="repasswordrule">确认密码必须与密码相同</string>
+    <string name="mailnotnull">邮箱不能为空，请填写</string>
+    <string name="mailrule">请输入正确的邮箱地址或手机号码</string>
+    <string name="namenotnull">姓名不能为空</string>
+    <string name="comPanynotnull">公司不能为空</string>
+    <string name="jobnotnull">职务不能为空</string>
+    <string name="phonenotnull">号码不能为空</string>
+    <string name="phonerule">请输入正确的手机号码</string>
+
+    <!-- 友盟的渠道号 -->
+    <string name="umeng_channel">360</string>
+
+    <!-- 登录页面 -->
+    <string name="logintopStr">和聊Logo</string>
+    <string name="loginMailTitle">人和网账号 / 邮箱  / 手机号</string>
+    <string name="loginPassTitle">密码</string>
+    <string name="loginBtnStr">登录</string>
+    <string name="registerBtnStr">注册</string>
+    <string name="hasNoAccount">还没有账号?</string>
+    <string name="gotoRegister">马上注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="login_question">登录遇到问题？</string>
+    <string name="input_password">输入密码</string>
+    <string name="change_user">切换账号</string>
+    <string name="ptr_pull_to_refresh">下拉刷新...</string>
+    <string name="ptr_release_to_refresh">松开刷新..</string>
+    <string name="ptr_refreshing">加载中...</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="clause"><h3>人和网(Renhe.cn)依据以下条件和条款提供您所享有的服务：</h3><br />人和网(Renhe.cn)致力于打造专业人士的人际关系网。通过这个平台，专业人士可以建立、拓展和管理自己的人际网络，并在此交流专业知识、业界资讯，探讨合作机会。   1. 接受条款：  通过首页进入人和网(Renhe.cn)网站即表示您已经同意自己与人和网(Renhe.cn)订立本协议，且受本协议条款和条件 (“条款”) 的约束。人和网(Renhe.cn)可随时自行全权决定更改“条款”。如“条款”有任何变更，人和网(Renhe.cn)将在网站上刊载公告，通知予您。如您不同意相关变更，必须停止使用“服务”。经修订的“条款”一经在人和网(Renhe.cn)网站公布后，立即自动生效。您登录或继续使用“服务”将表示您接受经修订的“条款”。除另行明确声明外，任何使“服务”范围扩大或功能增强的新内容均受本协议约束。  2. 谁可使用人和网(Renhe.cn)？  “服务”仅供能够根据相关法律订立具有法律约束力的合约的个人或公司使用。因此，您的年龄必须在十八周岁以上，才可使用本网站的服务。如不符合本项条件，请勿使用“服务” 。人和网(Renhe.cn)可随时自行全权决定拒绝向任何人士提供“服务”。“服务”不会提供给被暂时或永久终止资格的人和网(Renhe.cn)会员。  3. 隐私权条款：  人和网(Renhe.cn)强调保护所有会员的隐私权，我们将为每个会员提供最安全，最可靠的服务。您可以通过人和网(Renhe.cn)完全控制自己的个人信息。以下是我们的承诺：  [会员个人信息]  当您到我们网站上注册并填写经历的时候，您会被要求提供一系列个人基本信息，如您的电子邮件以及联系方式等等。会员个人信息（不包括您的姓名、公司名称和职位）只会被您允许的其他会员朋友看到。因此请避免将此部分信息填入到会员公开资料上，否则网站无法保障这部分信息的隐私权。我们不会向第三方公开上述信息，除非我们认为出于法律的需要。但这些资料将会被我们统计、汇总，为我们的广告商提供依据。  [信息的修改和删除]  您可以在人和网(Renhe.cn)上修改您的个人信息和经历。除了信息的发布者外，任何人无权修改或删除他人发布的信息。人和网(Renhe.cn)有根据其判断保留修改或删除任何不适信息的权利。  [隐私权条款的变更]  如果我们决定改变人和网(Renhe.cn)的隐私权条款，我们会及时公布，以便您能及时了解到我们在收集什么资料，如何使用这些资料，以及是否向别人公开这些资料，如果您有任何关于我们隐私权条款的问题，欢迎您随时发电子邮件联系我们。  4. 版权：  A 此网址的所有内容和图表受《中华人民共和国著作权法》及相关法律法规和中国加入的所有知识产权方面的国际条约的保护。人和网(Renhe.cn)对网站内容享有完整的著作权，未经其允许，不得以任何形式复制和采用。在内容和图表不作任何修改、保留性内容未做修改以及得到人和网(Renhe.cn)的许可的情况下，人和网(Renhe.cn)的网上材料可作为网外信息方面其他非商业性的用途。   B 申请使用人和网(Renhe.cn)内容的许可按特别批准原则进行；人和网(Renhe.cn)欢迎各方的申请；请把请求直接提交给我们。   C 请勿擅自复制或采用人和网(Renhe.cn)所创造的用以制成网页的HTML。人和网(Renhe.cn)对其HTML享有著作权。同时人和网(Renhe.cn)对其网址上的所有图标、图饰、图表、色彩、文字表述及其组合、版面设计、数据库均享有完全的著作权，对发布的信息均享有专有的发布和使用权，未经人和网(Renhe.cn)同意，不得擅自复制、使用或转载。   5. 责任承担：  人和网(Renhe.cn)并无随时监视此网址，但保留对其实施实时监视的权利。对于他方输入但不是人和网(Renhe.cn)发布的材料，人和网(Renhe.cn)概不负任何法律责任。应聘信息发布方必须对其存入简历中心的个人简历及材料的格式、内容的准确性和合法性独立承担一切法律责任。招聘信息的发布方对其在职位数据库公布的材料独立承担一切法律责任。  人和网(Renhe.cn)不保证对某一种职位描述会有一定数目的使用者来浏览，也不保证会有一位特定的使用者来浏览。对于在本网站上的其他网站网址链接内容，人和网(Renhe.cn)概不负法律责任。  对于申请注册人和网的会员，人和网并无义务查实该会员资料是否真实。如有机构提供相关资料（包括但不限于营业执照等），证明某会员并非该机构的工作人员，人和网有权不通知该会员，直接删除此账号。  6. 网站使用：  A 明确禁止条款： 人和网(Renhe.cn)只能用于合法目的，即交流专业知识，交流业界资讯，交流人脉关系，交流商业机会等。人和网(Renhe.cn)明确禁止任何其他用途，所有使用者必须保证不用于下列任何一种用途： (1) 在用户经历中公布虚假的、不完整的或不准确的资料，公布不是经历的资料，如意见、通知、商业广告或其他内容。  (2) 本公司的竞争同行用此方法寻求与雇主的业务联络。  (3) 擅自删除或修改任何其他个人或公司公布的资料。  (4) 擅自打印、复制或使用有关雇员的任何个人资料或有关雇主的商业信息。未经同意，给公布信息 的个人或公司发电子邮件、打电话、寄信或进行其他任何形式的接触。   B 网址安全规则： 禁止使用者破坏或企图破坏人和网(Renhe.cn)的安全规则，其中包括但不限于：  (1) 接触未经许可的数据或进入未经许可的服务器或账户；  (2) 没有得到许可，企图探查，扫描或测试系统或网络的弱点，或者破坏安全措施；  (3) 企图干涉对用户及网络的服务，包括，并不限于，通过超载， "邮件炸弹"或"摧毁"等手段；  (4) 发送促销，产品广告及服务的Email；   C 总则： 严禁出现下列三种情况：  (1) 违反任何现行法律法规；  (2) 侵犯他人的著作权及其他知识产权，侵害他人的商业机密或侵犯他人的隐私权等其他个人权利；  (3) 利用本网址传送、分发、储存属于诽谤、淫秽、威胁、辱骂性的材料，毁损他人材料。   7. 暂停与终止使用：  任何经人和网(Renhe.cn)查实违反了网站使用规则的用户，如果人和网(Renhe.cn)认为确有必要，可以不提出警告而马上暂停或终止对该用户的服务；而对屡犯者将立即终止其人和网账号的使用权。具体规则如下：  不允许：  违反互联网相关政策法规(http://www.cnnic.net.cn/html/Dir/2000/09/25/0652.htm)的行为与内容； 威胁他人，互相攻击； 泄露他人隐私； 个人资料中包含虚假信息，欺诈； 肆意发布广告，发布包含联系方式的内容。 对网站运营安全有潜在威胁的行为与内容。   不欢迎：  针对种族、国家、民族、宗教、性别、年龄、地缘、性取向、生理特征的歧视和仇恨言论； 无意义，与讨论主题不符的内容； 色情，暴力，传销，群发信息，网赚等可能令人不适的推广内容。   8. 除外：  除了本网址在信息保密中提出的条款外，使用者理解并同意，人和网(Renhe.cn)在不公开姓名的情况下，可以为用户向第三方提供综合性的资料。除非司法行政等公务需要，在未经本人同意的情况下，人和网(Renhe.cn)将不向任何第三方公开用户相关资料。  9. 风险分担：  用户使用本网址将承担一定风险：本网址的材料按“正如……的情况”提供，人和网(Renhe.cn)对材料不作任何明示的或暗示的保证。Renhe.cn(人和网)不能保证材料的特殊目的不受阻挠或不出错误、不能保证错误一定能得到纠正，也不能保证本网址或制成本网址的材料不会含有病毒或其他有害成分。在涉及有关材料的使用或使用结果方面，人和网(Renhe.cn)对材料的正确性、准确性、可靠性及其他同时不作出任何保证或说明。用户(而不是人和网(Renhe.cn))将承担因此而造成的一切必要的服务、修补和改正费用，除非现行的法律法规另有明文规定。</string>
+    <string name="more_setting">设置</string>
+
+    <!-- 客厅 -->
+    <string name="myroom">我的客厅</string>
+    <string name="friend">朋友</string>
+    <string name="colleague">同行</string>
+    <string name="city">同城</string>
+    <string name="follow">最受关注</string>
+    <string name="room_forward">转发</string>
+    <string name="room_reply">评论</string>
+    <string name="room_good">赞</string>
+    <string name="room_share">分享</string>
+    <string name="readable_date_common">yyyy-MM-dd HH:mm</string>
+    <string name="readable_date_ymd">yyyy年M月d日</string>
+    <string name="readable_date_ym">yyyy-MM</string>
+    <string name="readable_date_md">M月d日</string>
+    <string name="readable_date_md_hm">M月d日  HH:mm</string>
+    <string name="readable_date_yesterday">昨天</string>
+    <string name="readable_date_before_yesterday">前天</string>
+    <string name="readable_date_days">{0}天前</string>
+    <string name="readable_date_hours">{0}小时前</string>
+    <string name="readable_date_minutes">{0}分钟前</string>
+    <string name="readable_date_justnow">今天</string>
+    <string name="readable_date_today">今天</string>
+    <string name="readable_date_week">本周</string>
+    <string name="readable_date_month">本月</string>
+    <string name="readable_date_more">更早</string>
+    <string name="msg_now">刚刚</string>
+    <string name="msg_today">今天</string>
+    <string name="msg_yesterday">昨天</string>
+    <string name="msg_few_minutes_ago">分钟前</string>
+    <string name="msg_few_hours_ago">小时前</string>
+
+    <!-- 联系人高级搜索 -->
+    <string name="advance_keyword_hint">关键词</string>
+    <string name="advance_job_hint">职位</string>
+    <string name="advance_company_hint">公司</string>
+    <string name="advance_area_hint">地区</string>
+    <string name="advance_industry_hint">行业</string>
+    <string name="NETWORK_TIMEOUT">网络不给力，点击重新加载</string>
+    <string name="NETWORK_ERROR">网络不可用</string>
+    <string name="SERVER_ERROR">网络不可用</string>
+    <string name="CALL_ERROR">网络地址不可达</string>
+    <!-- 退出应用对话框 -->
+    <string name="closeRH">退出和聊</string>
+    <string name="closeRH_sub">你将不会收到新的和聊信息</string>
+    <string name="closeLoginRH">退出登录</string>
+    <string name="closeLoginRH_sub">注销或切换至其他账户登录</string>
+    <string name="xlistview_header_hint_normal">人脉成就事业！</string>
+    <string name="xlistview_header_hint_ready">人脉成就事业！</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="recyclerview_footer_hint_end">已经到最后了！</string>
+    <string name="recyclerview_footer_hint_ready">上拉加载更多</string>
+
+    <!-- 新注册界面 -->
+    <string name="new_register_area">国家和地区</string>
+    <string name="new_register_tel">请输入手机号码</string>
+    <string name="new_register_dialog_title">确认手机号码</string>
+    <string name="new_register_dialog_content">我们将发送验证码短信到这个号码：</string>
+    <string name="new_register_dialog_button_sure">确定</string>
+    <string name="new_register_dialog_button_cancle">取消</string>
+    <string name="warn">短信验证码发送成功，但该手机以前发送过验证码。</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_mobile_unempty">手机号码不能为空</string>
+    <string name="register_name_unstandard">名字不规范，请修改</string>
+    <string name="register_vcode_error">验证码错误，请重新验证</string>
+    <string name="register_mobile_change">手机号码已被注册，请尝试换一个手机号码注册</string>
+    <string name="register_company_position_null">公司或职务不能为空</string>
+
+    <!-- 验证码 -->
+    <string name="auth_desc1">我们已发送</string>
+    <string name="auth_desc2">验证码</string>
+    <string name="auth_desc3">到你的手机</string>
+    <string name="auth_dialog_sure">重新开始</string>
+    <string name="auth_dialog_cancle">等待</string>
+    <string name="auth_click_back">验证码短信可能略有延迟，确定取消并重新开始？</string>
+    <string name="auth_code_notreceive">收不到验证码？</string>
+    <string name="auth_code_receive_one_more_time">重新获取验证码</string>
+
+    <!-- 绑定手机 -->
+    <string name="bind_nobind">您还没有绑定手机号码</string>
+    <string name="bind_bind">您已绑定手机号码</string>
+    <string name="bind_desc">绑定手机号码可以帮助您找到更多的好友,并且可以使用该手机号登录和聊</string>
+    <string name="bind_notice">绑定手机号码后，可以使用手机号码+密码登录</string>
+    <string name="change_notice">修改绑定手机号码后，使用修改后手机号码+密码登录</string>
+    <string name="bind_success">手机号绑定成功</string>
+    <string name="change_success">手机号修改成功</string>
+
+    <!-- 消息提醒 -->
+    <string name="no_unread_msg">没有未读消息~</string>
+    <string name="no_net_connected">网络未连接~</string>
+    <string name="no_reply">还没有人回复~</string>
+    <string name="no_location">无法获取您的位置信息。</string>
+    <string name="guide">请到手机系统的[设置]->[隐私]->[定位服务]中打开定位服务，并允许和聊使用定位服务。</string>
+    <string name="user_error">用户名或密码错误</string>
+    <string name="user_null">用户名或密码为空</string>
+    <string name="user_exception">账户存在异常</string>
+    <string name="user_spam_exception">您的账户因涉及信息违规或非正常操作，目前已被封号。 如有疑问请联系「客服中心」，或联系QQ：1025121599</string>
+    <string name="loading">加载中...</string>
+    <string name="no_permission_tip">权限提示</string>
+    <string name="no_contactspermission">无法获取您的通讯录信息。</string>
+    <string name="contactspermission_guide">请在系统设置中的“设置-隐私-通讯录”选项中，允许和聊访问你的通讯录。</string>
+    <string name="set_permission">设置</string>
+    <string name="cancel_permission">好的</string>
+    <string name="no_blacklist">黑名单是空的~</string>
+    <string name="add_renmai_now">马上添加</string>
+    <!-- 城市选择 -->
+    <string name="is_locating">正在定位您所在城市...</string>
+    <string name="fail_locating">定位失败，请点击重试</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">搜索</string>
+    <string name="action_plus">功能</string>
+    <string name="action_album">我的相册</string>
+    <string name="action_collection">我的收藏</string>
+    <string name="action_card">我的银行卡</string>
+    <string name="action_settings">设置</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+    <string name="upload_portrait">上传一张正面靓照，展现良好职业形象！</string>
+    <string name="no_data">暂无数据！</string>
+    <string name="separator"> / </string>
+    <string name="check_all">查看全部</string>
+    <string name="check_industry">按行业筛选</string>
+    <string name="clean_location">清除位置信息并退出</string>
+
+    <!-- 人脉圈 -->
+    <string name="first_enter_renmaiquan1">好冷清的人脉圈~</string>
+    <string name="first_enter_renmaiquan2">赶紧添加人脉，一大波商机会扑面而来！</string>
+    <string name="renmaiquan_delete_message_tip">确定删除这条动态？</string>
+    <string name="renmaiquan_delete_comment_tip">确定删除这条评论？</string>
+    <string name="renmaiquan_share_message_title_tip">分享动态</string>
+    <string name="renmaiquan_share_message_content_tip">分享这条动态？</string>
+    <string name="renmaiquan_unread_message_clear_tip">清空所有提醒记录？</string>
+    <string name="renmaiquan_publish_photo_delete_tip">要删除这张照片吗？</string>
+    <string name="renmaiquan_publish_share_to_weichat_tip">同步朋友圈</string>
+    <string name="renmaiquan_publish_share_to_weichat_state_on">开启</string>
+    <string name="renmaiquan_publish_share_to_weichat_state_off">关闭</string>
+    <string name="renmaiquan_publish_New_Dynamic">发布新动态</string>
+    <string name="renmaiquan_send">动态不能为空</string>
+    <string name="circleName">未命名</string>
+    <!-- 人脉圈详情-->
+    <string name="renmaiquan_detail">评论不能为空</string>
+    <!-- 人脉订阅 -->
+    <string name="first_enter_bookfriend1">您还没有人脉订阅</string>
+    <string name="first_enter_bookfriend2">赶紧添加，一大波商机会扑面而来！</string>
+    <!--创建圈子-->
+    <string name="setJoinMethod">设置加入方式</string>
+    <string name="pleaseAddCircleMember">请添加圈子成员</string>
+    <string name="circleNameLength">圈子名称长度不能超过</string>
+    <string name="circleNoticeLength">圈子公告长度不能超过</string>
+    <string name="character">个字符</string>
+    <string name="contentNoChange">内容无改动</string>
+    <string name="createCircleHeadIcon">生成圈子头像中...</string>
+    <!--创建圈子时，圈子编辑界面-->
+    <string name="rb_one_compile_content">所有人可以加入</string>
+    <string name="rb_two_compile_content">需要审批才可以加入</string>
+    <string name="rb_three_compile_content">所有人都不可以加入</string>
+    <string name="title_zero">圈子名称</string>
+    <string name="title_one">加入方式</string>
+    <string name="title_two">圈子公告</string>
+    <!-- IM -->
+    <string name="signIn">登录</string>
+    <string name="openidHint">账号</string>
+    <string name="phoneNumHint">手机号</string>
+    <string name="nickNameHint">昵称</string>
+    <string name="passwordHint">密码</string>
+    <string name="codeHint">短信验证码</string>
+    <string name="getCodeHint">获取验证码</string>
+    <string name="mobile_code_hint">手机号/短信验证码登录</string>
+    <string name="confirmPasswordHint">确认密码</string>
+    <string name="createAccount">注册账号</string>
+    <string name="error_password_invalid">用户密码不合法</string>
+    <string name="error_confirm_password_invalid">确认密码无效不正确</string>
+    <string name="error_userid_invalid">用户账号不合法</string>
+    <string name="error_nickname_invalid">用户昵称不合法</string>
+    <string name="action_quit">退出</string>
+    <string name="actionbar_group_chat">发起群聊</string>
+    <string name="actionbar_tab_conversation">聊天</string>
+    <string name="actionbar_tab_contact">通讯录</string>
+    <string name="conversation_delete">删除</string>
+    <string name="chat_sure">确定</string>
+    <string name="chat_cancel">取消</string>
+    <string name="chat_back">返回</string>
+    <string name="chat_send_text">发送</string>
+    <string name="chat_hint_text">输入文字</string>
+    <string name="chat_unsupport_message">抱歉，该消息类型暂不支持</string>
+    <string name="chat_circle_quit_tip">是否退出圈子</string>
+    <string name="chat_circle_dissolve_tip">是否解散圈子</string>
+    <string name="chat_circle_dissolving_tip">正在解散...</string>
+    <string name="chat_circle_quitting_tip">正在退出...</string>
+    <string name="load_circle_members_error">加载圈子成员失败</string>
+
+    <!-- 底部tab -->
+    <string name="tab_dialog">和聊</string>
+    <string name="tab_search">找人脉</string>
+    <string name="tab_maillist">人脉</string>
+    <string name="tab_room">人脉圈</string>
+    <string name="tab_me">我的</string>
+    <string name="mailbox_statement">和聊不会保存您输入的密码，仅用于获取邮箱联系人。</string>
+
+    <!-- 任务系统 -->
+    <string name="task_1">签到狂魔</string>
+    <string name="task_2">闪亮登场</string>
+    <string name="task_3">手机控</string>
+    <string name="task_4">邮箱控</string>
+    <string name="task_5">评论家</string>
+    <string name="task_6">社交能手</string>
+    <string name="task_7">高朋满座</string>
+    <string name="task_8">指点江山</string>
+    <string name="task_9">满堂彩</string>
+    <string name="task_10">圈子领袖</string>
+
+    <!--人脉圈-->
+    <string name="rmq_dialogue_1">发布动态</string>
+    <!-- 对话 -->
+    <string name="dialogue_1">添加人脉</string>
+    <string name="dialogue_2">创建圈子</string>
+    <string name="dialogue_3">搜索圈子</string>
+    <!-- 聊天（群聊） -->
+    <string name="chat_dialogue_1">圈子话题</string>
+    <string name="chat_dialogue_2">我的话题</string>
+    <string name="chat_dialogue_3">圈子设置</string>
+    <!--人脉圈-->
+    <string name="contact_dialogue_1">同步通讯录</string>
+
+    <!-- 导入联系人 -->
+    <string name="import_dialogue_1">手机导入</string>
+    <string name="import_dialogue_2">邮箱导入</string>
+    <string name="renmaiquan_actionbar_guide">双击此处回到顶部</string>
+    <string name="app_download">我正在使用和聊App,挺靠谱的，想认识的人都能找到，对事业帮助特别大。你也下一个看看吧：http://t.renhe.cn/36nqAj</string>
+    <string name="import_maillist">导入通讯录仅用于为您推荐可能对您有价值的人脉，不会泄漏您的隐私。</string>
+    <string name="hl_no_newwork">当前网络不可用，请检查您的网络设置</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="no_more_dynamic_data">没有更多动态了</string>
+    <string name="load_more_error">加载失败，稍候重试</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">人脉成就事业！</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="xsearch_loading">正在加载中…</string>
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+
+    <!-- 扫一扫 -->
+    <string name="scan_text">将二维码放入框内,即可自动扫描</string>
+    <string name="scan_myqrcode">我的二维码</string>
+    <string name="scan_vcard_hint">名片识别成功后，系统会主动发送邀请给此人，帮您快速拓展人脉。</string>
+    <string name="deal_vcard_hint">为了保证100%识别率，云端识别可能需要一段时间，您可以先去看看人脉圈。</string>
+    <string name="scan_camerafail_hint">无法获取摄像头数据，请重新打开扫一扫。</string>
+    <string name="hint_close">关闭</string>
+    <string name="hint_iknow">知道了</string>
+    <string name="vcard_book">名片通讯录</string>
+    <string name="vcard_detail">名片详情</string>
+    <string name="vcard_dealtab">处理中</string>
+    <string name="vcard_finishtab">已完成</string>
+    <string name="vcard_listempty">这里竟然是空的，拍张名片试试？</string>
+    <string name="vcard_takevcard">立即拍摄</string>
+    <string name="vcard_takevcard_now">现在就去拍</string>
+    <string name="vcard_recfail">识别失败</string>
+    <string name="vcard_notvcard">不是名片</string>
+    <string name="vcard_unsupportlanguage">不支持的语言</string>
+    <string name="vcard_unsupportfile">无法识别的名片</string>
+    <string name="vcard_uploadfail">上传失败</string>
+    <string name="vcard_uploading">上传中…</string>
+    <string name="vcard_dealing">云端识别中…</string>
+    <string name="vcard_loading">加载名片中</string>
+    <string name="vcard_myfriend">已经是好友</string>
+    <string name="vcard_addfriend">已申请加好友</string>
+    <string name="vcard_inviteregister">已邀请注册</string>
+    <string name="vcard_delete">删除</string>
+    <string name="vcard_reupload">重新上传</string>
+    <string name="vcard_deleting">删除中</string>
+    <string name="vcard_deletefail">名片删除失败</string>
+    <string name="vcard_cancel">取消</string>
+    <string name="vcard_savetocontact">存入手机通讯录</string>
+    <string name="vcard_tel_mobile">手机</string>
+    <string name="vcard_tel_phone">电话</string>
+    <string name="vcard_tel_fax">传真</string>
+    <string name="vcard_tel">电话号码</string>
+    <string name="vcard_email">邮箱</string>
+    <string name="vcard_address">地址</string>
+    <string name="account_kikout">您的账号在另一台设备登录,请重新登录</string>
+    <string name="account_exception">您的账号存在异常,请重新登录</string>
+    <string name="vcard_im_qq">QQ</string>
+    <string name="vcard_im_weixin">微信</string>
+    <string name="vcard_im_msn">MSN</string>
+    <string name="vcard_website_blog">博客</string>
+    <string name="vcard_website_personal">个人网址</string>
+    <string name="vcard_website_company">公司网址</string>
+    <string name="vcard_social_facebook">Facebook</string>
+    <string name="vcard_social_twitter">Twitter</string>
+    <string name="vcard_social_sinaweibo">新浪微博</string>
+    <string name="vcard_social_tencentweibo">腾讯微博</string>
+    <string name="net_error">网络异常</string>
+    <string name="lack_of_privilege">您的权限不足，如有需要，请升级账号</string>
+    <string name="unkown_error">很抱歉，发现未知错误</string>
+    <string name="reach_max_circle">已达到创建圈子最大数量限制</string>
+    <string name="service_exception">很抱歉，发现服务器异常</string>
+    <string name="error_mail_format">邮箱格式有误，请检查</string>
+    <string name="fetch_contacts_failed">通讯录获取失败</string>
+    <string name="error_mobile_format">手机号码有误，请检查</string>
+    <string name="empty_contacts">通讯录获取失败</string>
+    <string name="empty_contacts_or_no_privilege">通讯录为空或没有权限</string>
+    <string name="no_permission_do">您无权进行此操作！</string>
+    <string name="send_failed">发送失败</string>
+    <string name="send_success">发送成功</string>
+    <string name="success_friend_request">好友请求发送成功</string>
+    <string name="repeat_add_friend">10天内已发出过添加好友邀请,请勿重复发送加好友请求！</string>
+    <string name="cannot_add_self">不能添加自己为好友</string>
+    <string name="already_become_friend">对方已经是您的好友了</string>
+    <string name="already_send_friend_request">已发送好友请求</string>
+    <string name="error_frind_sid">被添加好友的会员sid参数有误！</string>
+    <string name="beyond_friend_ammout_day">超过每日添加好友的数量</string>
+    <string name="beyond_friend_ammout_level">添加好友者的好友数量超过了会员等级限制</string>
+    <string name="only_permission_pay_user_to_add">只允许付费会员添加好友</string>
+    <string name="only_permission_autonym_user_to_add">只允许实名认证的会员添加好友</string>
+    <string name="only_permission_introduced_to_add">只允许通过朋友引荐添加好友</string>
+    <string name="beyond_same_account_friend_count">相同账号好友数量超过了好友上限</string>
+    <string name="beyond_friend_ammout_day_mobile">手机客户端超过每日加好友的限制(目前限制为50个)</string>
+    <string name="send_success_inner_msg">站内信发送成功</string>
+    <string name="already_copy_to_plate">内容已经复制到剪贴板</string>
+    <string name="import_mobile_contacts_tip">导入通讯录可以找到正在使用和聊的\n好友，和聊承诺不会泄漏您的任何个人消息。</string>
+    <string name="hl_terms_service">和聊服务条款</string>
+    <string name="mail_list_source_from_hl">来自和聊的好友邀请</string>
+    <string name="import_email_contacts_tip">导入您的邮箱联系人，可以找到邮箱中正在使用和聊的朋友，现在是否导入？</string>
+    <string name="bindphone_error_hasbinded">手机号码已被其他和聊会员绑定</string>
+    <string name="share_to_hlfriends">将人脉圈内容分享给和聊好友</string>
+    <string name="share_desc_hl_tip">通过和聊您可以快速找到各种有价值的商务人脉，并且随时随地和您的人脉保持联系！目前，和聊已经有1000万高端会员，他们都是您潜在的合作伙伴。</string>
+    <!-- 档案相关文本 -->
+    <string name="editotherinfo_length_limit">长度过长，请控制在200个字以内</string>
+    <string name="editotherinfo_netlink_illegal">填写的链接不合法，请重新填写</string>
+    <string name="editotherinfo_numb_limit">我能获得数量过多，请控制在3个以内</string>
+    <string name="editget_single_length_limit">我能提供单项长度过长，请控制在30个字以内</string>
+    <string name="editget_single_numb_limit">我能提供数量过多，请控制在3个以内</string>
+    <string name="editprovide_single_length_limit">我能获得单项长度过长，请控制在30个字以内</string>
+    <string name="editprovide_single_numb_limit">我能获得数量过多，请控制在3个以内</string>
+    <string name="editprovideget_content_unempty">内容不能为空，请填写</string>
+    <string name="editprovideget_content_limit">内容不能超过10个字，请调整</string>
+    <string name="editselfinfo_name_unempty">姓名不能为空，请填写</string>
+    <string name="editselfinfo_sex_unempty">性别不能为空，请填写</string>
+    <string name="editselfinfo_industry_unempty">从事行业不能为空，请填写</string>
+    <string name="editselfinfo_location_unempty">所在地不能为空，请填写</string>
+    <string name="network_anomaly">网络异常，请重试</string>
+    <string name="unknown_error">发生未知错误，请重试</string>
+    <string name="is_save">有更改尚未保存，是否保存更改的内容？</string>
+    <string name="please_input">请输入</string>
+    <string name="want_get">我想得到</string>
+    <string name="can_provide">我能提供</string>
+    <string name="years">年份</string>
+    <string name="months">月份</string>
+    <string name="company_property">公司性质</string>
+    <string name="company_scale">公司规模</string>
+    <string name="degrees">学历</string>
+    <string name="input_tip">请填写</string>
+    <string name="company_tip">请填写公司名称（必填）</string>
+    <string name="title_tip">请填写职位名称（必填）</string>
+    <string name="industry_tip">请选择行业（必填）</string>
+    <string name="description_work_tip">填写工作描述</string>
+    <string name="school_tip">请填写学校名称（必填）</string>
+    <string name="major_tip">请填写专业名称（必填）</string>
+    <string name="degrees_tip">请选择学历（必填）</string>
+    <string name="description_edu_tip">填写学习经历或社会活动等</string>
+    <string name="specialties_tip">输入技能专长</string>
+    <string name="record_new_dynamic">动态</string>
+    <string name="record_renmai">人脉</string>
+
+    <!-- 最新版本提醒 -->
+    <string name="app_current_version">当前已是最新版本</string>
+    <!-- 通用 -->
+    <string name="network_error_message">网络访问错误，请检查网络设置！</string>
+    <string name="network_wifi_message">当前使用的是WIFI网络</string>
+    <string name="network_wap_message">当前使用的是WAP网络</string>
+    <string name="select_addfriend_purpose">请选择一个添加目的</string>
+    <string name="connect_server_error">连接服务器失败！</string>
+    <string name="sorry_of_privilege">很抱歉，您的权限不足！</string>
+    <string name="sorry_of_unknow_exception">很抱歉，发生未知错误！</string>
+    <string name="update_avatar_success">更新成功！</string>
+    <string name="update_avatar_fail">更新失败！</string>
+    <string name="telphone_too_long">固定电话长度过长，请控制在30个字符以内</string>
+    <string name="qq_too_long">QQ长度过长，请控制在30个字符以内</string>
+    <string name="weixin_too_long">微信长度过长，请控制在30个字符以内</string>
+    <string name="edit_edu_error">新增的教育经历信息不完整，请填写完整</string>
+    <string name="edit_edu_error1">学校不能为空，请填写</string>
+    <string name="edit_edu_error2">专业不能为空，请填写</string>
+    <string name="edit_edu_error3">学历不能为空，请填写</string>
+    <string name="edit_edu_error4">入学时间填写不完整，请补充</string>
+    <string name="edit_edu_error5">毕业时间填写不完整，请补充</string>
+    <string name="edit_edu_error6">入学时间必须早于毕业时间，请调整</string>
+    <string name="publishmessage_hint_title">温馨提示！</string>
+    <string name="publishmessage_hint">1、请勿发布传销、三无产品信息，违帖一律删除，严重者或被封号。\n2、非常欢迎一切高质量的行业动态、分析、评论等原创性文章，来者不拒，多多益善。\n3、不建议您在文中留下微信、QQ、电话等一切可能涉及到您个人安全隐私的联系方式。</string>
+    <string name="chat_linked_unkonwn_msg">当前版本暂不支持查看此消息，请升级和聊最新版本查看。马上升级</string>
+    <string name="cicle_get_error">圈子资料获取失败</string>
+    <string name="cicle_get_error_not_exist">圈子不存在</string>
+    <string name="cicle_get_error_be_kikout">你已被圈主移出圈子</string>
+    <string name="cicle_share_default_name">圈子</string>
+    <string name="vcard_share_default_name">名片</string>
+    <string name="renmaiquan_share_default_name">人脉圈</string>
+    <string name="link_default_name">链接</string>
+    <string name="file_default_name">文件</string>
+    <string name="view_profile_user_uncheck">该会员尚未通过审批，请稍后再查看</string>
+    <string name="pay_way_choose">选择支付方式</string>
+    <string name="rsa_private">MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAME0nMk6sExUpS+i
+Q8hMBkoVI0jDnyZvPnM7sfCVKROMtWQkdyz0f5STpmOT7W+FTu7cslzW7P5rVBWw
+r4acGFS0Bti3CcrqJhFiZCupmbqtpzMS0+tDxit8dlCpNH2T0W6IEwsuHFCevqWt
+aq75AH6MIkwG1t7WXJWhd1Mh//ZLAgMBAAECgYBd9DXibZXaKLeDqIcJ2l6cnBbi
+ha7ZQ/O8meT4N7EX/q8fGdSSmfuIxxx9BCzMtKkj41MhbqslNhBX0+onrbTucqPa
+MPxBqx60Nn1AmetBrlZnJoCm2Aala5WFs5fZzRntPJCwofY6Zdh9lxlOuyx4tggj
+oefJvVchOhpSIUUlsQJBAPUGZlpSAeDi3J6Gk/urIr3btWhz4Pk0aq+fb5/iKMwn
+0Oht7kbq3aA61rZ6PdPlhyn6JWiFHM6f+Xe+3iHQsscCQQDJ3AUkzqQTNDTeM2ui
+l1Bq2qkdY1KgswdbYP90fyBBQ0Ld8lhW3zlqawpUPTQDQyFj2ll28rPeHuin5pg4
+FNxdAkBJuktCEjsOeDT6XnRY3f3uMxY6/+NKGUOg5NCpw1uTUsfBqJJyNGnLtOi2
+r8G66O3q66Il+SfZ5LkkFwKwGiQxAkBZJyy6ae27cZZcARfr0qq41uRUT3bB9PAt
+4rRQroj/agaRYiS0EZkZMDd6pyFew3pu0JQs3dqlIr+c0FKwij4dAkEAs0ul6juA
+qjTmJnfnvg1HSly+sMHRVaoUgiTBP5NAw7ilHou0Zgm9ySgyJLqEV6Iojdn3hlIY
+/CULtyieP5dQaw==</string>
+    <string name="repay_network_error">服务器异常，稍候重试</string>
+    <string name="network_error_retry">网络异常，点击重试</string>
+    <string name="title_vip">VIP会员</string>
+    <string name="title_account_upgrade">升级</string>
+    <string name="title_account_upgrade_tip">提升曝光率、搜索排名优先</string>
+    <!--dialog提示文案-->
+    <string name="saving">正在保存...</string>
+    <string name="deleting">正在删除...</string>
+    <string name="waitting">请稍候...</string>
+    <string name="logging">登录中...</string>
+    <string name="add_friend_sending">好友请求正在发送中...</string>
+    <string name="avater_uploading">正在上传头像...</string>
+    <string name="conversation_creating">正在创建会话...</string>
+    <string name="circle_creating">正在创建圈子...</string>
+    <string name="circle_create_failed">圈子创建失败,请稍后重试</string>
+    <string name="handling">正在处理...</string>
+    <string name="corver_uploading">正在上传封面...</string>
+    <string name="contact_info_loading">正在获取联系人信息</string>
+    <string name="new_friend_loading">正在获取新的朋友...</string>
+    <string name="request_handling">正在处理请求...</string>
+    <string name="contact_loading">正在加载联系人,请稍候...</string>
+    <string name="switching">正在更换...</string>
+    <string name="sharing">正在分享,请稍候...</string>
+    <string name="scaning">正在扫描...</string>
+    <string name="uploading_avtar">正在上传头像...</string>
+    <string name="data_loading">数据加载中...</string>
+    <string name="sending">好友请求正在发送中...</string>
+    <string name="dynamic_details">动态详情</string>
+
+    <!-- 账户限额 -->
+    <string name="accountlimit_sendinvite">每日发送好友邀请</string>
+    <string name="accountlimit_sendinvite_max">每日可发送加好友邀请的数量</string>
+    <string name="accountlimit_sendinvite_today">今日已使用：</string>
+    <string name="accountlimit_contacts">人脉上限</string>
+    <string name="accountlimit_contacts_max">最多可添加的人脉数</string>
+    <string name="accountlimit_contacts_current">当前已使用：</string>
+    <string name="accountlimit_search">人脉搜索列表上限</string>
+    <string name="accountlimit_search_max">人脉搜索匹配结果的上限</string>
+    <string name="accountlimit_seniorsearch">高级搜索</string>
+    <string name="accountlimit_seniorsearch_explain">使用更精细的搜索条件</string>
+    <string name="accountlimit_seniorsearch_state">当前不可用</string>
+    <string name="accountlimit_nearbyindustry">附近人脉行业过滤</string>
+    <string name="accountlimit_nearbyindustry_explain">按照行业对附近的人脉进行过滤</string>
+    <string name="accountlimit_nearbyindustry_state">当前不可用</string>
+    <string name="accountupgrade_boundphonenumb">绑定手机号</string>
+    <string name="accountupgrade_boundphonenumb_tip">绑定您的常用手机号码</string>
+    <string name="accountupgrade_importmaillist">导入通讯录</string>
+    <string name="accountupgrade_importmaillist_tip">导入您的手机通讯录，拓展更多人脉</string>
+    <string name="accountupgrade_realnameauthentication">实名认证</string>
+    <string name="accountupgrade_realnameauthentication_tip">完成实名认证，提高可信度</string>
+    <string name="accountupgrade_invitefriendsregister">邀请好友注册</string>
+    <string name="accountupgrade_invitefriendsregister_tip">每邀请1个好友注册和聊，最多5个</string>
+    <string name="renmaiquan_guide_bindphone">您的账号安全级别太低，绑定手机号可提升安全级别。</string>
+    <string name="renmaiquan_guide_import_contact">您有好友已加入和聊，导入通讯录看看是谁吧。</string>
+    <string name="renmaiquan_guide_bindphone_bt_text">立即绑定</string>
+    <string name="renmaiquan_guide_import_contact_bt_text">立即导入</string>
+    <string name="renmaiquan_guide_recommend_friend_title1">你认识他们吗？</string>
+    <string name="renmaiquan_guide_recommend_friend_title2">您有通讯录好友加入了和聊，去添加他为人脉吧！</string>
+    <string name="renmaiquan_guide_perfect_profile">快去完善个人资料吧</string>
+    <string name="renmaiquan_guide_perfect_profile_btn_text">去完善资料</string>
+    <string name="renmaiquan_guide_uplpad_avatar">您还没有上传头像哦，快去上传头像吧</string>
+    <string name="renmaiquan_guide_uplpad_avatar_btn_text">去上传头像</string>
+    <string name="accountupgrade_approvedUserHead">上传头像</string>
+    <string name="accountupgrade_approvedUserHead_tip">上传头像并审核通过</string>
+    <string name="accountupgrade_approvedCards">扫描名片</string>
+    <string name="accountupgrade_approvedCards_tip">扫描并审核通过5张名片</string>
+    <string name="accountupgrade_completeMemberData">完善资料</string>
+    <string name="accountupgrade_completeMemberData_tip">所有字段均已完善</string>
+    <string name="add_friend_limit_perday">发送邀请失败，今日添加好友数已达到上限</string>
+    <string name="contact_num_limit_error">添加好友失败，人脉列表已达到上限</string>
+    <string name="search_result_num_limit_error">人脉搜索结果列表已达到上限</string>
+    <string name="advance_search_auth_error">您当前未开启高级人脉搜索权限</string>
+    <string name="remove_from_blacklist">移除黑名单</string>
+    <string name="nearby_filter_auth_error">您当前未开启附近人脉过滤权限</string>
+    <string name="open_now">立即开启</string>
+    <string name="upgrade_now">立即提升</string>
+    <!-- 实名认证 -->
+    <string name="nameauth">实名认证</string>
+    <string name="identity_card_invalid">身份证格式不合法</string>
+    <string name="nameauth_stepone_words">提升限额，增加可信度</string>
+    <string name="nameauth_stepone_realname">真实姓名</string>
+    <string name="nameauth_stepone_personalid">身份证号</string>
+    <string name="nameauth_nextstep">下一步</string>
+    <string name="nameauth_steptwo_photo">立即拍照</string>
+    <string name="nameauth_steptwo_photoillus">照片示例</string>
+    <string name="nameauth_steptwo_photohint">上传本人手持身份证照片\n享受免费实名认证</string>
+    <string name="nameauth_steptwo_payword">支付￥{0}元</string>
+    <string name="nameauth_steptwo_freeauth">尊敬的会员，请免费认证</string>
+    <string name="nameauth_steptwo_authword">由全国公民身份信息系统提供权威数据支持</string>
+    <string name="nameauth_steptwo_powerauth">权威认证</string>
+    <string name="nameauth_stepthree_submitauth">提交审核</string>
+    <string name="nameauth_infoempty">认证信息不能为空</string>
+    <string name="nameauth_submitsuccess">提交成功，等待审核中</string>
+    <string name="nameauth_authtime">预计审核将在48小时内完成</string>
+    <string name="nameauth_authsuccess">您已通过实名认证</string>
+    <string name="camerafail_hint">无法获取摄像头数据，请重新打开。</string>
+
+    <!-- 邀请码 -->
+    <string name="invitation_code_share">分享我的邀请码</string>
+    <string name="invitation_code_share_tip">成功邀请好友条件：注册账号并且完成邀请码的验证</string>
+    <string name="invitation_code_share_btn">点击分享</string>
+    <string name="invitation_code_input_tip">请输入邀请码</string>
+    <string name="invitation_code_share_context">我正在使用和聊App,挺靠谱的，对事业帮助特别大。你也下一个看看吧：http://t.renhe.cn/36nqAj。邀请码：</string>
+
+    <!-- 加入圈子默认提示语句 -->
+    <string name="joincircle_tip">我想加入贵圈，希望能与贵圈成员进行深入的交流</string>
+
+    <!--新注册会员提示语-->
+    <string name="scan_tip">拍名片、扫二维码，快速建立人脉关系</string>
+    <string name="circle_tip">在圈子中寻找志同道合的人。</string>
+    <string name="nearby_tip">查看附近的人脉，发现身边的商机。</string>
+    <string name="advanced_search_tip">高级人脉搜索，找人脉更高效哦~</string>
+    <string name="messageboard_search_tip">找不到商机？试试搜索吧！</string>
+    <string name="i_see_menu">我知道了</string>
+
+    <!-- 搜索界面 -->
+    <string name="search_more_context_tip">搜索更多内容</string>
+    <string name="search_contacts_tip">联系人</string>
+    <string name="search_chat_record_tip">聊天记录</string>
+    <string name="search_new_contacts_tip">发现人脉</string>
+    <string name="search_circle_tip">圈子</string>
+    <string name="search_network_business_tip">人脉圈商机</string>
+    <string name="search_circle_contacts_tip">圈子联系人</string>
+    <string name="search_recommend_tip">推荐</string>
+
+    <!--首页人脉tab 人脉为空默认提示语句-->
+    <string name="search_contacts_null_tip">导入您的手机通讯录\n可以找到手机通讯录中使用和聊的朋友</string>
+    <string name="import_contact_btn">立即导入</string>
+    <string name="import_contact_failed">通讯录同步失败，请重试</string>
+    <!--IM发送文件-->
+    <string name="otherapp_share_to_heliao">发送给和聊好友</string>
+    <string name="otherapp_share_to_renmaiquan">分享到和聊人脉圈</string>
+    <string name="file_send_success">发送完成</string>
+    <string name="file_send_fail">发送失败</string>
+    <string name="file_preview_tip">该文件暂不支持预览，请用其他应用打开</string>
+    <string name="file_preview_download_stop">文件下载已暂停</string>
+    <string name="file_send_exception_toolarge">文件超过10M，暂不支持</string>
+    <string name="import_maillist_tip1">导入您的手机通讯录</string>
+    <string name="import_maillist_tip2">可以找到手机通讯录中使用和聊的朋友</string>
+
+    <string name="choose_other_contacts">选择其他联系人</string>
+    <string name="recent_contacts">最近聊天</string>
+    <string name="im_select_photo_latest_tip">你可能要发\n送的照片 :</string>
+    <!--material dialog-->
+    <string name="material_dialog_sure">确定</string>
+    <string name="material_dialog_cancel">取消</string>
+    <string name="material_dialog_give_up">放弃</string>
+    <string name="material_dialog_share">分享</string>
+    <string name="material_dialog_giveup">放弃</string>
+    <string name="material_dialog_title">提示</string>
+    <string name="version_update_sure">更新</string>
+    <!--版本更新-->
+    <string name="version_update_tip">版本更新</string>
+    <string name="share_code_tip">扫一扫二维码，快速在和聊上找到我</string>
+
+    <!-- 提醒用户完善资料 -->
+    <string name="perfect_info_renmaiquan_tip">您的基本资料尚未完善，无法发布人脉圈</string>
+    <string name="perfect_info_good_tip">您的基本资料尚未完善，无法发表评论／点赞</string>
+    <string name="perfect_info_add_friend_tip">您的资料尚未完善，无法添加好友</string>
+    <string name="perfect_info_add_circle_tip">您的资料尚未完善，无法加入圈子</string>
+    <!-- 提示用户修改资料（审核未通过） -->
+    <string name="approve_info_renmaiquan_tip">您的资料尚未通过审核，无法发布人脉圈</string>
+    <string name="approve_info_good_tip">您的基本资料尚未通过审核，无法发表评论／点赞</string>
+    <string name="approve_info_add_friend_tip">您的资料尚未通过审核，无法添加好友</string>
+    <string name="approve_info_add_circle_tip">您的资料尚未通过审核，无法加入圈子</string>
+
+    <string name="share_code_to_sms_tip">分享一个圈子【{0}】，我在这里发现了很多志趣相投的人，还能与各行好友随时交流，聊聊生意，侃侃人生。</string>
+
+    <!--分享-->
+    <string name="share_renmaiquan_title_tip">分享{0}的人脉圈</string>
+    <string name="share_archive_title_tip">{0}的名片</string>
+
+    <!-- 优惠券 -->
+    <string name="coupons_none_tip">您目前没有可使用的优惠券</string>
+    <string name="coupons_no_more">没有更多可用券了\t</string>
+    <string name="coupons_no_overdue">没有更多过期券了</string>
+    <string name="coupons_overdue">查看过期券>></string>
+    <string name="coupons_type_upgrade">升\n级\n代\n金\n券</string>
+
+    <!-- 人脉界面top导入/同步提示 -->
+    <string name="search_contacts_import_tip">导入通讯录，发现更多使用和聊的好朋友。</string>
+    <string name="search_contacts_sync_tip">有新的好友加入和聊，更新通讯录看看吧。</string>
+    <string name="search_contacts_sync_failed">同步失败，请重试</string>
+    <string name="search_contacts_sync_loading">正在同步...</string>
+    <string name="search_contacts_sync_success">通讯录已同步</string>
+
+
+    <string name="mobile_contacts_import_tip">1.邀请新朋友，得10元代金券，30元封顶。\n2.邀请短信由系统免费发送。</string>
+    <string name="email_contacts_import_tip">使用系统通道发送邮件，多选可一键发送</string>
+
+    <!-- 手机通讯录导入成功，但是全部被过滤，返回null提示 -->
+    <string name="mobile_contacts_import_filter_tip">通讯录中的号码有误或都已经是您的好友，请重新导入</string>
+
+    <!-- SharedPreferences 常量定义 -->
+    <string name="sharedperferences_mobile_contacts_first_tip">mobile_contacts_first_tip</string>
+    <string name="sharedperferences_email_contacts_first_tip">email_contacts_first_tip</string>
+
+    <!--人脉圈重绘-->
+    <string name="rmq_see_full_msg">全文</string>
+    <string name="rmq_see_packup_msg">收起</string>
+
+    <!-- IM发送失败提示语 -->
+    <string name="im_error_not_in_group">您已被移出圈子，发送消息失败</string>
+    <string name="im_error_no_permission_circle">您已被移出圈子，查看圈子设置失败</string>
+    <string name="im_error_upload">图片不存在，消息发送失败</string>
+    <string name="im_error_timeout">网络不可用，请重试</string>
+
+    <!-- 新的好友 头部显示 -->
+    <string name="new_friend_list_nearby_contacts">附近的人脉</string>
+    <string name="new_friend_list_guess_interest">猜你感兴趣</string>
+    <string name="new_friend_list_vcard">名片</string>
+    <string name="new_friend_list_ident_vcard">识别中的名片</string>
+
+    <string name="ocr_card_indenting">正在识别</string>
+    <string name="ocr_card_indent_error">无法识别</string>
+    <string name="ocr_card_indent_success">编辑资料</string>
+    <string name="ocr_card_indent_error_tip1">识别失败\n点击重新拍摄</string>
+    <string name="ocr_card_indent_error_tip2">网络中断，无法获取名片\n请点击重试</string>
+    <!--名片扫描完成后，actionbar的选项——保存-->
+    <string name="ocr_card_actionbar_option_item_save">保存</string>
+    <!--名片扫描失败后，actionbar的选项——删除-->
+    <string name="ocr_card_actionbar_option_item_delete">删除</string>
+
+    <string name="ocr_card_is_blank">您的名片夹是空的</string>
+    <string name="ocr_card_upload_error">名片上传失败，请重新拍摄</string>
+    <string name="ocr_mkx_auth_error">名片识别账户验证失败</string>
+    <string name="ocr_card_upload_auth_error">还未验证账户，请验证账户再获取数据</string>
+    <string name="ocr_card_indent_error_reason">模糊或不是名片</string>
+
+    <string name="user_not_exist">用户不存在</string>
+
+    <string name="im_sendfail_retry">是否重新发送</string>
+
+    <string name="folder_name">文件名</string>
+    <string name="image_num">图片数量</string>
+    <string name="all_folder">所有图片</string>
+    <string name="image_selector_preview">预览</string>
+    <string name="sheet">张</string>
+    <string name="shoot">拍摄照片</string>
+    <string name="picture">图片</string>
+    <string name="finish">发送</string>
+    <string name="done">完成</string>
+    <string name="temp_date">2015年12月2日</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">你最多只能选择9张照片</string>
+
+    <string name="open_camera_fail">相册初始化失败!</string>
+    <string name="empty_sdcard">没有SD卡</string>
+
+    <!-- 引导升级dialog -->
+    <string name="upgrade_account_dialog">此功能目前只开放给付费会员，升级付费会员享受更多特权</string>
+    <string name="upgrade_account_dialog_ok">去升级</string>
+    <string name="upgrade_account_dialog_cancel">取消</string>
+
+    <!-- 存入手机通讯录页面 -->
+    <string name="save_mail_list_empty_upgrade">升级付费会员</string>
+    <string name="save_mail_list_empty_upgrade_tip">直接将和聊人脉加入手机通讯录</string>
+    <string name="save_mail_list_empty_upgrade_immediately">+马上升级</string>
+
+    <!-- 加好友提示 -->
+    <string name="add_friend_tip">我想邀请您加入我在和聊上的人脉圈</string>
+
+    <string name="rmq_forbid_success_tip">屏蔽成功</string>
+    <string name="rmq_forbid_fail_tip">屏蔽失败</string>
+
+    <!--对话列表重写-->
+    <string name="login_im_fail_tip">登录失败，请重新登录</string>
+    <string name="load_conversation_list_fail_tip">加载会话列表失败</string>
+    <string name="conversation_heliao_helper">和聊助手</string>
+    <string name="conversation_toutiao">行业头条</string>
+    <string name="conversation_lastmsg_atme_tip">[有人@我]</string>
+    <string name="conversation_lastmsg_drft_tip">[草稿]</string>
+    <string name="conversation_lastmsg_topic_replyed_tip">{0}</string>
+
+    <!--升级提醒弹框-->
+    <string name="upgrade_guide_item1_title">1.人脉经营宝典</string>
+    <string name="upgrade_guide_item1_tip">您已成功添加5位好友，想知道跟多人脉秘诀吗？</string>
+    <string name="upgrade_guide_item2_title">2.700万客户在等您</string>
+    <string name="upgrade_guide_item2_tip">一次请客钱，就能将您和您的业务推广给700万商务人士！</string>
+    <string name="upgrade_guide_item3_title">3.尊贵是一种信仰</string>
+    <string name="upgrade_guide_item3_tip">马上升级付费会员，获得更多优质人脉的关注！</string>
+
+    <!--好友/非好友 查看其档案点击右上角进入的子页面，可以进行更多的操作，比如分享、收藏、举报等-->
+    <string name="archive_more_add_into_contacts">存入手机通讯录</string>
+    <string name="archive_more_add_into_contacts_success">成功存入手机通讯录</string>
+    <string name="archive_more_add_into_contacts_fail">存入手机通讯录失败，请重试</string>
+    <string name="archive_more_secretary">通过人脉秘书邀请</string>
+    <string name="archive_more_share">分享</string>
+    <string name="archive_more_collect">收藏</string>
+    <string name="archive_more_report">举报</string>
+    <string name="archive_more_grade">为好友打分</string>
+    <string name="archive_more_grade_tip">您对{0}的印象是？</string>
+    <string name="archive_more_blacklist">加入黑名单</string>
+    <string name="archive_more_delete">删除人脉</string>
+    <string name="archive_more_grade_behaviour">为人</string>
+    <string name="archive_more_grade_resource">资源</string>
+    <string name="archive_more_grade_power">能力</string>
+    <string name="archive_more_grade_appraise">写几句评价吧...</string>
+    <string name="collect_success">已收藏</string>
+    <string name="un_collect_success">已取消收藏</string>
+    <string name="collect_empty_tip">收藏夹是空的</string>
+    <!--人脉列表重写-->
+    <string name="contact_fuction_chat">聊天</string>
+    <string name="contact_fuction_call">通话</string>
+    <string name="contact_to_select_is_empty">您还没有联系人</string>
+    <string name="contact_to_add">去添加</string>
+    <!--升级页面重写-->
+    <string name="upgrade_VIP">VIP会员</string>
+    <string name="upgrade_GOLD">黄金会员</string>
+    <string name="upgrade_PT">铂金会员</string>
+    <string name="upgrade_default">付费</string>
+    <string name="upgrade_member_limit_remain_days">会员特权剩余{0}天</string>
+    <string name="upgrade_fee">￥{0}/年</string>
+    <string name="upgrade_renew_now">马上续费</string>
+    <string name="upgrade_upgrade_now">马上升级</string>
+    <string name="upgrade_realname_now">马上认证</string>
+    <string name="upgrade_latest_upgraded_member_vip">最新升级的VIP会员</string>
+    <string name="upgrade_latest_upgraded_member_gold">最新升级的黄金会员</string>
+    <string name="upgrade_latest_upgraded_member_pt">最新升级的铂金会员</string>
+    <string name="upgrade_pay_current_vip_last_money">当前会员剩余费用</string>
+    <string name="upgrade_pay_need_pay_money">还需支付</string>
+
+    <string name="upgrade_guide_check_strangeness_contacts_title">高级会员专享特权</string>
+    <string name="upgrade_guide_check_strangeness_contacts_sub_title">升级后即可查看</string>
+    <string name="upgrade_guide_today_add_friend_has_limit_title">今日邀请数已达上限</string>
+    <string name="upgrade_guide_today_add_friend_has_limit_sub_title">已达到当前会员等级每日邀请数上限，升级高级会员，获取批量加好友等专享特权！</string>
+    <string name="upgrade_guide_friend_num_has_limit_title">好友数已达上限</string>
+    <string name="upgrade_guide_friend_num_has_limit_sub_title">已达到当前会员等级好友上限，升级高级会员，获取批量加好友等专享特权！</string>
+
+    <string name="upgrade_guide_realname_limit_title">只允许实名用户联系</string>
+    <string name="upgrade_guide_realname_limit_sub_title">对方设置了只允许实名认证的用户添加好友。实名制，更安全。</string>
+
+    <string name="upgrade_guide_advanced_memeber_limit_title">只允许高级用户联系</string>
+    <string name="upgrade_guide_advanced_memeber_limit_sub_title">对方设置了只允许和聊高级会员添加好友。升级高级会员，享更多专属特权。</string>
+    <!--话题-->
+    <string name="topic_title_empy">话题标题不能为空</string>
+    <string name="topic_content_empy">话题内容不能为空</string>
+    <string name="posting">正在发布...</string>
+    <string name="topic_is_save">退出后编辑的内容无法保存</string>
+    <string name="topic_is_unshareable">该话题还未审核</string>
+    <!--红包-->
+    <string name="lucky_money_get">领取红包</string>
+    <string name="lucky_money_see">查看红包</string>
+    <string name="lucky_money_detail_best">手气最佳</string>
+    <string name="lucky_money_default_message">财源广进，生意兴隆！</string>
+    <string name="lucky_money_send_normal_tip">群里每人收到固定金额，</string>
+    <string name="lucky_money_send_pin_tip">每人抽到的金额随机，</string>
+    <string name="lucky_money_send_transform_normal_tip">改为普通红包</string>
+    <string name="lucky_money_send_transform_pin_tip">改为拼手气红包</string>
+    <string name="lucky_money_send_infoerror_tip">会话信息获取异常，请重试</string>
+    <string name="lucky_money_send_max_count_tip">一次最多可发{0}个红包</string>
+    <string name="lucky_money_send_min_count_tip">一次最少要发{0}个红包</string>
+    <string name="lucky_money_send_single_money_min_tip">单个红包金额不可低于{0}元</string>
+    <string name="lucky_money_send_single_money_max_tip">单个红包金额不可超过{0}元</string>
+    <string name="lucky_money_send_total_money_max_tip">单次支付总额不可超过{0}元</string>
+    <string name="lucky_money_send_total_money_min_tip">单次支付总额不可低于{0}元</string>
+    <string name="lucky_money_send_total_money">￥{0}</string>
+    <string name="lucky_money_send_bottom_tip">对方可领取的金额为{0}~{1}元</string>
+    <string name="lucky_money_send_payway_balance">余额支付</string>
+    <string name="lucky_money_send_payway_weichat">微信支付</string>
+    <string name="lucky_money_send_payway_alipay">支付宝支付</string>
+    <string name="lucky_money_send_set_psw_tip1">为了保障您的资产安全，请先</string>
+    <string name="lucky_money_send_set_psw_tip2">设置支付密码</string>
+    <string name="lucky_money_set_psw_tip1">为了保障您的资产安全，请输入支付密码</string>
+    <string name="lucky_money_set_psw_tip2">请再次输入支付密码</string>
+    <string name="psw_not_match_previous_error_tv">两次密码不一致！</string>
+    <string name="lucky_money_set_psw_success">设置成功</string>
+    <string name="pay_by_balance_error_dialog_content">支付错误，请重试</string>
+    <string name="pay_by_balance_error_dialog_retry">重试</string>
+    <string name="pay_by_balance_error_dialog_forgetpsw">忘记密码</string>
+    <string name="lucky_money_forget_psw_tip">重写绑定账号密码找回</string>
+    <string name="reset_psw_input_newpsw_tip">请设置新的和聊支付密码，用于支付验证</string>
+    <string name="reset_psw_input_oldpsw_tip">请输入原和聊支付密码，用于支付验证</string>
+    <string name="reset_psw_sure_newpsw_tip">请再次确认</string>
+    <string name="reset_psw_sure_newpsw_not_match_previous_error_tip">两次密码不一致，请重新输入</string>
+    <string name="reset_psw_newpsw_equals_old_error_tip">您设置的密码与老密码相同，请重新输入</string>
+    <string name="wallet_balance_cant_crash_tip1">余额提现功能仅对实名认证用户开放，</string>
+    <string name="wallet_balance_cant_crash_tip2">立即实名认证</string>
+    <string name="wallet_crash_tip">为保障您的账户安全，每日提现上限为500元</string>
+    <string name="wallet_crash_et_tip">本次提现100元以上</string>
+    <string name="wallet_real_crash_money_tip">您的实际到账金额为{0}元</string>
+    <string name="wallet_real_crash_result_tip1">提现申请已提交</string>
+    <string name="wallet_real_crash_result_tip2">预计一个工作日内到账</string>
+    <string name="app_version_is_old">当前版本暂不支持查看此消息，请升级和聊最新版本查看。马上升级</string>
+    <!--红包广告-->
+    <string name="ad_content_hint">请输入不超过{0}字的广告语</string>
+    <string name="ad_logo_tip">为了展示效果更佳，建议上传横向图</string>
+    <string name="ad_link_tip">发红包广告，品牌传播力更佳，帮您牢牢锁住用户</string>
+    <string name="ad_logo_uploading">正在上传图片...</string>
+    <string name="ad_logo_upload_success">图片上传成功</string>
+    <string name="ad_logo_upload_fail">图片上传失败</string>
+    <string name="ad_logo_not_exist">图片不存在，请重试</string>
+    <string name="lucky_money_ad_infoerror_tip">广告信息获取异常，请重试</string>
+    <string name="lucky_money_ad_error_default_tip">无效的红包广告</string>
+    <string name="lucky_money_ad_error_finish_tip">红包已领完</string>
+    <string name="lucky_money_ad_error_expired_tip">红包已过期</string>
+    <string name="lucky_money_ad_error_received_tip">红包已领取</string>
+    <string name="lucky_money_ad_tosee_tip">去看看</string>
+    <!--加好友发红包-->
+    <string name="add_friend_with_lucky_money_tip">添加红包能增加好友邀请的通过率</string>
+    <string name="lucky_money_send_memberinfo_error_tip">对方用户信息获取异常，请重试</string>
+    <string name="pay_error_tip">支付失败，请重试</string>
+    <string name="add_friend_purpose_default_tip">我想邀请您加入我在和聊上的人脉圈。</string>
+    <!--禁言-->
+    <string name="chat_silent_state_tip">您已被管理员禁言，请注意您的言论</string>
+</resources>

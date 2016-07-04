@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.itcalf.renhe.view.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sysmsg_tv"
+    style="@style/chat_text_date_style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="王宁加入圈子" />

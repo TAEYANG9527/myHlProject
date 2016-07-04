@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_up_corner_style"
+        android:padding="20dp"
+        android:textColor="@color/C1"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_down_corner_style"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/selector_text_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

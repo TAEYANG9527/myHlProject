@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/bottom_expression_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hall_list_bacg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/im_chat_bottom_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/ivPopUp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/chat_bottom_audio_bg" />
+
+            <RelativeLayout
+                android:id="@+id/btn_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/ivPopUp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_send_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.itcalf.renhe.view.Button
+                        android:id="@+id/btn_send_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/chat_bottom_add_bg" />
+
+                    <com.itcalf.renhe.view.Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/red_archieve_edit_bt_selected"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/chat_send_text"
+                        android:textColor="@drawable/archive_editbt_textcolor_selected"
+                        android:textSize="13sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- android:background="@drawable/chat_send_btn" -->
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/btn_send_bottom"
+                    android:background="@drawable/im_chat_edittext_selector"
+                    android:hint="意见反馈"
+                    android:maxHeight="80dp"
+                    android:maxLength="140"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/C1"
+                    android:textSize="16sp" />
+                <!-- android:background="@drawable/login_edit_normal" -->
+
+                <ImageView
+                    android:id="@+id/image_face"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignRight="@id/et_sendmessage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/chat_emo_normal"
+                    android:visibility="visible" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/btn_rcd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_send_bottom"
+                    android:background="@drawable/im_chat_speak_bt_selected"
+                    android:gravity="center"
+                    android:text="按住 说话"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <RelativeLayout
+            android:id="@+id/containerRl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/chat_face_container"
+                layout="@layout/chat_face_container"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/chat_imageselect_container"
+                layout="@layout/chat_image_container"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.XListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_expression_ll"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/im_chat_bcg"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="false"
+        android:transcriptMode="normal" />
+
+    <LinearLayout
+        android:id="@+id/rcChat_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/voice_rcd_hint_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</com.itcalf.renhe.view.KeyboardLayout>

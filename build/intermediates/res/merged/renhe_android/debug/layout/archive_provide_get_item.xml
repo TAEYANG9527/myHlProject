@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/professionalTv"
+        style="@style/titleTextSizeWithSmallBlack"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/archive_provide_get_item_shape"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:text="你好吗？"
+        android:textColor="@color/C1"
+        android:textSize="@dimen/provide_get_textsize" />
+
+</LinearLayout>

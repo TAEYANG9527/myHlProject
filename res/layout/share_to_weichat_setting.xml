@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/separate_line" />
+
+    <LinearLayout
+        android:id="@+id/share_to_circle_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_wechat_friends" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/renmaiquan_publish_share_to_weichat_tip"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_circle_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:textColor="@color/C4"
+                android:textSize="@dimen/archieve_job_size" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/share_to_weichat_tb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

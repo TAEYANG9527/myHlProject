@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/BC_3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BC_3"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/LH2"
+                    android:background="@null"
+                    android:ems="32"
+                    android:gravity="center_vertical"
+                    android:hint="输入真实姓名"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/C3"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/cpLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/BC_2" />
+
+                    <com.itcalf.renhe.view.ClearableEditText
+                        android:id="@+id/company_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/LH2"
+                        android:background="@null"
+                        android:ems="32"
+                        android:gravity="center_vertical"
+                        android:hint="输入公司"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/C1"
+                        android:textColorHint="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/BC_2" />
+
+                    <com.itcalf.renhe.view.ClearableEditText
+                        android:id="@+id/position_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/LH2"
+                        android:background="@null"
+                        android:ems="32"
+                        android:gravity="center_vertical"
+                        android:hint="输入职位"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+
+                        android:singleLine="true"
+                        android:textColor="@color/C1"
+                        android:textColorHint="@color/C3"
+                        android:textSize="@dimen/S4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ilLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/BC_2" />
+
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/industry_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/LH2"
+                        android:drawableRight="@drawable/archieve_goto"
+                        android:gravity="center_vertical"
+                        android:hint="选择行业"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/C1"
+                        android:textColorHint="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/BC_2" />
+
+                    <RelativeLayout
+                        android:id="@+id/location_Rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/LH2"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/location_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/LH2"
+                            android:gravity="center_vertical"
+                            android:hint="选择地区"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textColorHint="@color/C3"
+                            android:textSize="@dimen/S4" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/location_tip_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/LH2"
+                            android:layout_toRightOf="@id/location_tv"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="（当前城市）"
+                            android:textColor="@color/C3"
+                            android:textSize="@dimen/S7"
+                            android:visibility="gone" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/LH2"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/archieve_goto"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="更改"
+                            android:textColor="@color/CL"
+                            android:textSize="@dimen/S7" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/register_next_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_n_cl_corner_shape"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="下一步"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/textSize16" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/all_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/check_all"
+        android:textColor="@drawable/text_pressed_selector"
+        android:textSize="@dimen/S2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/BC_2" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/industry_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/check_industry"
+        android:textColor="@drawable/text_pressed_selector"
+        android:textSize="@dimen/S2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/BC_2" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/clear_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/clean_location"
+        android:textColor="@drawable/text_pressed_selector"
+        android:textSize="@dimen/S2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/BC_2" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/chat_cancel"
+        android:textColor="@drawable/text_pressed_selector"
+        android:textSize="@dimen/S2" />
+
+</LinearLayout>

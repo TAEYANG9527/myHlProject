@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/luckymoney_base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/bottom_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S7"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_tip_tv"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lucky_error_tip_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/lucky_error_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/luckymoney_send_error_bg_color"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="一次最多可发100个红包"
+                    android:textColor="@color/CF"
+                    android:textSize="@dimen/S7"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lucky_error_tip_ll"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/lucky_num_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/luckymoney_send_edit_item_bacg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/lucky_num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包个数"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/lucky_num_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="填写个数"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="个"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/S4" />
+                </LinearLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/circle_membernum_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="本群共100人"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S7" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/lucky_normal_totalmoney_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/luckymoney_send_edit_item_bacg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/lucky_normal_totalmoney_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="单个金额"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+
+                        <com.itcalf.renhe.view.EditText
+                            android:id="@+id/totalmoney_normal_et"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="填写金额"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/totalmoney_normal_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="元"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lucky_totalmoney_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/luckymoney_send_edit_item_bacg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/lucky_totalmoney_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/luckymoney_detail_pin"
+                            android:text="总金额"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+
+                        <com.itcalf.renhe.view.EditText
+                            android:id="@+id/totalmoney_et"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="填写金额"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/totalmoney_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="元"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/lucky_totalmoney_type_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/lucky_type_tip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前为拼手气红包，"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/lucky_type_transform_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lucky_money_send_transform_normal_tip"
+                        android:textColor="@color/CL"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <!--多个红包（群聊）的留言-->
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/leave_note_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/luckymoney_send_edit_item_bacg"
+                        android:gravity="left|top"
+                        android:hint="@string/lucky_money_default_message"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/S4"
+                        android:visibility="visible" />
+                    <!--单个红包（单聊）的留言-->
+                    <LinearLayout
+                        android:id="@+id/lucky_single_leave_message_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.itcalf.renhe.view.EditText
+                            android:id="@+id/lucky_single_leave_message_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:background="@drawable/luckymoney_send_edit_item_bacg"
+                            android:gravity="left|top"
+                            android:hint="@string/lucky_money_default_message"
+                            android:padding="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S4"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/totalmoney_to_send_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="￥0.00"
+                    android:textColor="@color/black"
+                    android:textSize="36sp" />
+
+                <com.itcalf.renhe.view.Button
+                    android:id="@+id/send_bt"
+                    style="@style/luckyMoneyBtStyle"
+                    android:layout_marginTop="20dp"
+                    android:text="塞钱进红包" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

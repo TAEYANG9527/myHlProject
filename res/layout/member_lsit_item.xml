@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.7dp"
+        android:background="#DEDEDE" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tx_charHint"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#F2F2F2"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="圈主"
+        android:textColor="#9C9C9F"
+        android:textSize="@dimen/renhe_format_logo_textsize"
+        android:visibility="gone" />
+
+    <com.itcalf.renhe.view.MyListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/setting_selector">
+
+    <ImageView
+        android:id="@+id/img_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_card"
+        android:singleLine="true"
+        android:textColor="@color/_C1"
+        android:textSize="@dimen/S3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_card"
+        android:layout_alignLeft="@+id/tv_status">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/_C2"
+            android:textSize="@dimen/S6" />
+
+        <ProgressBar
+            android:id="@+id/pb_deal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:progressDrawable="@drawable/bg_progressbar"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

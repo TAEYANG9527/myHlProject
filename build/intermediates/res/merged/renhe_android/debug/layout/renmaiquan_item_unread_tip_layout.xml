@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unreadmsg_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/unread_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_notice_background"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        >
+
+        <com.itcalf.renhe.view.RoundImageView
+            android:id="@+id/user_head_iv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/avatar" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/unreadcount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:text="12条新消息"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

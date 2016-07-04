@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/self_info_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:text="个人简介"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3">
+
+            <com.itcalf.renhe.view.ExpandableTextView
+                android:id="@+id/professional_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                expandableTextView:maxCollapsedLines="4">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/new_archive_job_textsize" />
+
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent" />
+
+            </com.itcalf.renhe.view.ExpandableTextView>
+
+            <View
+                android:id="@+id/separate_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/professional_tv"
+                android:layout_marginTop="30dp"
+                android:background="@color/separate_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/self_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="能提供"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10">
+
+            <com.itcalf.renhe.widget.FlowLayout
+                android:id="@+id/professionalLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" />
+
+            <View
+                android:id="@+id/separate_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/professionalLl"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/separate_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/self_profession_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="想得到"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <com.itcalf.renhe.widget.FlowLayout
+            android:id="@+id/preferLl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

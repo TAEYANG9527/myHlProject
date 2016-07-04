@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <color name="comm_black">#FF000000</color>
+    <color name="comm_blue">#FF52A0DB</color>
+    <color name="comm_gray">#FF888888</color>
+    <color name="comm_red">#FFFF0000</color>
+    <color name="comm_tab_selected_strip">#ffffffff</color>
+    <color name="comm_transparent">#00000000</color>
+    <color name="comm_white">#FFffffff</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="DragSortListView"><attr format="dimension" name="collapsed_height"/><attr format="float" name="drag_scroll_start"/><attr format="float" name="max_drag_scroll_speed"/><attr format="color" name="float_background_color"/><attr name="remove_mode"><enum name="clickRemove" value="0"/><enum name="flingRemove" value="1"/></attr><attr format="boolean" name="track_drag_sort"/><attr format="float" name="float_alpha"/><attr format="float" name="slide_shuffle_speed"/><attr format="integer" name="remove_animation_duration"/><attr format="integer" name="drop_animation_duration"/><attr format="boolean" name="drag_enabled"/><attr format="boolean" name="sort_enabled"/><attr format="boolean" name="remove_enabled"/><attr name="drag_start_mode"><enum name="onDown" value="0"/><enum name="onMove" value="1"/><enum name="onLongPress" value="2"/></attr><attr format="integer" name="drag_handle_id"/><attr format="integer" name="fling_handle_id"/><attr format="integer" name="click_remove_id"/><attr format="boolean" name="use_default_controller"/></declare-styleable>
+    <declare-styleable name="RoundImageView"><attr format="dimension" name="borderRadius"/><attr name="type"><enum name="round" value="1"/><enum name="circle" value="0"/></attr></declare-styleable>
+    <declare-styleable name="SwipyRefreshLayout"><attr name="direction"><enum name="top" value="0"/><enum name="bottom" value="1"/><enum name="both" value="2"/></attr></declare-styleable>
+    <dimen name="comm_h_gap">10dip</dimen>
+    <dimen name="comm_h_margin">16dip</dimen>
+    <dimen name="comm_v_gap">10dip</dimen>
+    <dimen name="comm_v_margin">16dip</dimen>
+    <item name="click_remove" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <item name="layoutContent" type="id"/>
+    <item name="layoutEmpty" type="id"/>
+    <item name="layoutLoadFailed" type="id"/>
+    <item name="layoutLoading" type="id"/>
+    <item name="layoutProcessing" type="id"/>
+    <item name="layoutRefresh" type="id"/>
+    <item name="layoutReload" type="id"/>
+    <item name="listView" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="txtLoadEmpty" type="id"/>
+    <item name="txtLoadFailed" type="id"/>
+    <string name="comm_dialog_hint">提示</string>
+    <string name="comm_error_noneNetwork">没有网络连接</string>
+    <string name="comm_error_resultIllegal">数据解析出错</string>
+    <string name="comm_error_timeout">网络不给力</string>
+    <string name="comm_hint_copied">已经复制 %s</string>
+    <string name="comm_hint_exit">再按一次退出</string>
+    <string name="comm_reload_hint">刷新看看</string>
+    <string name="comm_request_disable">全部都加载完了</string>
+    <string name="comm_request_loading">加载中...</string>
+    <string name="comm_request_more">加载更多</string>
+    <style name="LoadingProgressBar">
+        android:indeterminateDrawable="@drawable/loading_bar1
+    </style>
+</resources>

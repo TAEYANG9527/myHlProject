@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.itcalf.renhe.view.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" />
+
+    <!--  <include
+         android:id="@+id/topLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/renhe_title_height"
+         android:layout_alignParentTop="true"
+         layout="@layout/send_top" /> -->
+
+</RelativeLayout>

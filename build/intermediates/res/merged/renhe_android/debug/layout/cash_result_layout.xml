@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/ly_cashing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/icon_auth_submitsuccess" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/wallet_real_crash_result_tip1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/S2" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/wallet_real_crash_result_tip2"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/account_cash_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="提现银行卡"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S4" />
+
+            <EditText
+                android:id="@+id/account_cash_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:enabled="false"
+                android:gravity="right"
+                android:imeOptions="actionDone"
+                android:padding="15dp"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/card_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="提现金额"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S4" />
+
+            <EditText
+                android:id="@+id/card_no_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:enabled="false"
+                android:gravity="right"
+                android:hint="请输入您本人的银行卡号"
+                android:imeOptions="actionDone"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/S4" />
+        </LinearLayout>
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/cashBt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/red_archieve_edit_bt_selected"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="我知道了"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/renhe_login_button_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

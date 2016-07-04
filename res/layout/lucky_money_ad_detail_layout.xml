@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/luckymoney_base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_corner_shape"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ad_logo_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="center" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/ad_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S4" />
+
+                <View
+                    android:id="@+id/ad_content_dash_line_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/c2_dash_line_shape"
+                    android:layerType="software"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/userinfo_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/avatar_iv"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/avatar" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignTop="@+id/avatar_iv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/avatar_iv"
+                        android:gravity="center_vertical">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/username_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/S2" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/title_tv"
+                            style="@style/titleTextSizeWithBlack"
+                            android:layout_alignLeft="@+id/username_tv"
+                            android:layout_below="@+id/username_tv"
+                            android:layout_marginTop="3dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/C2"
+                            android:textSize="@dimen/S4" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/rob_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/luckymoney_bt_selected"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="点此领取"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

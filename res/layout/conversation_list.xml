@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/conversation_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:overScrollMode="never"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/register_guide_conversation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/guideIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/guide_page_conversation" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/top_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/luckymoney_detail_top_bg" />
+
+        <ImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="-35dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/avatar"
+            android:visibility="invisible" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/luckymoney_detail_pin"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/S4"
+            android:visibility="invisible" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S7"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/rob_money_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/rob_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="50sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/rob_money_yuan_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="元"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/getcrash_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/CL"
+            android:textSize="@dimen/S7"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/rob_progress_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/BC_3"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S7"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+</LinearLayout>

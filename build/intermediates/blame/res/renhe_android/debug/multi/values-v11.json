@@ -1,0 +1,436 @@
+[
+    {
+        "outputFile": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\res\\values-v11\\bools.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 46,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 316
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 653
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 658,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 1078
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 474,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 894
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1083,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 1506
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 899,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 1322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1511,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 1932
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1327,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 1748
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1937,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 2359
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1753,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2175
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2364,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 2784
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2180,
+                        "endLine": 37,
+                        "endColumn": 12,
+                        "endOffset": 2600
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2789,
+                    "endColumn": 88,
+                    "endOffset": 2873
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2605,
+                        "endColumn": 88,
+                        "endOffset": 2689
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2878,
+                    "endColumn": 100,
+                    "endOffset": 2974
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2694,
+                        "endColumn": 100,
+                        "endOffset": 2790
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2979,
+                    "endLine": 48,
+                    "endColumn": 12,
+                    "endOffset": 3382
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2795,
+                        "endLine": 44,
+                        "endColumn": 12,
+                        "endOffset": 3198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3387,
+                    "endLine": 53,
+                    "endColumn": 12,
+                    "endOffset": 3802
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 3203,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 3618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3807,
+                    "endLine": 55,
+                    "endColumn": 12,
+                    "endOffset": 3909
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 3623,
+                        "endLine": 51,
+                        "endColumn": 12,
+                        "endOffset": 3725
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3914,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 4038
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 3730,
+                        "endLine": 53,
+                        "endColumn": 12,
+                        "endOffset": 3854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4043,
+                    "endLine": 74,
+                    "endColumn": 12,
+                    "endOffset": 5077
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1089
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 5082,
+                    "endLine": 91,
+                    "endColumn": 12,
+                    "endOffset": 6098
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1094,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 2110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 6103,
+                    "endColumn": 70,
+                    "endOffset": 6169
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 3859,
+                        "endColumn": 70,
+                        "endOffset": 3925
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 6174,
+                    "endColumn": 82,
+                    "endOffset": 6252
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 3930,
+                        "endColumn": 82,
+                        "endOffset": 4008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 6257,
+                    "endLine": 144,
+                    "endColumn": 12,
+                    "endOffset": 9960
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 4013,
+                        "endLine": 106,
+                        "endColumn": 12,
+                        "endOffset": 7716
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 9965,
+                    "endLine": 196,
+                    "endColumn": 12,
+                    "endOffset": 13808
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 7721,
+                        "endLine": 158,
+                        "endColumn": 12,
+                        "endOffset": 11564
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 197,
+                    "startColumn": 4,
+                    "startOffset": 13813,
+                    "endColumn": 90,
+                    "endOffset": 13899
+                },
+                "from": {
+                    "file": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 159,
+                        "startColumn": 4,
+                        "startOffset": 11569,
+                        "endColumn": 90,
+                        "endOffset": 11655
+                    }
+                }
+            }
+        ]
+    }
+]

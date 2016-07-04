@@ -1,0 +1,12 @@
+rootProject.name = 'Hl5.5.1'
+
+include 'Android-ViewPagerIndicator-master'
+project(':Android-ViewPagerIndicator-master').projectDir = new File('D:\\StudioProject\\HeLiaoAndroidLibrary\\Android-ViewPagerIndicator-master')
+include 'emojiLibrary'
+project(':emojiLibrary').projectDir = new File('D:\\StudioProject\\HeLiaoAndroidLibrary\\HlEmojiLibrary')
+include ':OneSDK'
+project(':OneSDK').projectDir = new File('D:\\StudioProject\\HeLiaoAndroidLibrary\\OneSDK')
+include ':heliao-idl'
+project(':heliao-idl').projectDir = new File('D:\\StudioProject\\heliao-idl')
+include ':ShortcutLib'
+project(':ShortcutLib').projectDir = new File('D:\\StudioProject\\HeLiaoAndroidLibrary\\ShortcutLib')

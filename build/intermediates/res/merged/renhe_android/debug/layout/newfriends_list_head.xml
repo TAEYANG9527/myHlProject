@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH2"
+        android:background="@color/search_city_edit_bacg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_box_Ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/keyword_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_search"
+                android:drawablePadding="5dp"
+                android:hint="搜索"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/renhe_login_edittext_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divide_line"
+        android:background="@color/BC_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/nearby_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_bacg"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/nearby_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nearby_contacts" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/nearby_contacts_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nearby_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/new_friend_list_nearby_contacts"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S6" />
+
+            <ImageView
+                android:id="@+id/nearby_notice_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/nearby_contacts_tv"
+                android:layout_alignTop="@id/nearby_contacts_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/nearby_contacts_tv"
+                android:src="@drawable/menu_unread_red_circle_shape"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/guess_interest_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_bacg"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/guess_interest_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/guess_interest" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/guess_interest_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guess_interest_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/new_friend_list_guess_interest"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S6" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/identification_card_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/identification_card_Rl"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/LH5"
+            android:background="@drawable/list_item_bacg"
+            android:paddingLeft="10dp">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/avatar_txt"
+                android:layout_width="@dimen/renhe_room_image_wh"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:layout_centerVertical="true"
+                android:background="@drawable/avatar_bg_cl_solid_circle_style"
+                android:gravity="center"
+                android:text="@string/new_friend_list_vcard"
+                android:textColor="@color/white"
+                android:textSize="@dimen/S5" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/ident_vcard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/avatar_txt"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="@string/new_friend_list_ident_vcard"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S3" />
+
+            <ImageView
+                android:id="@+id/new_vcard_numb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/menu_unread_red_circle_shape"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="68dp"
+            android:background="@color/BC_2" />
+    </LinearLayout>
+</LinearLayout>

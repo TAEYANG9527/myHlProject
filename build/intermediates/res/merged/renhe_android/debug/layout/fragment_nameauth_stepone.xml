@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ly_stepone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawablePadding="22dp"
+                android:drawableTop="@drawable/icon_auth"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:text="@string/nameauth_stepone_words"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/LH2" >
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/nameauth_stepone_realname"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/et_realname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separate_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/LH2" >
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/nameauth_stepone_personalid"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.EditText
+                        android:id="@+id/et_personalid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:inputType="textVisiblePassword"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/btn_nextstep"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_bg_color56c9e8_roundrect_shape"
+                android:text="@string/nameauth_nextstep"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_authing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/icon_auth_submitsuccess" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/nameauth_submitsuccess"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/nameauth_authtime"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_authsuccess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/icon_auth_success" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/nameauth_authsuccess"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

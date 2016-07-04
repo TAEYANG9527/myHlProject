@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/luckymoney_base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/luckymoney_send_edit_item_bacg"
+            android:padding="15dp">
+
+            <com.itcalf.renhe.view.EditText
+                android:id="@+id/ad_url_et"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="请输入广告链接"
+                android:maxLines="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/S3" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/ad_url_maxlength_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ad_url_et"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S3"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

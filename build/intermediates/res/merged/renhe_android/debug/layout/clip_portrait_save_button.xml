@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    	
+    <com.itcalf.renhe.view.Button 
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="使用"
+    	android:textColor="@drawable/archive_editbt_textcolor_selected"
+    	android:paddingTop="2dp"
+    	android:paddingBottom="2dp"
+    	android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+    	 android:layout_margin="10dp"
+    	android:background="@drawable/login_bt_selected"
+    	android:textSize="13sp"
+    	/>
+
+</LinearLayout>

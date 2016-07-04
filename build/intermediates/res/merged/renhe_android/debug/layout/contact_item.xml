@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_txt_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BC_3"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/contact_separate_char"
+            android:textSize="@dimen/contact_format_company_textsize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/contact_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="72dp"
+            android:background="@color/contact_separate_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/LH4"
+            android:background="@drawable/list_item_bacg"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="35dp"
+            android:paddingTop="7dp">
+
+            <CheckBox
+                android:id="@+id/check_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/contact_checkbox_selector"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical" />
+
+            <RelativeLayout
+                android:id="@+id/avatar_img_ll"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/check_CB">
+
+                <ImageView
+                    android:id="@+id/avatar_img"
+                    android:layout_width="@dimen/renhe_room_image_wh"
+                    android:layout_height="@dimen/renhe_room_image_wh"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/avatar_txt"
+                    android:layout_width="@dimen/renhe_room_image_wh"
+                    android:layout_height="@dimen/renhe_room_image_wh"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_bg_color6670bf_circular_solid_style"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S6"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/vipImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+
+                <ImageView
+                    android:id="@+id/realnameImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/avatar_img_ll"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/username_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/contact_format_name_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/job_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/username_txt"
+                    android:layout_below="@id/username_txt"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/contact_format_company_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/company_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/username_txt"
+                    android:layout_below="@id/job_txt"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/contact_format_company_textsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

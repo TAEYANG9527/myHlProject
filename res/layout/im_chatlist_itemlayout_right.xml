@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/im_chat_bcg"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:id="@+id/user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/iv_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="false" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#818181"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_content_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/user_layout">
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_to_bg"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:minHeight="40dp">
+
+                <com.itcalf.renhe.widget.emojitextview.AisenChatTextView
+                    android:id="@+id/tv_chatcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:fadingEdgeLength="10dp"
+                    android:focusable="false"
+                    android:lineSpacingExtra="2dp"
+                    android:maxWidth="@dimen/im_chat_item_maxlength"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S4" />
+
+                <RelativeLayout
+                    android:id="@+id/iv_imgcontent_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_imgcontent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxHeight="@dimen/im_chat_item_imageview_maxwidth"
+                        android:maxWidth="@dimen/im_chat_item_imageview_maxwidth"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/room_pic_default_bcg"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/iv_imgcontent"
+                        android:layout_alignLeft="@+id/iv_imgcontent"
+                        android:layout_alignRight="@+id/iv_imgcontent"
+                        android:layout_alignTop="@+id/iv_imgcontent"
+                        android:background="@drawable/room_pic_grid_item_selector" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_audiocontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/chatto_voice_playing_default"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/linked_fl_content"
+                android:layout_width="@dimen/im_chat_item_maxlength"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_linked_bg"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:minHeight="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/linked_title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/C2"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:id="@+id/divider_linker"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/BC_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.itcalf.renhe.view.RoundImageView
+                            android:id="@+id/froward_pic_round"
+                            android:layout_width="@dimen/im_chat_linked_pic_width"
+                            android:layout_height="@dimen/im_chat_linked_pic_width"
+                            android:layout_marginRight="10dp"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/chat_link_default"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/froward_pic_iv"
+                            android:layout_width="@dimen/im_chat_linked_pic_width"
+                            android:layout_height="@dimen/im_chat_linked_pic_width"
+                            android:layout_marginRight="10dp"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/chat_link_default" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/forward_content_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="4"
+                            android:textColor="@color/C1"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/file_fl_content"
+                android:layout_width="@dimen/im_chat_file_item_maxlength"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatto_linked_bg"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:minHeight="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/file_pic_iv"
+                        android:layout_width="@dimen/im_chat_linked_pic_width"
+                        android:layout_height="@dimen/im_chat_linked_pic_width"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_filetype_unknown" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/file_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/C1"
+                            android:textSize="15sp"
+                            android:visibility="visible" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/file_state_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/file_title_tv"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/C2"
+                            android:textSize="@dimen/S7"
+                            android:visibility="gone" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/file_size_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/file_title_tv"
+                            android:layout_below="@id/file_title_tv"
+                            android:layout_marginTop="5dp"
+                            android:layout_toLeftOf="@id/file_state_tv"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="4"
+                            android:textColor="@color/C2"
+                            android:textSize="@dimen/S7" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/file_percent_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/file_size_tv"
+                            android:layout_marginTop="5dp" />
+
+                        <ProgressBar
+                            android:id="@+id/file_progressbar"
+                            style="@style/mProgress_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_alignBottom="@id/file_percent_tv"
+                            android:layout_below="@id/file_size_tv"
+                            android:layout_marginTop="5dp"
+                            android:layout_toLeftOf="@id/file_percent_tv"
+                            android:secondaryProgress="0" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/audio_length_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/fl_content_rl"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/read_circle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/audio_length_tv"
+            android:src="@drawable/menu_unread_red_circle_shape"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_send_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/fl_content_rl">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_sendFail"
+                android:layout_width="@dimen/im_conversation_list_unread_wh"
+                android:layout_height="@dimen/im_conversation_list_unread_wh"
+                android:background="@drawable/menu_unread_red_circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="!"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb_sending"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

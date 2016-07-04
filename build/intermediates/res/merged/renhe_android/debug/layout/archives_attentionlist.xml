@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.itcalf.renhe.view.XListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" />
+    <!--
+        <include
+            android:id="@+id/topLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/renhe_title_height"
+            layout="@layout/common_top" /> -->
+
+    <!--     <RelativeLayout
+            android:id="@+id/haader_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/topLayout"
+            android:layout_marginTop="-1dp"
+            android:background="@color/colorF5f5f5"
+            android:clickable="true" >
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="点击刷新"
+                android:textColor="@color/C1"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/waitPb"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+        </RelativeLayout> -->
+
+</RelativeLayout>

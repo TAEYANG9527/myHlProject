@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/luckymoney_base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/luckymoney_send_edit_item_bacg"
+                android:padding="15dp">
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/ad_content_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="请输入广告语"
+                    android:maxLines="10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S3" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/ad_content_maxlength_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ad_content_et"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S3"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ad_logo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_item_bacg_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/ad_logo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ad_logo_iv"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_red_ad_cam" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/circle_membernum_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ad_logo_tip"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+
+            <LinearLayout
+                android:id="@+id/ad_link_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_item_bacg_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/ad_link_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广告链接"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/ad_link_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="添加链接"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/archieve_goto" />
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/ad_link_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ad_link_tip"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/next_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/luckymoney_bt_selected"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="下一步"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

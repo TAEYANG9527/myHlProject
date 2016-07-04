@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/custlogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/copyrightText"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/renhe_copyright2"
+            android:textColor="@color/_C2"
+            android:textSize="@dimen/S5"
+            android:visibility="visible" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/registerBtn"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:background="@drawable/white_archieve_edit_bt_selected"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="@dimen/renhe_login_edittext_margintop"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/registerBtnStr"
+            android:textColor="@drawable/white_editbt_textcolor_selected"
+            android:textSize="@dimen/S3"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/loginBtn"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@id/registerBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:background="@drawable/purple_archieve_edit_bt_selected"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/loginBtnStr"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S3"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

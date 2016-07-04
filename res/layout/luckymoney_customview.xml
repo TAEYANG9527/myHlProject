@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/lucky_bg_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_lucky_money_bg" />
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_bubble_delete" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/lucky_bg_iv"
+        android:layout_alignLeft="@id/lucky_bg_iv"
+        android:layout_alignRight="@id/lucky_bg_iv"
+        android:layout_alignTop="@id/lucky_bg_iv"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <FrameLayout
+            android:id="@+id/avatar_fl"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:id="@+id/open_iv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/icon_lucky_money_kai"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/avatar_iv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/avatar"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar_fl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="王宁"
+            android:textColor="@color/luckymoney_text_color"
+            android:textSize="@dimen/S4" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:text="恭喜发财，大吉大利！"
+            android:textColor="@color/luckymoney_text_color"
+            android:textSize="@dimen/S1" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/see_others_lucky_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="看看大家的手气>"
+            android:textColor="@color/luckymoney_text_color"
+            android:textSize="@dimen/S7" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg">
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/top_bacg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_bar_back" />
+
+            <ImageView
+                android:id="@+id/menu_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_logo" />
+        </LinearLayout>
+        <ImageView
+        android:id="@+id/backBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:src="@drawable/logo_selector" >
+    </ImageView>
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backBt"
+            android:background="@drawable/unread_homepage"
+            android:textColor="@color/top_bacg_red"
+            android:textSize="@dimen/unread_textsize"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_txt"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/unread_homepage_margin_left"
+            android:layout_toRightOf="@+id/unread"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/sendBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/renhe_hall_title_bt_marginright"
+            android:background="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/renhe_menu_title_textsize" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/countTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sendBt"
+            android:textColor="@color/white" 
+            android:text="140"
+            android:textSize="@dimen/renhe_menu_title_textsize"/>
+    </RelativeLayout>
+    -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/editLl"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editLl1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/forwardrl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_bottom_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/forwardCk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:text="同时转发"
+                    android:textColor="@color/C1"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <com.itcalf.renhe.view.EditText
+                android:id="@+id/contentEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/forwardrl"
+                android:background="@null"
+                android:gravity="left|top"
+                android:maxLines="10"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_expression_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hall_list_bacg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <ImageView
+            android:id="@+id/image_face"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/chat_emo_normal"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <include
+            android:id="@+id/chat_face_container"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.itcalf.renhe.view.KeyboardLayout>

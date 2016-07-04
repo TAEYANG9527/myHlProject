@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/editscrview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/editRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="关键词"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/advance_keywork_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint=""
+                    android:imeOptions="actionSearch"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="姓名"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/advance_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint=""
+                    android:imeOptions="actionSearch"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="职位"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/advance_job_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint=""
+                    android:imeOptions="actionSearch"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <LinearLayout
+                android:id="@+id/advance_industry_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="行业"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/advance_industry_rl_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/archieve_goto"
+                    android:hint="选择行业"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="全部行业"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/C2"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <LinearLayout
+                android:id="@+id/advance_area_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="地区"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/advance_area_rl_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/archieve_goto"
+                    android:hint="选择地区"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="全部城市"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/C2"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="公司"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/advance_company_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint=""
+                    android:imeOptions="actionSearch"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/BC_2" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/advance_ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/red_archieve_edit_bt_selected"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="搜索"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/renhe_login_button_textsize"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/historyRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/historyRl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/search_history_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="visible" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/search_history_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/search_history_iv"
+                        android:text="近期搜索记录"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/history_seperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/historyRl1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/BC_2" />
+
+                <RelativeLayout
+                    android:id="@+id/histroyrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/history_seperator"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:id="@+id/histroyll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.itcalf.renhe.view.ListviewWithScroolview
+                            android:id="@+id/historylv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:smoothScrollbar="true"></com.itcalf.renhe.view.ListviewWithScroolview>
+
+                        <LinearLayout
+                            android:id="@+id/clearll"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/LH1"
+                            android:layout_below="@+id/historylv"
+                            android:background="@drawable/section_list_item_bacg"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <com.itcalf.renhe.view.TextView
+                                android:id="@+id/clearhistoryTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="清空历史搜索记录"
+                                android:textSize="@dimen/S4" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/nohistoryTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:text="无历史搜索记录"
+                        android:textColor="@color/separate_line"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/history_seperator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/histroyrl"
+                    android:background="@color/BC_2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

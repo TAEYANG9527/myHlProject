@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_auth_submitsuccess" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/invited_numb_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已成功发送5条邀请短信"
+            android:textSize="@dimen/S5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您获得"
+                android:textSize="@dimen/S5" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/voucher_amount_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10元升级代金券"
+                android:textColor="@color/black"
+                android:textSize="@dimen/S4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/contact_separate_line" />
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/scanning_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_n_cl_corner_shape"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="查看代金券"
+        android:textColor="@drawable/archive_editbt_textcolor_selected"
+        android:textSize="@dimen/S2"
+        android:visibility="gone" />
+</LinearLayout>

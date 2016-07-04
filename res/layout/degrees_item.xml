@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/junior_college_bt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="大专"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/bachelor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="本科"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/master_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="硕士"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/doctor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="博士"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/post_doctoral_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="博士后"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/others_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="其他"
+            android:textColor="@color/C1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

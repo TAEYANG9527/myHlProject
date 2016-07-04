@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/upgrade_guide_dialog_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upgrade_guide_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/upgrade_guide_dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="高级会员专享特权"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S2" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/upgrade_guide_dialog_sub_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="@string/upgrade_guide_today_add_friend_has_limit_sub_title"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S5" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/upgrade_guide_dialog_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/archive_sprcialties_item_shape"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="button"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S2" />
+    </LinearLayout>
+</LinearLayout>

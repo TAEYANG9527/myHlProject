@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/diytitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/renhe_actionbar_bcg"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/scanning_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_markman_scan_selector_type2" />
+
+    <LinearLayout
+        android:id="@+id/searchEdt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/scanning_imgbtn"
+        android:background="@drawable/diy_search_shape"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/keyword_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_top_search"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:hint="找人脉"
+            android:singleLine="true"
+            android:textColorHint="@color/BC_7"
+            android:textSize="@dimen/S5" />
+    </LinearLayout>
+
+</RelativeLayout>

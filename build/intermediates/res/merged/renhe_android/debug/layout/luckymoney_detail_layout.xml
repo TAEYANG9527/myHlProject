@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/luckymoney_base_tool_bar" />
+
+    <ListView
+        android:id="@+id/rob_detail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tip_tv"
+        android:layout_below="@id/toolbarLayout"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/separate_line"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

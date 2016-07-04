@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/chat_item_padding">
+
+    <include
+        layout="@layout/chat_base_item_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_item_padding"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/chat_user_layout"
+            layout="@layout/chat_base_item_user_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:id="@+id/content_rl"
+            android:layout_width="@dimen/im_chat_luckymoney_item_maxlength"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/chat_item_padding"
+            android:layout_toLeftOf="@id/chat_user_layout"
+            android:background="@drawable/chat_luckymoney_ad_right_bg"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:minHeight="40dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/chat_item_padding"
+            android:paddingRight="@dimen/chat_item_padding"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/luckymoney_info_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="@dimen/chat_item_padding">
+
+                <ImageView
+                    android:id="@+id/user_pic_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_chat_lucky_money_ad" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/lucky_info_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/user_pic_iv"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/user_pic_iv"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="赏你们的，拿去花！"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/lucky_info_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/user_pic_iv"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/user_pic_iv"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="领取红包"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S5" />
+            </RelativeLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/luckymoney_info_ll"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableRight="@drawable/icon_bubble_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="和聊红包广告"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/chat_base_item_sendstate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/content_rl"
+            android:layout_alignTop="@id/content_rl"
+            android:layout_marginRight="@dimen/chat_item_padding"
+            android:layout_toLeftOf="@id/content_rl" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/circle_good_height"
+    android:layout_height="@dimen/circle_good_height"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_grida_rl"
+        android:layout_width="@dimen/circle_good_height"
+        android:layout_height="@dimen/circle_good_height">
+
+        <com.itcalf.renhe.view.RoundImageView
+            android:id="@+id/item_grida_image"
+            android:layout_width="@dimen/circle_good_height"
+            android:layout_height="@dimen/circle_good_height"
+            android:scaleType="centerCrop" />
+
+        <!--  <View
+             android:layout_width="@dimen/renhe_room_showmsg_reply_image_wh"
+             android:layout_height="@dimen/renhe_room_showmsg_reply_image_wh"
+             android:background="@drawable/room_pic_grid_item_selector" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_grida_textview_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/item_grid_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/C2"
+            android:textSize="7sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

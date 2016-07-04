@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountlimit_Rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/BC_3"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/accountlimit_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/sendInvitedLimit_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/list_item_bacg"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/sendInvitedLimit_imgFl"
+                    android:layout_width="@dimen/A4"
+                    android:layout_height="@dimen/A4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.itcalf.renhe.view.RoundImageView
+                        android:id="@+id/invitedLimite_img"
+                        android:layout_width="@dimen/A4"
+                        android:layout_height="@dimen/A4"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_bg_color8ec73f_circular_solid_style"
+                        android:scaleType="fitXY" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/invitedLimite_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/S2" />
+                </FrameLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/sendInvitedLimit_upgrade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:text="提升"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/sendInvitedLimit_Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/sendInvitedLimit_upgrade_txt"
+                    android:layout_toRightOf="@id/sendInvitedLimit_imgFl"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_sendinvite"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_sendinvite_max"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/sendinvite_usenumb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_sendinvite_today"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contactsLimit_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH5"
+                android:layout_below="@+id/sendInvitedLimit_Rl"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/list_item_bacg"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/contactsLimit_imgFl"
+                    android:layout_width="@dimen/A4"
+                    android:layout_height="@dimen/A4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.itcalf.renhe.view.RoundImageView
+                        android:id="@+id/contactsLimit_img"
+                        android:layout_width="@dimen/A4"
+                        android:layout_height="@dimen/A4"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_bg_color41a99c_circular_solid_style"
+                        android:scaleType="fitXY" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contactsLimit_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/S2" />
+                </FrameLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/contactsLimit_upgrade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:text="提升"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/contactsLimit_Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/contactsLimit_upgrade_txt"
+                    android:layout_toRightOf="@id/contactsLimit_imgFl"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_contacts"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_contacts_max"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contacts_usenumb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_contacts_current"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/searchLimit_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH5"
+                android:layout_below="@+id/contactsLimit_Rl"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/list_item_bacg"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/searchLimit_imgFl"
+                    android:layout_width="@dimen/A4"
+                    android:layout_height="@dimen/A4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.itcalf.renhe.view.RoundImageView
+                        android:id="@+id/searchLimit_img"
+                        android:layout_width="@dimen/A4"
+                        android:layout_height="@dimen/A4"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_bg_color6670bf_circular_solid_style"
+                        android:scaleType="fitXY" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/searchLimit_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/S2" />
+                </FrameLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/searchLimit_upgrade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:text="提升"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/searchLimit_Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/searchLimit_upgrade_txt"
+                    android:layout_toRightOf="@id/searchLimit_imgFl"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_search"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_search_max"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seniorSearchLimit_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH5"
+                android:layout_below="@id/searchLimit_Rl"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/list_item_bacg"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/seniorSearchLimit_imgFl"
+                    android:layout_width="@dimen/A4"
+                    android:layout_height="@dimen/A4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.itcalf.renhe.view.RoundImageView
+                        android:id="@+id/seniorSearch_img"
+                        android:layout_width="@dimen/A4"
+                        android:layout_height="@dimen/A4"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_bg_color_bc3_circular_solid_style"
+                        android:scaleType="fitXY" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/seniorSearch_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="NO"
+                        android:textColor="@color/BC_1"
+                        android:textSize="@dimen/S2" />
+
+                    <ImageView
+                        android:id="@+id/seniorSearch_Iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_accountlimit_ok"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/seniorSearch_upgrade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:text="开启"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/seniorSearchLimit_Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/seniorSearch_upgrade_txt"
+                    android:layout_toRightOf="@id/seniorSearchLimit_imgFl"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_seniorsearch"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_seniorsearch_explain"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/seniorsearch_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_seniorsearch_state"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nearbyIndustryLimit_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH5"
+                android:layout_below="@id/seniorSearchLimit_Rl"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/list_item_bacg"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/nearbyIndustryLimit_imgFl"
+                    android:layout_width="@dimen/A4"
+                    android:layout_height="@dimen/A4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.itcalf.renhe.view.RoundImageView
+                        android:id="@+id/nearbyIndustry_img"
+                        android:layout_width="@dimen/A4"
+                        android:layout_height="@dimen/A4"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/btn_bg_color_bc3_circular_solid_style"
+                        android:scaleType="fitXY" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/nearbyIndustry_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="NO"
+                        android:textColor="@color/BC_1"
+                        android:textSize="@dimen/S2" />
+
+                    <ImageView
+                        android:id="@+id/nearbyIndustry_Iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_accountlimit_ok"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/nearbyIndustry_upgrade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawablePadding="12dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:text="开启"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4" />
+
+                <LinearLayout
+                    android:id="@+id/nearbyIndustryLimit_Ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/nearbyIndustry_upgrade_txt"
+                    android:layout_toRightOf="@id/nearbyIndustryLimit_imgFl"
+                    android:orientation="vertical">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_nearbyindustry"
+                        android:textColor="@color/C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_nearbyindustry_explain"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/nearbyindustry_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="@string/accountlimit_nearbyindustry_state"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S7" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

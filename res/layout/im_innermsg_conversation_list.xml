@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/innermsg_listRl"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.XListView
+        android:id="@+id/innermsg_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:smoothScrollbar="false" />
+
+</RelativeLayout>

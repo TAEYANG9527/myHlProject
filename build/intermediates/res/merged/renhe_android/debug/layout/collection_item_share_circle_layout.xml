@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_list_item_bacg"
+        android:orientation="vertical"
+        android:padding="@dimen/collection_item_padding">
+
+        <include layout="@layout/collection_item_top_layout" />
+
+        <com.itcalf.renhe.widget.emojitextview.AisenTextView
+            android:id="@+id/content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/collection_content_margin_top"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/lineSpacing"
+            android:maxLines="4"
+            android:text="哈哈"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S3" />
+
+        <RelativeLayout
+            android:id="@+id/forward_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rmq_content_margin_pic"
+            android:background="@drawable/raw_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/rmq_forward_padding">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/forward_circle_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cicle_share_default_name"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S6" />
+
+            <View
+                android:id="@+id/seperate_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/forward_circle_title_tv"
+                android:layout_marginBottom="@dimen/rmq_forward_padding"
+                android:layout_marginTop="@dimen/rmq_forward_padding"
+                android:background="@color/separate_line" />
+
+
+            <ImageView
+                android:id="@+id/forward_circle_pic_iv"
+                android:layout_width="@dimen/rmq_forward_web_pic_width"
+                android:layout_height="@dimen/rmq_forward_web_pic_width"
+                android:layout_below="@id/seperate_line"
+                android:layout_gravity="left"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar" />
+
+            <RelativeLayout
+                android:id="@+id/forward_circle_content_desc_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rmq_forward_web_pic_width"
+                android:layout_below="@id/seperate_line"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/rmq_forward_padding"
+                android:layout_toRightOf="@id/forward_circle_pic_iv"
+                android:gravity="center_vertical">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/forward_circle_name_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S6" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/forward_circle_desc_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forward_circle_name_tv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S6" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collection_item_divider_height"
+        android:background="@color/BC_3" />
+</LinearLayout>

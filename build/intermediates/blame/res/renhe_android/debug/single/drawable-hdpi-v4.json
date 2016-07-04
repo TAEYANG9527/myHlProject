@@ -1,0 +1,1342 @@
+[
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\back_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\back_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_point_up.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_point_up.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_haha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_haha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_ear.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_ear.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_pouting_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_pouting_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\radio.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\radio.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\remove_one_more.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\remove_one_more.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_del.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_del.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\tk_drop_list_bg1.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\tk_drop_list_bg1.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\checkbox.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\checkbox.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_older_man.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_older_man.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_bust_in_silhouette.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_bust_in_silhouette.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\pic_error.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\pic_error.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_joy_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_joy_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_rcd_cancel_bg.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_rcd_cancel_bg.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\listheadbg.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\listheadbg.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_room_social_send_now.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_room_social_send_now.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\exit_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\exit_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\back.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\back.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_busts_in_silhouette.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_busts_in_silhouette.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heart_decoration.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heart_decoration.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\readed.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\readed.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\checked_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\checked_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\send.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\send.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_ok_hand.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_ok_hand.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_blue_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_blue_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_pressed_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_bar.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_bar.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\shadow_bg.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\shadow_bg.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_dancer.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_dancer.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\msg_right.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\msg_right.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_crying_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_crying_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_broken_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_broken_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\mx.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\mx.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_raising_hand.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_raising_hand.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_keyboard_presss.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_keyboard_presss.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_man.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_man.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_person_with_blond_hair.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_person_with_blond_hair.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_2nd.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_2nd.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_circle_delete.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_circle_delete.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\quicksearch2.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\quicksearch2.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\imageselector_photo.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\imageselector_photo.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_gift_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_gift_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heartbeat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heartbeat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sparkling_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sparkling_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_muscle.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_muscle.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_bride_with_veil.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_bride_with_veil.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_haircut.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_haircut.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\main_bottom.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\main_bottom.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_santa.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_santa.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_cold.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_cold.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_step.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_step.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\show_msg_share.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\show_msg_share.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kissing_smiling_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kissing_smiling_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_expressionles.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_expressionles.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_add_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_add_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_construction_worker.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_construction_worker.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_quxiao_focused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_quxiao_focused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_woman.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_woman.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\settinghead.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\settinghead.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_confounded.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_confounded.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_guardsman.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_guardsman.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_clap.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_clap.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_pray.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_pray.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp7.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp7.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smiling_halo.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smiling_halo.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_stuck_out_tongue.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_stuck_out_tongue.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_footprints.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_footprints.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp2.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp2.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\unread_dot.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\unread_dot.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_to_short.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_to_short.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_information_desk_person.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_information_desk_person.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smiley.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smiley.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_raised_hands.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_raised_hands.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_pulltorefresh_arrow.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\search_edt.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\search_edt.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_angel.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_angel.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smiling_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smiling_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_queding_unfocused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_queding_unfocused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ios7_switch_on.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ios7_switch_on.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_134.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_134.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_action_navigation_previous_item.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_action_navigation_previous_item.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kissing_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kissing_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_addpic_focused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_addpic_focused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\indicator_autocrop.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\indicator_autocrop.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\com_taobao_tae_sdk_simple_toast_bg.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\OneSDK\\unspecified\\res\\drawable-hdpi-v4\\com_taobao_tae_sdk_simple_toast_bg.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_see_no_evil.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_see_no_evil.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_rcd_hint.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_rcd_hint.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_man_with_turban.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_man_with_turban.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_disappointed.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_disappointed.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp3.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp3.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\aai.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\aai.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\md_nav_back.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.7\\res\\drawable-hdpi-v4\\md_nav_back.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_audi_press.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_audi_press.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ptr_pulltorefresh_arrow.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ptr_pulltorefresh_arrow.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_wave.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_wave.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_yum.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_yum.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_triumph.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_triumph.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\weibo_checked.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\weibo_checked.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\upload_error.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\upload_error.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kissing_closed_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kissing_closed_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\profile_arrow_cell_drawer_normal.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\profile_arrow_cell_drawer_normal.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_speak_no_evil.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_speak_no_evil.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_yellow_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_yellow_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_two_men_holding_hands.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_two_men_holding_hands.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_tired_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_tired_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_hear_no_evil.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_hear_no_evil.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_man_with_gua_pi_mao.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_man_with_gua_pi_mao.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_cupid.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_cupid.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_winking_eye.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_winking_eye.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_action_navigation_close_press.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_action_navigation_close_press.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_hankey.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_hankey.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\avatar.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\avatar.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_boy.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_boy.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_imp.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_imp.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\exit_avatar.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\exit_avatar.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ab2.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ab2.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_quxiao_unfocused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_quxiao_unfocused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_curiousness.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_curiousness.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\weibo_checked_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\weibo_checked_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_emo_normal.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_emo_normal.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_joy.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_joy.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_join_2x.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_join_2x.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_two_hearts.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_two_hearts.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\checked.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\checked.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\bg_no_top.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\bg_no_top.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_add_press.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_add_press.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\relationship_input.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\relationship_input.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\imageselector_selected.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\imageselector_selected.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\rcd_cancel_icon.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\rcd_cancel_icon.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\csearch.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\csearch.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\imageselector_select_photo.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\imageselector_select_photo.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\m_shadow_bg.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\m_shadow_bg.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_selected_pressed_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\none.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\none.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heartpulse.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heartpulse.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\clip_point.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\clip_point.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_no_mouth.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_no_mouth.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\add_one_more.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\add_one_more.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smiley_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smiley_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_keyboard.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_keyboard.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_other.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_other.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\relationship_input_del_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\relationship_input_del_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_extraterrestrial_alien.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_extraterrestrial_alien.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_queding_focused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_queding_focused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_no_good.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_no_good.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\contact_list_header.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\contact_list_header.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_blush.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_blush.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\archives_right.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\archives_right.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kissing.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kissing.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_hand.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_hand.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smile_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smile_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp6.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp6.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\aaz.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\aaz.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_point_down.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_point_down.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_navigation_drawer.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_navigation_drawer.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_neutral_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_neutral_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\xlistview_frest_iv.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\xlistview_frest_iv.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\imageselector_select_album.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\imageselector_select_album.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\online_dotsunselect.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\online_dotsunselect.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_rcd_cancle.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_rcd_cancle.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_audio.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_audio.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_confused_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_confused_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_cop.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_cop.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\exit.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\exit.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_persevere.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_persevere.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_alien_monster.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_alien_monster.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smirk_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smirk_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_astonished.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_astonished.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_purple_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_purple_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_punch.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_punch.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_japanese_ogre.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_japanese_ogre.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_mouth.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_mouth.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sunglasses.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sunglasses.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\search_flag.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\search_flag.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\archives_use_bg.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\archives_use_bg.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ab1.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ab1.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_rage.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_rage.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_girl.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_girl.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_write.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_write.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_pouting_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_pouting_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_flushed.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_flushed.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_shanchu_focused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_shanchu_focused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\dialog_background.xml",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\dialog_background.xml"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\bg_transparent.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\bg_transparent.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\delete.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\delete.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_action_navigation_accept.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_action_navigation_accept.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_save.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_save.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kissing_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kissing_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_closed_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_closed_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\renhe_logo.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\renhe_logo.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_pensive.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_pensive.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_add.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_add.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\aah.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\aah.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ios7_switch_off.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ios7_switch_off.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_bottom_add.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_bottom_add.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\archives4.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\archives4.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_anguished.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_anguished.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_angry_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_angry_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sleepy.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sleepy.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp1.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp1.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_point_up2.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_point_up2.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_massage.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_massage.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\search_history.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\search_history.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_rcd_hint_bg.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_rcd_hint_bg.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp4.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp4.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_tongue.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_tongue.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\wifi.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\wifi.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_princess.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_princess.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\setting_uncheck.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\setting_uncheck.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_dizzy.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_dizzy.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\vpi__tab_selected_holo.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\Hl5.5.1\\Android-ViewPagerIndicator-master\\unspecified\\res\\drawable-hdpi-v4\\vpi__tab_selected_holo.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_revolving_hearts.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_revolving_hearts.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_older_woman.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_older_woman.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_kiss.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_kiss.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_ok_woman.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_ok_woman.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_bow.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_bow.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_unamused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_unamused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_point_right.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_point_right.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smile_open_mouth.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smile_open_mouth.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_cry.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_cry.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_smirk.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_smirk.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_baby.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_baby.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_scream.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_scream.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\online_dotsselect.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\online_dotsselect.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\setting_checked.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\setting_checked.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\quicksearch1.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\quicksearch1.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_fearful.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_fearful.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_nail_polish.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_nail_polish.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_skull.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_skull.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_two_women_holding_hands.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_two_women_holding_hands.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\ic_action_navigation_close.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\ic_action_navigation_close.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\lognbg.jpg",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\lognbg.jpg"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\imageselector_back.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\imageselector_back.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\archives_right_gray.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\archives_right_gray.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_frowning.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_frowning.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_horns.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_horns.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_couplekiss.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_couplekiss.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_hushed_face.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_hushed_face.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_couple.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_couple.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_point_left.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_point_left.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_ghost.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_ghost.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heart_eyes.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heart_eyes.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_couple_with_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_couple_with_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\chat_emo_normal_on.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\chat_emo_normal_on.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\xlistview_arrow.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\xlistview_arrow.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_open_hands.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_open_hands.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_victory.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_victory.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sleeping.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sleeping.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_fist.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_fist.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_scream_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_scream_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_weary.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_weary.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_wink.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_wink.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_mask.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_mask.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\amp5.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\amp5.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_addpic_unfocused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_addpic_unfocused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_dancers.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_dancers.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_relieved.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_relieved.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sob.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sob.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_green_heart.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_green_heart.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_xixi.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_xixi.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\new_register_et.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\new_register_et.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_1st.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_1st.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\toggle.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\toggle.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_worried.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_worried.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_family.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_family.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\camera.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\camera.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_nose.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_nose.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\radio_on.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\radio_on.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_heart_eyes_cat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_heart_eyes_cat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_grimacing.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_grimacing.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\voice_rcd_cancel_bg_focused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\voice_rcd_cancel_bg_focused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_del_p.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_del_p.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_good.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_good.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sweat_smile.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sweat_smile.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_japanese_goblin.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_japanese_goblin.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_sweat.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_sweat.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_circle_add.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_circle_add.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\hl_laughing.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\hl_laughing.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\icon_shanchu_unfocused.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\icon_shanchu_unfocused.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\menu_bar_back.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\menu_bar_back.png"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\drawable-hdpi-v4\\aay.png",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\drawable-hdpi\\aay.png"
+    }
+]

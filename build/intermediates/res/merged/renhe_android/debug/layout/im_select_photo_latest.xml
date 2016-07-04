@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_photo_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/im_select_photo_latest"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="14dp"
+    android:paddingTop="5dp">
+
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/im_select_photo_latest_tip"
+        android:textColor="#888888"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/im_select_photo_latest_image_width"
+        android:layout_height="@dimen/im_select_photo_latest_image_width"
+        android:layout_below="@id/textview"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon" />
+</RelativeLayout>

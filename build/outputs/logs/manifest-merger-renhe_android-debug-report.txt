@@ -1,0 +1,2540 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:2:1-1124:12
+	package
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:4:5-31
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:6:5-46
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:3:5-51
+	android:versionCode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:5:5-32
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:2:11-69
+supports-screens
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:8:5-13:39
+	android:largeScreens
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:10:9-36
+	android:smallScreens
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:11:9-37
+	android:resizeable
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:12:9-34
+	android:anyDensity
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:9:9-34
+application
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:16:5-1051:19
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:20:5-66:19
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:12:5-21:19
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:12:5-30:19
+MERGED from [com.android.support:design:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.afollestad.material-dialogs:commons:0.8.5.7] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.github.afollestad.material-dialogs\commons\0.8.5.7\AndroidManifest.xml:12:5-20
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.7] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.github.afollestad.material-dialogs\core\0.8.5.7\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [org.litepal.android:core:1.3.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\org.litepal.android\core\1.3.1\AndroidManifest.xml:11:5-14:19
+MERGED from [com.jungly:gridPasswordView:0.3] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.jungly\gridPasswordView\0.3\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [Hl5.5.1:emojiLibrary:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\emojiLibrary\unspecified\AndroidManifest.xml:11:5-47
+MERGED from [com.android.support:design:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.nhaarman.listviewanimations:lib-core:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core\3.1.0\AndroidManifest.xml:26:5-27:19
+MERGED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:26:5-29:19
+MERGED from [com.nhaarman.listviewanimations:lib-core-slh:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core-slh\3.1.0\AndroidManifest.xml:26:5-27:19
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:27:5-62:19
+MERGED from [Hl5.5.1:heliao-idl:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\heliao-idl\unspecified\AndroidManifest.xml:5:5-7:38
+MERGED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:62:5-66:19
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:20:9-41
+	android:supportsRtl
+		ADDED from [Hl5.5.1:heliao-idl:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\heliao-idl\unspecified\AndroidManifest.xml:7:9-35
+	android:allowBackup
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:18:9-36
+		REJECTED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:20:18-45
+		REJECTED from [org.litepal.android:core:1.3.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\org.litepal.android\core\1.3.1\AndroidManifest.xml:12:9-35
+		REJECTED from [Hl5.5.1:emojiLibrary:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\emojiLibrary\unspecified\AndroidManifest.xml:11:18-44
+		REJECTED from [com.nhaarman.listviewanimations:lib-core:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core\3.1.0\AndroidManifest.xml:26:18-44
+		REJECTED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:26:18-44
+		REJECTED from [com.nhaarman.listviewanimations:lib-core-slh:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core-slh\3.1.0\AndroidManifest.xml:26:18-44
+		REJECTED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:27:18-44
+		REJECTED from [Hl5.5.1:heliao-idl:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\heliao-idl\unspecified\AndroidManifest.xml:6:9-35
+		REJECTED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:63:9-35
+	android:icon
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:19:9-38
+	android:largeHeap
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:21:9-33
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:22:9-50
+	tools:replace
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:23:9-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:17:9-41
+activity#com.itcalf.renhe.context.MyPortal
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:26:9-44:20
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:28:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:29:13-48
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:27:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:30:13-33:29
+action#android.intent.action.MAIN
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:32:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:34:13-43:29
+action#android.intent.action.VIEW
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:35:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:37:17-76
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:37:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:38:17-78
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:38:27-75
+data
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:40:17-42:50
+	android:host
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:41:21-46
+	android:scheme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:42:21-47
+activity#com.itcalf.renhe.context.portal.LoginActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:45:9-49:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:47:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:49:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:48:13-48
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:46:13-57
+activity#com.itcalf.renhe.context.portal.LoginAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:50:9-54:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:54:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:53:13-48
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:51:13-52
+activity#com.itcalf.renhe.context.portal.ClauseActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:55:9-57:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:57:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:56:13-58
+activity#com.itcalf.renhe.context.contacts.SearchForContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:58:9-61:58
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:60:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:61:13-55
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:59:13-71
+activity#com.itcalf.renhe.context.contacts.FindMoreConnectionsAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:62:9-65:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:64:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:65:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:63:13-68
+activity#com.itcalf.renhe.context.contacts.MyCircleAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:66:9-69:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:68:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:69:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:67:13-57
+activity#com.itcalf.renhe.context.fragmentMain.TabMainFragmentActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:71:9-77:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:75:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:74:13-44
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:73:13-36
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:77:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:76:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:72:13-89
+activity#com.itcalf.renhe.context.room.AddMessageBoardActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:78:9-88:20
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:82:13-49
+	android:label
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:81:13-65
+	android:icon
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:80:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:79:13-65
+activity#com.itcalf.renhe.context.room.ForwardMessageBoardActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:89:9-91:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:91:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:90:13-69
+activity#com.itcalf.renhe.context.archives.MyHomeArchivesActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:93:9-95:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:95:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:94:13-68
+activity#com.itcalf.renhe.context.archives.MyContactArchivesActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:97:9-99:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:99:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:98:13-71
+activity#com.itcalf.renhe.context.archives.AddFriendAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:100:9-102:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:102:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:101:13-58
+activity#com.itcalf.renhe.context.more.FeedBackActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:103:9-105:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:105:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:104:13-58
+activity#com.itcalf.renhe.context.relationship.AdvancedSearchActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:108:9-111:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:111:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:110:13-44
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:109:13-72
+activity#com.itcalf.renhe.context.relationship.SearchResultActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:112:9-115:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:115:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:114:13-44
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:113:13-70
+activity#com.itcalf.renhe.context.contacts.SearchContactsActivityNew
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:116:9-119:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:118:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:119:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:117:13-71
+activity#com.itcalf.renhe.context.contacts.SearchContactsFragmentActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:120:9-123:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:122:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:123:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:121:13-76
+activity#com.itcalf.renhe.context.contacts.SaveToMailListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:124:9-127:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:126:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:127:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:125:13-68
+activity#com.itcalf.renhe.context.contacts.NewFriendsAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:128:9-131:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:130:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:131:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:129:13-59
+activity#com.itcalf.renhe.context.contacts.GuessInterestActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:132:9-135:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:134:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:135:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:133:13-67
+activity#com.itcalf.renhe.context.contacts.MobileMailList
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:136:9-139:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:138:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:139:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:137:13-60
+activity#com.itcalf.renhe.context.contacts.MailBoxList
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:140:9-143:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:142:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:143:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:141:13-57
+activity#com.itcalf.renhe.context.contacts.MailBoxWebView
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:144:9-147:70
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:146:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:147:13-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:145:13-60
+activity#com.itcalf.renhe.context.contacts.MobileMailContactPopWindown
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:148:9-151:69
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:150:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:151:13-66
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:149:13-73
+activity#com.itcalf.renhe.context.contacts.InvitedSuccessActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:152:9-155:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:154:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:155:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:153:13-68
+activity#com.itcalf.renhe.context.contacts.SearchPopWindow
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:156:9-159:69
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:158:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:159:13-66
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:157:13-61
+activity#com.itcalf.renhe.context.contacts.SearchResultByContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:160:9-163:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:162:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:163:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:161:13-76
+activity#com.itcalf.renhe.context.more.AccountManagementActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:164:9-166:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:166:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:165:13-67
+activity#com.itcalf.renhe.context.more.BlacklistActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:167:9-169:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:169:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:168:13-59
+activity#com.itcalf.renhe.context.more.MySettingActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:170:9-172:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:172:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:171:13-59
+activity#com.itcalf.renhe.context.more.AboutHeliaoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:173:9-175:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:175:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:174:13-61
+activity#com.itcalf.renhe.context.more.CouponsListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:176:9-178:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:178:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:177:13-61
+activity#com.itcalf.renhe.context.more.CouponsOverdueListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:179:9-181:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:181:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:180:13-68
+activity#com.itcalf.renhe.context.more.AccountLimitActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:182:9-184:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:184:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:183:13-62
+activity#com.itcalf.renhe.context.more.AccountLimitUpgradeActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:185:9-187:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:187:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:186:13-69
+activity#com.itcalf.renhe.context.more.InvitationCodeActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:188:9-190:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:190:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:189:13-64
+activity#com.itcalf.renhe.context.more.SettingNewMsgActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:191:9-193:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:193:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:192:13-63
+activity#com.itcalf.renhe.context.more.SettingAllActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:194:9-196:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:196:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:195:13-60
+activity#com.itcalf.renhe.context.more.SettingGPRSActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:197:9-199:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:199:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:198:13-61
+activity#com.itcalf.renhe.context.room.NewMessageBoardActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:200:9-202:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:202:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:201:13-65
+activity#com.itcalf.renhe.context.relationship.NearbyActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:204:9-206:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:206:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:205:13-64
+activity#com.itcalf.renhe.context.register.RegisterAuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:209:9-211:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:211:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:210:13-82
+activity#com.itcalf.renhe.context.register.RegisterPerfectInfoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:212:9-214:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:214:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:213:13-89
+activity#com.itcalf.renhe.context.register.ImportMoblieMailActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:215:9-217:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:217:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:216:13-86
+activity#com.itcalf.renhe.context.register.RegisterProvideGetInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:218:9-220:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:220:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:219:13-84
+activity#com.itcalf.renhe.context.register.RecommendListAct
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:221:9-223:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:223:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:222:13-78
+activity#com.itcalf.renhe.context.register.BindPhoneActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:225:9-227:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:227:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:226:13-79
+activity#com.itcalf.renhe.context.register.BindPhoneAuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:228:9-230:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:230:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:229:13-83
+activity#com.itcalf.renhe.context.register.BindPhoneGuideActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:231:9-233:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:233:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:232:13-84
+activity#com.itcalf.renhe.context.relationship.AdvanceSearchSelectCityMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:234:9-237:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:236:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:237:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:235:13-101
+activity#com.itcalf.renhe.context.relationship.AdvanceSearchSelectForeignCityMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:238:9-241:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:240:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:241:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:239:13-108
+activity#com.itcalf.renhe.context.relationship.AdvanceSearchSelectIndustryMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:242:9-245:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:244:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:245:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:243:13-105
+activity#com.itcalf.renhe.context.relationship.selectindustry.SelectIndustryExpandableListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:246:9-249:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:248:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:249:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:247:13-117
+activity#com.itcalf.renhe.context.relationship.selectindustry.SelectIndustryListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:250:9-253:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:252:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:253:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:251:13-107
+activity#com.itcalf.renhe.context.archives.EditMyHomeArchivesActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:254:9-257:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:256:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:257:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:255:13-88
+activity#com.itcalf.renhe.context.archives.edit.EditProvideGetInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:258:9-261:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:260:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:261:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:259:13-85
+activity#com.itcalf.renhe.context.archives.edit.EditSummaryInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:262:9-265:70
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:264:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:265:13-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:263:13-82
+activity#com.itcalf.renhe.context.archives.edit.EditSpecialties
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:266:9-268:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:268:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:267:13-82
+activity#com.itcalf.renhe.context.archives.edit.EditWorkInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:269:9-272:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:271:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:272:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:270:13-79
+activity#com.itcalf.renhe.context.archives.edit.EditWorks
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:273:9-275:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:275:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:274:13-76
+activity#com.itcalf.renhe.context.archives.edit.EditWorksItem
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:276:9-279:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:278:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:279:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:277:13-80
+activity#com.itcalf.renhe.context.archives.edit.EditEdus
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:280:9-282:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:282:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:281:13-75
+activity#com.itcalf.renhe.context.archives.edit.EditEdusItem
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:283:9-286:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:285:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:286:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:284:13-79
+activity#com.itcalf.renhe.context.archives.edit.EditEduInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:287:9-290:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:289:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:290:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:288:13-78
+activity#com.itcalf.renhe.context.archives.edit.EditEduInfoSelectSchool
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:291:9-294:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:293:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:294:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:292:13-90
+activity#com.itcalf.renhe.context.archives.edit.EditOtherInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:295:9-298:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:297:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:298:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:296:13-80
+activity#com.itcalf.renhe.context.archives.edit.EditContactInfo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:299:9-302:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:301:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:302:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:300:13-82
+activity#com.itcalf.renhe.context.archives.edit.SelectCityWithChinaAndForeignActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:303:9-306:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:305:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:306:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:304:13-104
+activity#com.itcalf.renhe.context.archives.edit.SelectCityActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:307:9-310:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:309:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:310:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:308:13-85
+activity#com.itcalf.renhe.context.archives.edit.SelectChinaCityMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:311:9-315:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:313:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:315:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:314:13-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:312:13-94
+activity#com.itcalf.renhe.context.archives.edit.SelectForeignCityMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:316:9-320:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:318:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:320:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:319:13-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:317:13-96
+activity#com.itcalf.renhe.context.room.TwitterShowMessageBoardActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:321:9-324:58
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:323:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:324:13-55
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:322:13-89
+activity#com.itcalf.renhe.context.room.WebViewActivityForReport
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:325:9-329:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:327:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:329:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:328:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:326:13-82
+activity#com.itcalf.renhe.context.portal.WebViewActivityForFindPwd
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:330:9-334:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:332:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:334:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:333:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:331:13-85
+activity#com.itcalf.renhe.view.WebViewActWithTitle
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:335:9-339:70
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:337:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:339:13-67
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:338:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:336:13-69
+activity#com.itcalf.renhe.view.WebViewForIndustryCircle
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:340:9-343:70
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:342:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:343:13-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:341:13-74
+activity#com.itcalf.renhe.zxing.ui.ActivityScan
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:345:9-349:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:348:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:347:13-44
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:349:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:346:13-66
+activity#com.itcalf.renhe.zxing.ui.ActivityQrcodeResult
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:350:9-353:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:352:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:353:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:351:13-74
+activity#com.itcalf.renhe.context.wukong.im.ActivityCreatCircle
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:355:9-358:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:357:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:358:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:356:13-82
+activity#com.itcalf.renhe.context.wukong.im.ChatToGroupActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:359:9-362:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:361:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:362:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:360:13-82
+activity#com.itcalf.renhe.context.wukong.im.ActivitySearchCircle
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:363:9-366:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:365:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:366:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:364:13-83
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleDetail
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:367:9-370:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:369:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:370:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:368:13-83
+activity#com.itcalf.renhe.context.wukong.im.ActivityMyCircleJoinReuset
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:371:9-374:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:373:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:374:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:372:13-89
+activity#com.itcalf.renhe.context.wukong.im.ActivityApplyAddCircle
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:375:9-378:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:377:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:378:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:376:13-85
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleSetting
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:379:9-382:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:381:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:382:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:380:13-84
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleMemberTwo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:383:9-386:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:385:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:386:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:384:13-86
+activity#com.itcalf.renhe.context.wukong.im.ActivityGrpcCircleMemberTwo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:387:9-390:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:389:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:390:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:388:13-90
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleCompile
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:391:9-393:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:393:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:392:13-84
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleJoinRequest
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:394:9-397:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:396:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:397:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:395:13-88
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleJoinReusetDetail
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:398:9-401:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:400:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:401:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:399:13-93
+activity#com.itcalf.renhe.context.wukong.im.ActivityCircleContacts
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:402:9-405:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:404:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:405:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:403:13-85
+activity#com.itcalf.renhe.context.wukong.im.ChatRemindActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:406:9-410:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:409:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:408:13-43
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:410:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:407:13-81
+activity#com.itcalf.renhe.context.cropImage.CropImage
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:411:9-414:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:413:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:414:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:412:13-72
+activity#com.itcalf.renhe.context.register.RecommendListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:415:9-417:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:417:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:416:13-83
+activity#com.itcalf.renhe.context.room.addMessage.ImageGridActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:418:9-420:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:420:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:419:13-86
+activity#com.itcalf.renhe.context.room.addMessage.TestPicActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:421:9-423:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:423:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:422:13-84
+activity#com.itcalf.renhe.context.room.addMessage.PhotoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:424:9-426:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:426:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:425:13-82
+activity#com.itcalf.renhe.context.room.ViewPhotoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:427:9-430:51
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:429:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:430:13-48
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:428:13-75
+activity#com.itcalf.renhe.context.portal.FirstGuideActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:431:9-434:51
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:433:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:434:13-48
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:432:13-78
+activity#com.itcalf.renhe.context.portal.FirstGuideVideoSurfaceActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:435:9-438:74
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:437:13-49
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:438:13-71
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:436:13-90
+activity#com.itcalf.renhe.context.room.PersonalMessageBoardActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:439:9-441:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:441:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:440:13-86
+activity#com.itcalf.renhe.context.more.SettingAuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:442:9-444:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:444:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:443:13-77
+activity#com.itcalf.renhe.context.more.ContactAuthClauseActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:445:9-447:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:447:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:446:13-83
+activity#com.itcalf.renhe.context.relationship.bookfriend.BookFriendActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:448:9-450:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:450:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:449:13-95
+activity#com.itcalf.renhe.context.relationship.bookfriend.BookFriendListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:451:9-453:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:453:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:452:13-99
+activity#com.itcalf.renhe.context.relationship.selectindustry.SelectCityExpandableListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:454:9-457:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:456:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:457:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:455:13-113
+activity#com.itcalf.renhe.context.archives.edit.EditSelfInfoEditName
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:458:9-461:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:460:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:461:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:459:13-87
+activity#com.itcalf.renhe.context.archives.cover.UpdateCoverActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:462:9-465:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:464:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:465:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:463:13-87
+activity#com.itcalf.renhe.context.archives.cover.MemberCoverActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:466:9-469:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:468:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:469:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:467:13-87
+activity#com.itcalf.renhe.context.cropImage.CoverCropImage
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:470:9-473:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:472:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:473:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:471:13-77
+activity#com.itcalf.renhe.context.relationship.AdvancedSearchIndexActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:474:9-477:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:477:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:476:13-44
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:475:13-77
+activity#com.itcalf.renhe.context.relationship.AdvancedSearchIndexActivityTwo
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:478:9-481:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:481:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:480:13-44
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:479:13-80
+activity#com.itcalf.renhe.context.wukong.im.TouTiaoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:482:9-485:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:484:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:485:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:483:13-78
+activity#com.itcalf.renhe.context.wukong.im.SystemMsgActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:486:9-489:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:488:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:489:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:487:13-80
+activity#com.itcalf.renhe.context.wukong.im.InnerMsgConversationActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:490:9-493:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:492:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:493:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:491:13-91
+activity#com.itcalf.renhe.context.wukong.im.InnerMsgChatActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:494:9-497:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:496:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:497:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:495:13-83
+activity#com.itcalf.renhe.context.wukong.im.MobileContactChatActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:498:9-501:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:500:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:501:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:499:13-88
+activity#com.itcalf.renhe.context.wukong.im.ChatSelectImage
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:502:9-505:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:504:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:505:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:503:13-78
+activity#com.itcalf.renhe.context.room.ConverViewPhotoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:506:9-508:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:508:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:507:13-81
+activity#com.itcalf.renhe.context.contacts.ToShareContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:509:9-512:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:511:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:512:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:510:13-85
+activity#com.itcalf.renhe.context.contacts.ToShareWithRecentContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:513:9-543:20
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:516:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:517:13-52
+	android:icon
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:515:13-54
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:514:13-95
+intent-filter#android.intent.action.SEND+android.intent.category.DEFAULT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:518:13-522:29
+action#android.intent.action.SEND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:519:17-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:519:25-66
+intent-filter#android.intent.action.SEND_MULTIPLE+android.intent.category.DEFAULT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:533:13-537:29
+action#android.intent.action.SEND_MULTIPLE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:534:17-78
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:534:25-75
+activity#com.itcalf.renhe.context.contacts.ChooseContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:544:9-547:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:546:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:547:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:545:13-84
+activity#com.itcalf.renhe.context.more.TwoDimencodeActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:548:9-550:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:550:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:549:13-78
+activity#com.itcalf.renhe.context.wukong.im.FilePrviewActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:551:9-553:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:553:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:552:13-81
+activity#com.itcalf.renhe.context.auth.NameAuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:554:9-557:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:556:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:557:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:555:13-74
+activity#com.itcalf.renhe.context.auth.CameraActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:558:9-562:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:560:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:562:13-52
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:561:13-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:559:13-72
+activity#com.itcalf.renhe.context.room.ShareToWeichatSettingActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:563:9-566:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:565:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:566:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:564:13-87
+activity#com.itcalf.renhe.context.archives.ArchiveMoreActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:567:9-570:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:569:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:570:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:568:13-65
+activity#com.itcalf.renhe.context.archives.UserGradeActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:571:9-574:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:573:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:574:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:572:13-63
+activity#com.tencent.tauth.AuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:576:9-589:20
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:578:13-44
+	android:noHistory
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:579:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:577:13-58
+activity#com.tencent.connect.common.AssistActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:590:9-594:75
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:593:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:592:13-63
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:594:13-72
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:591:13-69
+activity#com.itcalf.renhe.context.contacts.OcrCardsListActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:595:9-598:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:597:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:598:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:596:13-66
+activity#com.itcalf.renhe.context.contacts.OcrCardDetailActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:599:9-602:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:601:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:602:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:600:13-67
+activity#cn.ocrsdk.uploadSdk.OcrActivityCamera
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:604:9-74
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:604:19-71
+activity#com.itcalf.renhe.context.imageselector.ImageSelectorActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:606:9-609:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:609:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:608:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:607:13-72
+activity#com.itcalf.renhe.context.imageselector.FragmentImageSelectorActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:610:9-613:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:613:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:612:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:611:13-80
+activity#com.itcalf.renhe.context.imageselector.FragmentSelectPhotoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:614:9-617:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:617:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:616:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:615:13-78
+activity#com.itcalf.renhe.context.imageselector.SelectPhotoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:618:9-621:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:621:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:620:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:619:13-70
+activity#com.itcalf.renhe.context.collect.CollectionsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:622:9-625:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:625:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:624:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:623:13-64
+activity#com.itcalf.renhe.context.upgrade.UpgradeActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:626:9-629:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:629:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:628:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:627:13-60
+activity#com.itcalf.renhe.context.topic.PostOrEditTopicActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:630:9-633:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:633:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:632:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:631:13-66
+activity#com.itcalf.renhe.context.luckymoney.LuckyMoneyDetailActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:634:9-638:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:637:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:636:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:638:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:635:13-72
+activity#com.itcalf.renhe.context.luckymoney.LuckyMoneySendActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:639:9-643:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:642:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:641:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:643:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:640:13-70
+activity#com.itcalf.renhe.context.luckymoney.SetPayPasswordActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:644:9-648:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:647:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:646:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:648:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:645:13-70
+activity#com.itcalf.renhe.context.luckymoney.ForgetPayPasswordActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:649:9-652:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:652:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:651:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:650:13-73
+activity#com.itcalf.renhe.context.luckymoney.InputPayPasswordActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:653:9-656:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:656:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:655:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:654:13-72
+activity#com.itcalf.renhe.context.more.PayManageActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:657:9-660:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:660:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:659:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:658:13-59
+activity#com.itcalf.renhe.context.luckymoney.MyWalletDetailActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:661:9-664:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:664:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:663:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:662:13-70
+activity#com.itcalf.renhe.context.luckymoney.CashActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:665:9-668:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:668:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:667:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:666:13-60
+activity#com.itcalf.renhe.context.luckymoney.CashResultActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:669:9-672:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:672:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:671:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:670:13-66
+activity#com.itcalf.renhe.context.contacts.MobileContactsActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:673:9-676:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:676:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:675:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:674:13-68
+activity#com.itcalf.renhe.context.luckyMoneyAd.LuckyMoneyAdFillInfoActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:677:9-681:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:680:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:679:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:681:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:678:13-78
+activity#com.itcalf.renhe.context.luckyMoneyAd.LuckyMoneyAdFillUrlActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:682:9-686:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:685:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:684:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:686:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:683:13-77
+activity#com.itcalf.renhe.context.luckyMoneyAd.LuckyMoneyAdSendActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:687:9-691:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:690:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:689:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:691:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:688:13-74
+activity#com.itcalf.renhe.context.cropImage.CropAdLogoImage
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:692:9-695:55
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:694:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:695:13-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:693:13-78
+activity#com.itcalf.renhe.context.luckyMoneyAd.LuckyMoneyAdDetailActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:696:9-700:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:699:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:698:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:700:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:697:13-76
+activity#com.itcalf.renhe.context.luckymoneyaddfriend.AddFriendLuckyMoneySendActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:701:9-705:56
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:704:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:703:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:705:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:702:13-88
+activity#com.itcalf.renhe.context.archives.TopSpeedInviteActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:706:9-709:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:709:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:708:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:707:13-68
+activity#com.itcalf.renhe.context.archives.SecretaryInviteActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:710:9-713:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:713:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:712:13-59
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:711:13-69
+activity#com.itcalf.renhe.view.WebViewCompanyAuthActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:714:9-718:57
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:717:13-49
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:716:13-59
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:718:13-54
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:715:13-60
+service#com.itcalf.renhe.service.RenheService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:720:9-724:41
+	android:label
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:724:13-38
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:722:13-36
+	android:icon
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:723:13-42
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:721:13-49
+service#com.itcalf.renhe.service.CreateCircleServise
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:725:9-729:41
+	android:label
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:729:13-38
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:727:13-37
+	android:icon
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:728:13-42
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:726:13-56
+meta-data#BaiduMobAd_STAT_ID
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:732:9-734:42
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:734:13-39
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:733:13-46
+meta-data#BaiduMobAd_EXCEPTION_LOG
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:739:9-741:36
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:741:13-33
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:740:13-52
+meta-data#BaiduMobAd_SEND_STRATEGY
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:743:9-745:41
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:745:13-38
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:744:13-52
+meta-data#BaiduMobAd_ONLY_WIFI
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:749:9-751:37
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:751:13-34
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:750:13-48
+meta-data#BaiduMobAd_CELL_LOCATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:753:9-755:36
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:755:13-33
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:754:13-52
+meta-data#BaiduMobAd_GPS_LOCATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:757:9-759:36
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:759:13-33
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:758:13-51
+meta-data#BaiduMobAd_WIFI_LOCATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:761:9-763:36
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:763:13-33
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:762:13-52
+meta-data#UMENG_APPKEY
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:767:9-769:56
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:769:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:768:13-40
+meta-data#UMENG_CHANNEL
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:770:9-772:34
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:772:13-31
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:771:13-41
+service#com.baidu.location.f
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:775:9-782:19
+	android:enabled
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:777:13-35
+	android:process
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:778:13-38
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:776:13-48
+intent-filter#com.baidu.location.service_v2.2
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:779:13-781:29
+action#com.baidu.location.service_v2.2
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:780:17-74
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:780:25-71
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:785:9-787:56
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:787:13-53
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:786:13-52
+meta-data#lwp.extension
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:789:9-791:69
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:791:13-66
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:790:13-41
+meta-data#wk.appKey
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:793:9-795:64
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:795:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:794:13-37
+service#com.laiwang.protocol.android.LWPService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:797:9-799:40
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:58:9-61:19
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:799:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:798:13-67
+activity#com.itcalf.renhe.context.wukong.im.ChatMainActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:801:9-804:58
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:803:13-49
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:804:13-55
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:802:13-79
+activity#com.itcalf.renhe.context.common.KickOutActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:806:9-810:65
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:809:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:808:13-44
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:810:13-62
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:807:13-75
+activity#com.itcalf.renhe.context.common.LoginIMErrorActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:811:9-815:65
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:814:13-49
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:813:13-44
+	android:theme
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:815:13-62
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:812:13-80
+activity#com.itcalf.renhe.context.pay.ChoosePayWayActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:816:9-820:20
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:818:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:817:13-77
+activity#com.itcalf.renhe.context.pay.PayResultActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:821:9-823:52
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:823:13-49
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:822:13-74
+activity#com.alipay.sdk.app.H5PayActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:826:9-831:70
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:830:13-47
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:829:13-37
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:831:13-67
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:828:13-74
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:827:13-60
+activity#com.itcalf.renhe.wxapi.WXPayEntryActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:832:9-835:46
+	android:launchMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:835:13-43
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:834:13-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:833:13-69
+receiver#com.itcalf.renhe.context.pay.wxapi.AppRegister
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:837:9-841:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:837:19-80
+intent-filter#com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:838:13-840:29
+action#com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:839:17-100
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:839:25-97
+meta-data#TRACE:com.alibaba.doraemon.impl.trace.TraceFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:845:9-847:38
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:21:9-23:38
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:847:13-35
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:846:13-78
+meta-data#STATISTICS:com.alibaba.doraemon.impl.statistics.StatisticsFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:848:9-851:45
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:24:9-26:60
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:850:13-45
+		REJECTED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:26:13-57
+	tools:replace
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:851:13-42
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:849:13-93
+meta-data#CACHE:com.alibaba.doraemon.impl.cache.CacheFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:852:9-854:32
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:36:9-38:32
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:854:13-29
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:853:13-78
+meta-data#THREAD:com.alibaba.doraemon.impl.threadpool.ThreadFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:855:9-857:41
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:45:9-47:41
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:857:13-38
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:856:13-85
+meta-data#REQUEST:com.alibaba.doraemon.impl.request.VollyRequestFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:858:9-860:37
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:48:9-50:37
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:860:13-34
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:859:13-89
+meta-data#NAVIGATOR:com.alibaba.doraemon.impl.navigator.NavigatorFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:861:9-863:32
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:51:9-53:32
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:863:13-29
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:862:13-90
+meta-data#EVENTBUTLER:com.alibaba.doraemon.impl.eventbus.EventButlerFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:864:9-866:41
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:54:9-56:41
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:866:13-38
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:865:13-93
+meta-data#LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:867:9-869:32
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:30:9-32:32
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:15:9-17:32
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:869:13-29
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:868:13-97
+meta-data#AUDIOCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:870:9-872:32
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:18:9-20:32
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:872:13-29
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:871:13-83
+meta-data#IMAGECACHE:com.alibaba.doraemon.impl.cache.CacheFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:873:9-875:32
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:21:9-23:32
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:875:13-29
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:874:13-83
+meta-data#IMAGE:com.alibaba.doraemon.impl.image.ImageMagicianFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:876:9-878:57
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:24:9-26:57
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:878:13-54
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:877:13-86
+meta-data#AUDIO:com.alibaba.doraemon.impl.audio.AudioMagicianFetcher
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:879:9-881:57
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:27:9-29:57
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:881:13-54
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:880:13-86
+receiver#com.itcalf.renhe.receiver.BootReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:884:9-890:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:884:19-72
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.HOME
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:885:13-889:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:886:17-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:886:25-76
+category#android.intent.category.HOME
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:888:17-73
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:888:27-70
+receiver#com.itcalf.renhe.receiver.NetWorkStateReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:892:9-896:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:892:19-80
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:893:13-895:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:894:17-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:894:25-76
+activity#com.sina.weibo.sdk.component.WeiboSdkBrowser
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:900:9-904:58
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:903:13-37
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:904:13-55
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:902:13-63
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:901:13-72
+activity#com.sina.weibo.sdk.register.mobile.MobileRegisterActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:907:9-912:58
+	android:screenOrientation
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:911:13-49
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:910:13-37
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:912:13-55
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:909:13-63
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:908:13-85
+activity#com.sina.weibo.sdk.register.mobile.SelectCountryActivity
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:915:9-919:58
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:918:13-37
+	android:windowSoftInputMode
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:919:13-55
+	android:configChanges
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:917:13-63
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:916:13-84
+service#com.sina.weibo.sdk.net.DownloadService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:921:9-923:40
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:923:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:922:13-66
+meta-data#com.alibaba.app.appkey
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:926:9-928:40
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:928:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:927:13-50
+meta-data#com.alibaba.app.appsecret
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:929:9-931:64
+	android:value
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:931:13-61
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:930:13-53
+service#com.alibaba.sdk.android.push.ChannelService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:936:9-947:19
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:30:9-42:19
+	android:process
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:939:13-39
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:938:13-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:937:13-71
+intent-filter#com.taobao.accs.intent.action.SERVICE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:940:13-942:29
+action#com.taobao.accs.intent.action.SERVICE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:941:17-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:941:25-77
+intent-filter#org.agoo.android.intent.action.PING_V4+taobao
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:943:13-946:29
+action#org.agoo.android.intent.action.PING_V4
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:944:17-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:944:25-78
+category#taobao
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:945:17-51
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:945:27-48
+service#com.alibaba.sdk.android.push.MsgService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:950:9-959:19
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:45:9-54:19
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:952:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:951:13-67
+intent-filter#com.taobao.accs.intent.action.RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:953:13-955:29
+action#com.taobao.accs.intent.action.RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:954:17-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:954:25-77
+intent-filter#com.alibaba.sdk.android.push.NOTIFY_ACTION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:956:13-958:29
+action#com.alibaba.sdk.android.push.NOTIFY_ACTION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:957:17-85
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:957:25-82
+receiver#anet.channel.heartbeat.HeartbeatManager$Receiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:962:9-966:20
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:57:9-61:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:962:19-82
+intent-filter#anetwork.channel.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:963:13-965:29
+action#anetwork.channel.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:964:17-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:964:25-78
+service#com.xiaomi.push.service.XMPushService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:968:9-971:42
+	android:enabled
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:970:13-35
+	android:process
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:971:13-39
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:969:13-65
+service#com.xiaomi.mipush.sdk.PushMessageHandler
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:972:9-975:39
+	android:enabled
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:974:13-35
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:975:13-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:973:13-68
+service#com.xiaomi.mipush.sdk.MessageHandleService
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:976:9-978:38
+	android:enabled
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:978:13-35
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:977:13-70
+receiver#com.alibaba.sdk.android.push.MiPushBroadcastReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:980:9-992:20
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:982:13-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:981:13-80
+intent-filter#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:983:13-985:29
+action#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:984:17-76
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:984:25-73
+intent-filter#com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:986:13-988:29
+action#com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:987:17-76
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:987:25-73
+intent-filter#com.xiaomi.mipush.ERROR
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:989:13-991:29
+action#com.xiaomi.mipush.ERROR
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:990:17-66
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:990:25-63
+receiver#com.xiaomi.push.service.receivers.NetworkStatusReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:993:9-1000:20
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:995:13-36
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:994:13-83
+intent-filter#android.intent.category.DEFAULT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:996:13-999:29
+receiver#com.xiaomi.push.service.receivers.PingReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1001:9-1008:20
+	android:process
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1004:13-39
+	android:exported
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1003:13-37
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1002:13-74
+intent-filter#com.xiaomi.push.PING_TIMER
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1005:13-1007:29
+action#com.xiaomi.push.PING_TIMER
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1006:17-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1006:25-66
+receiver#com.alibaba.sdk.android.push.HuaWeiReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1011:9-1018:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1011:19-77
+intent-filter#com.huawei.android.push.intent.RECEIVE+com.huawei.android.push.intent.REGISTRATION+com.huawei.intent.action.PUSH+com.huawei.intent.action.PUSH_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1012:13-1017:29
+action#com.huawei.android.push.intent.REGISTRATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1013:17-86
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1013:25-83
+action#com.huawei.android.push.intent.RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1014:17-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1014:25-78
+action#com.huawei.intent.action.PUSH
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1015:17-72
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1015:25-69
+action#com.huawei.intent.action.PUSH_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1016:17-78
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1016:25-75
+receiver#com.itcalf.renhe.receiver.AliYunMessageReceiver
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1020:9-1049:20
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1020:19-81
+intent-filter#com.alibaba.push2.action.NOTIFICATION_OPENED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1021:13-1023:29
+action#com.alibaba.push2.action.NOTIFICATION_OPENED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1022:17-87
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1022:25-84
+intent-filter#com.alibaba.push2.action.NOTIFICATION_REMOVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1024:13-1026:29
+action#com.alibaba.push2.action.NOTIFICATION_REMOVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1025:17-88
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1025:25-85
+intent-filter#com.taobao.accs.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1027:13-1029:29
+action#com.taobao.accs.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1028:17-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1028:25-77
+intent-filter#com.taobao.taobao.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1030:13-1032:29
+action#com.taobao.taobao.intent.action.COMMAND
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1031:17-82
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1031:25-79
+intent-filter#org.agoo.android.intent.action.RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1033:13-1035:29
+action#org.agoo.android.intent.action.RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1034:17-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1034:25-78
+intent-filter#android.intent.action.USER_PRESENT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1039:13-1041:29
+action#android.intent.action.USER_PRESENT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1040:17-77
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1040:25-74
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1042:13-1044:29
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1045:13-1048:29
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1046:17-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1046:25-77
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1053:5-68
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:18:5-68
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1053:22-65
+uses-permission#android.permission.INTERNET
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1054:5-67
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:14:5-67
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1054:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1055:5-79
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:16:5-79
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1055:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1056:5-81
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:13:5-81
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:10:5-81
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:9:5-81
+MERGED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1056:22-78
+uses-permission#android.permission.PERMISSION_NAME
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1057:5-74
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1057:22-71
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1058:5-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1058:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1059:5-75
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:11:5-75
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1059:22-72
+uses-permission#android.permission.VIBRATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1060:5-66
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1060:22-63
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1061:5-73
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:17:5-73
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:14:5-73
+MERGED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:13:5-73
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1061:22-70
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1062:5-71
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1062:22-68
+uses-permission#android.permission.CAMERA
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1063:5-65
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1063:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1064:5-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1064:22-66
+uses-feature#android.hardware.camera
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1066:5-60
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1066:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1067:5-70
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1067:19-67
+permission#com.itcalf.renhe.permission.JPUSH_MESSAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1070:5-1072:47
+	android:protectionLevel
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1072:9-44
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1071:9-65
+uses-permission#com.itcalf.renhe.permission.JPUSH_MESSAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1075:5-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1075:22-78
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1076:5-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1076:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1077:5-80
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:12:5-80
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:9:5-80
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:16:5-80
+MERGED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1077:22-77
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1078:5-84
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1078:22-81
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1083:5-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1083:22-78
+uses-permission#android.permission.ACCESS_COARSE_UPDATES
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1084:5-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1084:22-77
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1085:5-76
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:15:5-76
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1085:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1086:5-76
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1086:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1087:5-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1087:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1088:5-89
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1088:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1089:5-79
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1089:22-76
+uses-permission#android.permission.READ_LOGS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1090:5-68
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1090:22-65
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1091:5-75
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1091:22-72
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1092:5-72
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1092:22-69
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1093:5-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1093:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1094:5-81
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1094:22-78
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1096:5-70
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1096:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1097:5-67
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1097:22-64
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1098:5-80
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1098:22-77
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1100:5-75
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1100:22-72
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1101:5-75
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1101:22-72
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1102:5-84
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:24:5-84
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1102:22-81
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1103:5-68
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:18:5-68
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1103:22-65
+uses-permission#android.permission.ACCESS_GPS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1104:5-69
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1104:22-66
+uses-permission#android.permission.ACCESS_ASSISTED_GPS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1105:5-78
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1105:22-75
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1107:5-68
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1107:22-65
+uses-permission#android.permission.BATTERY_STATS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1108:5-72
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1108:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1111:5-73
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1111:22-70
+uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1115:5-84
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1115:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_REPLACED
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1116:5-85
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1116:22-82
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1118:5-71
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:22:5-71
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1118:22-68
+permission#com.itcalf.renhe.permission.MIPUSH_RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1120:5-1122:55
+	android:protectionLevel
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1122:9-52
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1121:9-66
+uses-permission#com.itcalf.renhe.permission.MIPUSH_RECEIVE
+ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1123:5-82
+	android:name
+		ADDED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml:1123:22-79
+uses-sdk
+INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:5:5-7:41
+MERGED from [:doraemon-multimedia-1.9.9.6:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\doraemon-multimedia-1.9.9.6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.github.afollestad.material-dialogs:commons:0.8.5.7] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.github.afollestad.material-dialogs\commons\0.8.5.7\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.afollestad.material-dialogs:core:0.8.5.7] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.github.afollestad.material-dialogs\core\0.8.5.7\AndroidManifest.xml:8:5-11:75
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.5] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.5\AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.orhanobut:logger:1.11] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.orhanobut\logger\1.11\AndroidManifest.xml:8:5-10:41
+MERGED from [org.litepal.android:core:1.3.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\org.litepal.android\core\1.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:8.0.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.0.1\AndroidManifest.xml:5:5-43
+MERGED from [com.jungly:gridPasswordView:0.3] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.jungly\gridPasswordView\0.3\AndroidManifest.xml:8:5-10:41
+MERGED from [Hl5.5.1:Android-ViewPagerIndicator-master:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\Android-ViewPagerIndicator-master\unspecified\AndroidManifest.xml:7:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [Hl5.5.1:emojiLibrary:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\emojiLibrary\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [asia.ivity.android:drag-sort-listview:1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\asia.ivity.android\drag-sort-listview\1.0\AndroidManifest.xml:6:5-7:35
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.nhaarman.listviewanimations:lib-core:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core\3.1.0\AndroidManifest.xml:22:5-24:41
+MERGED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:22:5-24:41
+MERGED from [com.nhaarman.listviewanimations:lib-core-slh:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-core-slh\3.1.0\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:5:5-7:40
+MERGED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.3.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:23:9-75
+	android:maxSdkVersion
+		ADDED from [Hl5.5.1:Android-ViewPagerIndicator-master:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\Android-ViewPagerIndicator-master\unspecified\AndroidManifest.xml:8:9-35
+	android:targetSdkVersion
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+		INJECTED from D:\StudioProject\HeLiaoToGitHub\AndroidManifest.xml
+meta-data#MONITOR:com.alibaba.doraemon.impl.monitor.MonitorFetcher
+ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:27:9-29:32
+	android:value
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:29:13-29
+	android:name
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:28:13-84
+meta-data#CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher
+ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:33:9-35:32
+MERGED from [:auth_push_2.3.2.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\auth_push_2.3.2.1\AndroidManifest.xml:18:9-20:32
+	android:value
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:35:13-29
+	android:name
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:34:13-92
+meta-data#REQDEFCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher
+ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:39:9-41:32
+	android:value
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:41:13-29
+	android:name
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:40:13-84
+meta-data#REQTTMPCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher
+ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:42:9-44:32
+	android:value
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:44:13-29
+	android:name
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:43:13-85
+service#com.laiwang.protocol.android.LWPService$KernelService
+ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:62:9-65:19
+	android:exported
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:64:13-37
+	android:name
+		ADDED from [:wukongim_1.4.3.1:] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\wukongim_1.4.3.1\AndroidManifest.xml:63:13-81
+activity#com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeTouchListenerTestActivity
+ADDED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:27:9-129
+	android:name
+		ADDED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:27:19-126
+activity#com.nhaarman.listviewanimations.itemmanipulation.dragdrop.DynamicListViewTestActivity
+ADDED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:28:9-122
+	android:name
+		ADDED from [com.nhaarman.listviewanimations:lib-manipulation:3.1.0] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\com.nhaarman.listviewanimations\lib-manipulation\3.1.0\AndroidManifest.xml:28:19-119
+uses-permission#android.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:13:5-72
+	android:name
+		ADDED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:13:22-69
+uses-permission#android.permission.CHANGEWIFISTATE
+ADDED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:25:5-74
+	android:name
+		ADDED from [Hl5.5.1:OneSDK:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\OneSDK\unspecified\AndroidManifest.xml:25:22-71
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:14:5-88
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:14:22-85
+uses-permission#com.android.launcher.permission.UNINSTALL_SHORTCUT
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:15:5-90
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:15:22-87
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:16:5-85
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:16:22-82
+uses-permission#com.android.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:17:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:17:22-83
+uses-permission#com.android.launcher2.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:18:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:18:22-83
+uses-permission#com.android.launcher2.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:19:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:19:22-84
+uses-permission#com.android.launcher3.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:20:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:20:22-83
+uses-permission#com.android.launcher3.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:21:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:21:22-84
+uses-permission#org.adw.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:22:22-78
+uses-permission#org.adw.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:23:22-79
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:24:22-78
+uses-permission#com.htc.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:25:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:25:22-79
+uses-permission#com.qihoo360.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:26:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:26:22-83
+uses-permission#com.qihoo360.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:27:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:27:22-84
+uses-permission#com.lge.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:28:22-78
+uses-permission#com.lge.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:29:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:29:22-79
+uses-permission#net.qihoo.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:30:5-83
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:30:22-80
+uses-permission#net.qihoo.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:31:22-81
+uses-permission#org.adwfreak.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:32:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:32:22-83
+uses-permission#org.adwfreak.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:33:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:33:22-84
+uses-permission#org.adw.launcher_donut.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:34:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:34:22-84
+uses-permission#org.adw.launcher_donut.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:35:5-88
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:35:22-85
+uses-permission#com.huawei.launcher3.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:36:5-85
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:36:22-82
+uses-permission#com.huawei.launcher3.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:37:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:37:22-83
+uses-permission#com.fede.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:38:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:38:22-79
+uses-permission#com.fede.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:39:5-83
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:39:22-80
+uses-permission#com.sec.android.app.twlauncher.settings.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:40:5-93
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:40:22-90
+uses-permission#com.sec.android.app.twlauncher.settings.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:41:5-94
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:41:22-91
+uses-permission#com.anddoes.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:42:5-85
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:42:22-82
+uses-permission#com.anddoes.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:43:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:43:22-83
+uses-permission#com.tencent.qqlauncher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:44:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:44:22-84
+uses-permission#com.tencent.qqlauncher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:45:5-88
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:45:22-85
+uses-permission#com.huawei.launcher2.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:46:5-85
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:46:22-82
+uses-permission#com.huawei.launcher2.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:47:5-86
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:47:22-83
+uses-permission#com.android.mylauncher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:48:5-87
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:48:22-84
+uses-permission#com.android.mylauncher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:49:22-85
+uses-permission#com.ebproductions.android.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:50:5-99
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:50:22-96
+uses-permission#com.ebproductions.android.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:51:5-100
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:51:22-97
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:52:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:52:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:53:5-83
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:53:22-80
+uses-permission#com.miui.mihome2.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:54:5-81
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:54:22-78
+uses-permission#com.miui.mihome2.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:55:5-82
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:55:22-79
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:56:5-92
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:56:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:57:5-93
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:57:22-90
+uses-permission#telecom.mdesk.permission.READ_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:58:5-78
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:58:22-75
+uses-permission#telecom.mdesk.permission.WRITE_SETTINGS
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:59:5-79
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:59:22-76
+uses-permission#dianxin.permission.ACCESS_LAUNCHER_DATA
+ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:60:5-79
+	android:name
+		ADDED from [Hl5.5.1:ShortcutLib:unspecified] D:\StudioProject\HeLiaoToGitHub\build\intermediates\exploded-aar\Hl5.5.1\ShortcutLib\unspecified\AndroidManifest.xml:60:22-76

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/renhe_actionbar_bcg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_identify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/content_mine_id"
+            android:gravity="center"
+            android:text="实名认证"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/S5" />
+
+        <RelativeLayout
+            android:id="@+id/layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/avatarRl"
+                android:layout_width="@dimen/arartar_image_width"
+                android:layout_height="@dimen/arartar_image_width">
+
+                <RelativeLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp">
+
+                    <View
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/white_circle_shape" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_head"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/avatar" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/vipImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/archive_vip_2_2x" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/upgrade_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/upgrade_top_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/content_mine_up" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_upgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upgrade_top_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="升级会员"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S5" />
+
+            <ImageView
+                android:id="@+id/upgrade_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/upgrade_top_iv"
+                android:layout_alignTop="@id/upgrade_top_iv"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/upgrade_top_iv"
+                android:src="@drawable/content_mine_user_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="王宁"
+        android:textColor="@color/white"
+        android:textSize="@dimen/S5" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_user_desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Android工程师 / 人和网"
+        android:textColor="@color/white"
+        android:textSize="@dimen/S5" />
+</LinearLayout>

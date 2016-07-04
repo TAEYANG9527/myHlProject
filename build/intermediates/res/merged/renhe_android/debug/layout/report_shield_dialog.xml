@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reportLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/room_item_new_bacg_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/report_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="举报"
+                android:textSize="@dimen/close_title_textsize" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:id="@+id/shieldLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/room_item_new_bacg_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/shiledTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏蔽"
+                android:textSize="@dimen/close_title_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

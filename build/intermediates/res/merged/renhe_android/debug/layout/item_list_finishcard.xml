@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tv_dealfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_card"
+            android:singleLine="true"
+            android:textColor="@color/CF"
+            android:textSize="@dimen/S3" />
+
+        <LinearLayout
+            android:id="@+id/ly_vcardinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_card"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/_C1"
+                android:textSize="@dimen/S3" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S6" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_dealres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S6" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="70dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

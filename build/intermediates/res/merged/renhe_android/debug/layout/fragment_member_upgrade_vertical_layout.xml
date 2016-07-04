@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nocolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/avatar_img_ll"
+                android:layout_width="@dimen/renhe_member_upgrade_image_wh_outer"
+                android:layout_height="@dimen/renhe_member_upgrade_image_wh_outer"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <com.itcalf.renhe.view.RoundImageView
+                    android:id="@+id/avatar_img"
+                    android:layout_width="@dimen/renhe_member_upgrade_image_wh"
+                    android:layout_height="@dimen/renhe_member_upgrade_image_wh"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/avatar" />
+
+                <ImageView
+                    android:id="@+id/vipImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/archive_vip_2_3x" />
+            </RelativeLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_upgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_member_upgrade_btn"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="￥399/年，马上升级"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S2" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

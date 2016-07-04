@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ly_bottombar"
+        android:layout_below="@id/toolbarLayout">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.itcalf.renhe.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_vcard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="拍名片"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/S7"
+                android:visibility="gone"/>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_qrcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二维码"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/S7"
+                android:visibility="gone"/>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tv_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/btn_takepicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_scan_takepicture"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

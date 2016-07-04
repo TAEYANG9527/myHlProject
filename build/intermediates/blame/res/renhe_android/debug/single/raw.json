@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\raw\\hl_guide_video.mp4",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\raw\\hl_guide_video.mp4"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\raw\\bibi.mp3",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\raw\\bibi.mp3"
+    },
+    {
+        "merged": "D:\\StudioProject\\HeLiaoToGitHub\\build\\intermediates\\res\\merged\\renhe_android\\debug\\raw\\beep.ogg",
+        "source": "D:\\StudioProject\\HeLiaoToGitHub\\res\\raw\\beep.ogg"
+    }
+]

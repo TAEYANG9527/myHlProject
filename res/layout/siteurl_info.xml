@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/titleTv"
+            android:layout_width="@dimen/archive_info_title_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/provide_get_textcolor"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <LinearLayout
+            android:id="@+id/addSelfInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_add" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="添加"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/new_archive_job_textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/valueTv"
+                style="@style/titleTextSizeWithSmallBlack"
+                android:textColor="@color/C1"
+                android:textColorLink="@color/room_at_color"
+                android:textSize="@dimen/new_archive_job_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperate_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/separate_line" />
+
+</LinearLayout>

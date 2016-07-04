@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/archieve_edit_item_bacg"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/addfriendtitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="发送好友请求："
+        android:textSize="@dimen/archieve_job_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/splitline"></View>
+
+    <com.itcalf.renhe.view.ClearableEditText
+        android:id="@+id/addfriend_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/search_shape"
+        android:hint="请输入验证消息"
+        android:imeOptions="actionDone"
+        android:maxLength="30"
+        android:padding="@dimen/search_eidt_text_padding"
+        android:textColorHint="@color/search_city_edit_bacg"
+        android:textSize="@dimen/archieve_job_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/send_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/archieve_edit_bt_selected"
+            android:padding="5dp"
+            android:text="发送"
+            android:textColor="#175d7c"
+            android:textSize="@dimen/archieve_job_textsize" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/archieve_edit_bt_selected"
+            android:padding="5dp"
+            android:text="取消"
+            android:textColor="#175d7c"
+            android:textSize="@dimen/archieve_job_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

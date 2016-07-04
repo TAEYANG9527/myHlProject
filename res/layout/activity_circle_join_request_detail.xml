@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.RoundImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/A4"
+            android:layout_height="@dimen/A4"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S5" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tx_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="已审核"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S5"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/BC_1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:singleLine="true"
+            android:text="附加消息"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S4" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/tx_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S4" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/BC_1" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/bt_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_purple_selector"
+                android:padding="10dp"
+                android:text="拒绝"
+                android:textColor="@color/BP_1"
+                android:textSize="@dimen/S4"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/bt_consent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/purple_archieve_edit_bt_selected"
+                android:padding="10dp"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:textSize="@dimen/S4"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

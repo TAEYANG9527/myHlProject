@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottom_reply_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_reply_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/bottom_reply_rl_rightbt"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/gotoReply"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/room_item_new_bacg_selector"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_room_social_send_now" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@+id/gotoReply"
+                    android:layout_alignTop="@+id/gotoReply"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_reply_rll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bottom_reply_rl_rightbt"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.itcalf.renhe.view.EditText
+                    android:id="@+id/reply_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/im_chat_edittext_selector"
+                    android:hint="评论"
+                    android:maxHeight="80dp"
+                    android:maxLength="140"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/C1"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/image_face"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignBottom="@id/reply_edt"
+                    android:layout_alignRight="@id/reply_edt"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/chat_emo_normal"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

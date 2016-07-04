@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:clipChildren="false"
+    android:layerType="software"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/no_network_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/hl_renmaiquan_no_network_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/network_error_retry"
+        android:textColor="@color/C1"
+        android:visibility="gone" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/member_upgrade_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="20dip"
+        app:fillColor="#000000"
+        app:pageColor="#a8a8a8"
+        app:radius="5dp"
+        app:strokeColor="#FF000000"
+        app:strokeWidth="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/member_upgrade_pager_view"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/member_upgrade_indicator"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_centerInParent="true"
+        android:clipChildren="false" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    style="@style/actionbarlogobcg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 水平显示 -->
+
+    <ImageView
+        android:id="@+id/title_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/actionbar_add_icon"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/title_drawer">
+
+        <ImageView
+            android:id="@+id/title_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_markman_scan"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/title_logo"
+            android:clickable="false"
+            android:textColor="@color/renhe_theme_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/main_rl"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/guide_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/renmaiquan_actionbar_guide"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/speline"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#80FFFFFF"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/diy_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/ly_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LH1"
+        android:layout_below="@id/toolbarLayout">
+
+        <RelativeLayout
+            android:id="@+id/ly_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/vcard_dealtab"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S4" />
+
+            <View
+                android:id="@+id/tabline1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/BP_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/vcard_finishtab"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S4" />
+
+            <View
+                android:id="@+id/tabline2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/C3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ly_tab"
+        android:background="@color/BC_3" />
+
+</RelativeLayout>

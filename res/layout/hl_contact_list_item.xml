@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/hl_contact_find_result_list_item" />
+
+    <LinearLayout
+        android:id="@+id/title_txt_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BC_3"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/contact_separate_char"
+            android:textSize="@dimen/contact_format_company_textsize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+    </LinearLayout>
+</LinearLayout>

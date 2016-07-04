@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:text="跳过"
+        android:textColor="@drawable/skip_text_selected"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/scroolview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/skip"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/self_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/can_provide_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/can_provide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我能提供："
+                    android:textColor="@color/new_archieve_fourbt_textcolor"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                <com.itcalf.renhe.widget.FlowLayout
+                    android:id="@+id/can_provide_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/can_provide"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" />
+
+                <com.itcalf.renhe.view.Button
+                    android:id="@+id/add_can_provide_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/can_provide"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/can_provide_group"
+                    android:background="@drawable/register_provide_get_item_selected"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="+添加"
+                    android:textColor="#868686"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/want_get_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/want_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想得到："
+                    android:textColor="@color/new_archieve_fourbt_textcolor"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                <com.itcalf.renhe.widget.FlowLayout
+                    android:id="@+id/want_get_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/want_get"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" />
+
+                <com.itcalf.renhe.view.Button
+                    android:id="@+id/add_want_get_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/want_get"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/want_get_group"
+                    android:background="@drawable/register_provide_get_item_selected"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="+添加"
+                    android:textColor="#868686"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

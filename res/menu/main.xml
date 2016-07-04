@@ -1,0 +1,183 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_action_search_selector"
+        android:queryHint="人脉搜索"
+        android:title="人脉搜索"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_search_result"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_action_action_search"
+        android:title="人脉搜索"
+        android:visible="false"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/item_edit"
+        android:icon="@drawable/ic_action_content_edit_selector"
+        android:title="编辑"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_write_msg"
+        android:title="写站内信"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_invite_friend"
+        android:icon="@drawable/action_invite"
+        android:title="添加好友"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_share"
+        android:icon="@drawable/ic_action_social_share_selector"
+        android:title="分享"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_count"
+        android:visible="false"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item_save"
+        android:title="保存"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_send"
+        android:icon="@drawable/ic_action_social_send_now_selector"
+        android:title="发送"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_reply"
+        android:title="回复"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_delete"
+        android:icon="@drawable/ic_action_content_discard_selector"
+        android:title="删除"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_clip"
+        android:actionLayout="@layout/clip_portrait_save_button"
+        android:title="使用"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_changelogin"
+        android:title="切换帐号"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_maillist"
+        android:title="通讯录"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_addbymobile"
+        android:title="手机导入"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_pic"
+        android:icon="@drawable/icon_richscan_picture"
+        android:orderInCategory="2"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_flicker"
+        android:icon="@drawable/icon_richscan_flicker_close"
+        android:orderInCategory="1"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_addbyemail"
+        android:title="邮箱导入"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_add"
+        android:icon="@drawable/ic_action_conversation_selector"
+        android:title="添加"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_add_contacts"
+        android:icon="@drawable/ic_action_add_contact_selector"
+        android:orderInCategory="2"
+        android:title="添加人脉"
+        android:visible="false"
+        app:showAsAction="always" />
+    <!-- 导入到手机通讯录 -->
+    <item
+        android:id="@+id/item_add_contacts_maillist"
+        android:icon="@drawable/ic_action_add_contact_maillist_selector"
+        android:orderInCategory="1"
+        android:title="导入到手机通讯录"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_save"
+        android:title="确定"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_circle_setting"
+        android:icon="@drawable/ic_action_contact_selector"
+        android:title="设置"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_circle_chat_setting"
+        android:icon="@drawable/ic_action_chat_setting_selector"
+        android:title="设置"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/icon_menu_more_selector"
+        android:title="更多"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_camera"
+        android:icon="@drawable/icon_richscan"
+        android:title="拍名片"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_circle_more"
+        android:icon="@drawable/ic_action_navigation_more_selector"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/archive_more"
+        android:icon="@drawable/ic_action_navigation_more_selector"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_skip"
+        android:title="跳过"
+        android:visible="false"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item_help"
+        android:icon="@drawable/ic_action_help_selector"
+        android:title="帮助"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item_cash_help"
+        android:icon="@drawable/ic_action_cash_help_selector"
+        android:title="帮助"
+        android:visible="false"
+        app:showAsAction="ifRoom|withText" />
+</menu>

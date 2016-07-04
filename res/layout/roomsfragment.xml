@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hall_list_bacg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/guide_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b3000000"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/guide_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="first in guide,just once"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_action_bar_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

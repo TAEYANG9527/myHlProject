@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/icon_lucky_money_a3"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/icon_lucky_money_a2"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/icon_lucky_money_a1"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/icon_lucky_money_a6"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/icon_lucky_money_a5"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/icon_lucky_money_a4"
+        android:duration="100" />
+</animation-list>

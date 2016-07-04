@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+    <!--选择支付方式界面-->
+    <FrameLayout
+        android:id="@+id/select_payway_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/select_payway_close_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/select_payway_close_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/select_payway_close_iv"
+                    android:text="选择支付方式"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+
+            <LinearLayout
+                android:id="@+id/select_payway_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </FrameLayout>
+    <!--支付界面-->
+    <FrameLayout
+        android:id="@+id/pay_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/pay_close_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/lucky_ic_close" />
+
+                <ImageView
+                    android:id="@+id/pay_avatar_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/pay_close_iv"
+                    android:src="@drawable/avatar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/pay_avatar_iv"
+                    android:text="请选择支付方式"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/separate_line" />
+
+            <TextView
+                android:id="@+id/pay_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="和聊红包"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/totalmoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="￥100.00"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+
+            <LinearLayout
+                android:id="@+id/selected_payway_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bacg"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/selected_payway_logo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_pay_money" />
+
+                <TextView
+                    android:id="@+id/selected_payway_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="余额支付"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lucky_ic_goin" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/separate_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/setpsw_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/setpsw_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lucky_money_send_set_psw_tip1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/S7"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/setpsw_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lucky_money_send_set_psw_tip2"
+                        android:textColor="@color/CL"
+                        android:textSize="@dimen/S7"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <com.jungly.gridpasswordview.GridPasswordView
+                    android:id="@+id/password_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:gpvGridColor="@color/white"
+                    app:gpvLineColor="@color/_C3"
+                    app:gpvLineWidth="1px"
+                    app:gpvPasswordLength="6"
+                    app:gpvPasswordType="numberPassword"
+                    app:gpvTextColor="#000000"
+                    app:gpvTextSize="15sp" />
+
+                <Button
+                    android:id="@+id/payBt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/red_archieve_edit_bt_selected"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="确定支付"
+                    android:textColor="@drawable/archive_editbt_textcolor_selected"
+                    android:textSize="@dimen/renhe_login_button_textsize"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/room_list_item_bacg"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/cl_layout_icon"
+            android:layout_width="58dp"
+            android:layout_height="58dp">
+
+            <ImageView
+                android:id="@+id/cl_icon"
+                android:layout_width="@dimen/renhe_conversation_room_image_wh"
+                android:layout_height="@dimen/renhe_conversation_room_image_wh"
+                android:layout_margin="5dip" />
+
+            <ImageView
+                android:id="@+id/newfriend_icon"
+                android:layout_width="@dimen/renhe_conversation_room_image_wh"
+                android:layout_height="@dimen/renhe_conversation_room_image_wh"
+                android:layout_margin="5dip"
+                android:src="@drawable/newfriend"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sysmsg_icon"
+                android:layout_width="@dimen/renhe_conversation_room_image_wh"
+                android:layout_height="@dimen/renhe_conversation_room_image_wh"
+                android:layout_margin="5dip"
+                android:src="@drawable/sysmsg"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/toutiao_icon"
+                android:layout_width="@dimen/renhe_conversation_room_image_wh"
+                android:layout_height="@dimen/renhe_conversation_room_image_wh"
+                android:layout_margin="5dip"
+                android:src="@drawable/toutiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/innermsg_icon"
+                android:layout_width="@dimen/renhe_conversation_room_image_wh"
+                android:layout_height="@dimen/renhe_conversation_room_image_wh"
+                android:layout_margin="5dip"
+                android:src="@drawable/newinnermsg"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/message_mention"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/im_conversation_list_unread_wh"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/im_conversation_list_red_circle_shape"
+                android:gravity="center"
+                android:minWidth="@dimen/im_conversation_list_unread_wh"
+                android:textColor="#ffffffff"
+                android:textSize="12.0sp"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/message_mention_bother"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bother_red_circle_shape"
+                android:gravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cl_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@id/cl_layout_icon"
+            android:layout_alignTop="@id/cl_layout_icon"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/cl_layout_icon"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/cl_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:singleLine="true"
+                android:textColor="@color/C2"
+                android:textSize="14sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/cl_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/cl_time"
+                android:ellipsize="end"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textSize="16sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/cl_lastmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cl_title"
+                android:layout_below="@+id/cl_title"
+                android:layout_toLeftOf="@id/cl_time"
+                android:ellipsize="end"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:singleLine="true"
+                android:textColor="@color/C2"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="68dp"
+        android:background="@color/separate_line" />
+
+</RelativeLayout>

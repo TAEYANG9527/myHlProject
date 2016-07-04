@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/editLl"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.EditText
+                android:id="@+id/contentEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColor="@color/C1" />
+
+            <GridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="@dimen/addmsg_grid_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:columnWidth="@dimen/addmsg_grid_item_width"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="3dp"></GridView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/separate_line" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:id="@+id/share_to_circle_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_wechat_friends" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/renmaiquan_publish_share_to_weichat_tip"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/tx_circle_name1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:textColor="@color/C4"
+                    android:textSize="@dimen/archieve_job_size" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/share_to_weichat_state_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/search_flag"
+                    android:gravity="right"
+                    android:text="开启"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S7" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/separate_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_expression_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hall_list_bacg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <ImageView
+            android:id="@+id/image_face"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/chat_emo_normal"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <!--<include
+            android:id="@+id/chat_face_container"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />-->
+        <LinearLayout
+            android:id="@+id/chat_face_container"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.itcalf.renhe.view.KeyboardLayout>

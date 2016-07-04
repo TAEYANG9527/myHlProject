@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg">
+
+    <RelativeLayout
+        android:id="@+id/renmaiquan_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/hall_list_bacg">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/no_network_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/hl_renmaiquan_no_network_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/hl_no_newwork"
+            android:textColor="@color/C1"
+            android:visibility="gone" />
+
+        <com.itcalf.widget.ultra_pull_to_refresh.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/weibo_list_ptl_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/no_network_tv"
+            android:background="@color/BC_3"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <ListView
+                android:id="@+id/weibo_list_ptl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="singleChoice"
+                android:divider="@drawable/circle_divider"
+                android:dividerHeight="20dp"
+                android:fadingEdge="none"
+                android:headerDividersEnabled="true"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay" />
+        </com.itcalf.widget.ultra_pull_to_refresh.PtrClassicFrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first_enter_renmaiquan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/icon_fail" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/isbindTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/first_enter_renmaiquan1"
+                android:textColor="@color/C3"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/first_enter_renmaiquan2"
+                android:textColor="@color/C3"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/bindBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/import_btn_shape"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="15dp"
+                android:text="@string/add_renmai_now"
+                android:textColor="@drawable/import_text_selector"
+                android:textSize="@dimen/S2"
+                android:textStyle="bold"></com.itcalf.renhe.view.Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

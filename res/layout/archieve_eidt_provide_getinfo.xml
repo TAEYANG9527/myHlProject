@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_archieve_bcg" >
+
+    <!-- <include
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/renhe_title_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/archive_edit_top" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/self_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/can_provide_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/can_provide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我能提供："
+                    android:textColor="@color/new_archieve_fourbt_textcolor"
+                    android:textSize="@dimen/archieve_edit_item_text_size"
+                     />
+
+                <LinearLayout
+                    android:id="@+id/can_provide_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/can_provide"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:orientation="vertical" >
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/add_can_provide_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/can_provide_group"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add_one_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/want_get_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/want_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想得到："
+                    android:textColor="@color/new_archieve_fourbt_textcolor"
+                    android:textSize="@dimen/archieve_edit_item_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/want_get_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/want_get"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/archieve_edit_item_bacg"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/add_want_get_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/want_get_group"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add_one_more" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

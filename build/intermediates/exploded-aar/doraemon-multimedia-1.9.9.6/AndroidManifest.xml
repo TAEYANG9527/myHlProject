@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alibaba.multimedia" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application>
+
+        <!-- <uses-library android:name="AUDIOCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher" android:required="false"/> -->
+        <!-- <uses-library android:name="IMAGECACHE:com.alibaba.doraemon.impl.cache.CacheFetcher" android:required="false"/> -->
+        <!-- <uses-library android:name="IMAGE:com.alibaba.doraemon.impl.image.ImageMagicianFetcher" android:required="false"/> -->
+
+        <meta-data
+            android:name="AUDIOCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGECACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGE:com.alibaba.doraemon.impl.image.ImageMagicianFetcher"
+            android:value="IMAGECACHE;REQUEST;THREAD" />
+        <meta-data
+            android:name="AUDIO:com.alibaba.doraemon.impl.audio.AudioMagicianFetcher"
+            android:value="AUDIOCACHE;REQUEST;THREAD" />
+    </application>
+
+</manifest>

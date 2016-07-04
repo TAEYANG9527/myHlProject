@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="10dp">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/avatar_iv"
+            android:text="王宁"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S4" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/avatar_iv"
+            android:layout_below="@id/name_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/avatar_iv"
+            android:text="12:00"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S7" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/name_tv"
+            android:text="100元"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S4" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/money_tv"
+            android:layout_marginTop="5dp"
+            android:text="已领取"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S7" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+</LinearLayout>

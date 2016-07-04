@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/listitem_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/listitem_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- <com.itcalf.renhe.view.RoundCornerImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="@dimen/rencommend_image_wh"
+                android:layout_height="@dimen/rencommend_image_wh"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar"
+                attr:radiusXY="@dimen/list_item_round_image_radius" /> -->
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="@dimen/rencommend_image_wh"
+                android:layout_height="@dimen/rencommend_image_wh"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/avatar_img"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/new_tag"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/menu_unread_red_circle_shape"
+                    android:visibility="gone" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/username_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/new_tag"
+                    android:text=""
+                    android:textColor="@color/C1"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/vipImage"
+                    android:layout_width="@dimen/rencommend_vipicon_hh"
+                    android:layout_height="@dimen/rencommend_vipicon_wh"
+                    android:layout_alignBottom="@id/username_txt"
+                    android:layout_alignTop="@id/username_txt"
+                    android:layout_marginBottom="@dimen/vip_margin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/vip_margin"
+                    android:layout_toRightOf="@id/username_txt" />
+
+                <ImageView
+                    android:id="@+id/realnameImage"
+                    android:layout_width="@dimen/rencommend_vipicon_hh"
+                    android:layout_height="@dimen/rencommend_vipicon_wh"
+                    android:layout_alignBottom="@id/username_txt"
+                    android:layout_alignTop="@id/username_txt"
+                    android:layout_marginBottom="@dimen/vip_margin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/vip_margin"
+                    android:layout_toRightOf="@id/vipImage" />
+
+                <ImageView
+                    android:id="@+id/friendsImage"
+                    android:layout_width="@dimen/rencommend_vipicon_wh"
+                    android:layout_height="@dimen/rencommend_vipicon_wh"
+                    android:layout_alignBottom="@id/username_txt"
+                    android:layout_alignTop="@id/username_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realnameImage"
+                    android:src="@drawable/archieve_contacts" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/friendsNumb_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/friendsImage"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/friendsImage"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/C4"
+                    android:textSize="@dimen/rencommend_friends_textsize" />
+
+                <LinearLayout
+                    android:id="@+id/companyLl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username_txt"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/position_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="60dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/C4"
+                        android:textSize="12sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/company_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/C4"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/locationLl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/companyLl"
+                    android:orientation="horizontal">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/location_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="60dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/C4"
+                        android:textSize="12sp" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/industry_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/C4"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+    </LinearLayout>
+
+</LinearLayout>

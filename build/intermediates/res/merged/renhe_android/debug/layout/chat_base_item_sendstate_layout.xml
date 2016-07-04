@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_send_status"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_sendFail"
+        android:layout_width="@dimen/im_conversation_list_unread_wh"
+        android:layout_height="@dimen/im_conversation_list_unread_wh"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/menu_unread_red_circle_shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="!"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/pb_sending"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+</FrameLayout>

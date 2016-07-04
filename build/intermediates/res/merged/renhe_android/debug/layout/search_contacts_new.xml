@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/contact_top_tip_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/hl_renmaiquan_no_network_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/contacts_top_tip_Pb"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/contacts_top_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/search_contacts_import_tip"
+            android:textColor="@color/C1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_top_tip_Ll"
+        android:background="@color/search_city_edit_bacg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/acctount_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.ClearableEditText
+                android:id="@+id/keyword_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_search"
+                android:drawablePadding="5dp"
+                android:hint="输入拼音首字母查询"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/renhe_login_edittext_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/csearch_bootom_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/waitPb"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/count_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/color000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/list_bottom"
+        android:layout_below="@id/editLl"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.PinnedSectionListView
+            android:id="@+id/contacts_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <!-- 导入通讯录提示 -->
+        <LinearLayout
+            android:id="@+id/none_contacts_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BC_3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/icon_contacts_search" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/import_contact_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/search_contacts_null_tip"
+                android:textColor="@color/C3"
+                android:textSize="@dimen/S4" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/import_contact_btn"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/import_btn_shape"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/import_contact_btn"
+                android:textColor="@drawable/import_text_selector"
+                android:textSize="@dimen/S4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/letter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color000"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <com.itcalf.renhe.view.SearchContactsSideBar
+        android:id="@+id/contact_cv"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editLl"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:longClickable="false" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/contact_emptytip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:text="没有符合条件的信息"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/register_guide_contacts_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/guideIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/guide_page_contacts" />
+    </RelativeLayout>
+
+    <include layout="@layout/base_loading" />
+</RelativeLayout>

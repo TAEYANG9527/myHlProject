@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/self_info_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="个人简介"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/new_archive_job_textsize"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/professionalTv"
+            style="@style/titleTextSizeWithSmallBlack"
+            android:lineSpacingExtra="@dimen/lineSpacing"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <LinearLayout
+            android:id="@+id/addSelfInfoLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_add" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="编辑个人简介"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/new_archive_job_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separate_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/separate_line" />
+
+    <LinearLayout
+        android:id="@+id/self_info_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_gravity="center_vertical"
+            android:text="能提供"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <com.itcalf.renhe.widget.FlowLayout
+            android:id="@+id/professionalLl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/addSelfInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_reea_add" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="添加"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/new_archive_job_textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/separate_line" />
+
+    <LinearLayout
+        android:id="@+id/self_profession_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_archieve_sub_item_bacg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/archive_item_info_padding">
+
+        <com.itcalf.renhe.view.TextView
+            style="@style/titleTextSizeWithSmallBlack"
+            android:layout_gravity="center_vertical"
+            android:text="想得到"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/new_archive_job_textsize" />
+
+        <com.itcalf.renhe.widget.FlowLayout
+            android:id="@+id/preferLl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/addProfessionInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_archieve_reea_add" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="添加"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/new_archive_job_textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

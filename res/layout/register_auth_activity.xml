@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_rootLl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.ClearableEditText
+                android:id="@+id/register_mobile_edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LH2"
+                android:background="@null"
+                android:hint="@string/new_register_tel"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textColorHint="@color/C3"
+                android:textSize="@dimen/S4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/BC_2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <com.itcalf.renhe.view.Button
+                    android:id="@+id/resend_code_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_cl_stroke_bc3_p_selector"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="重新发送"
+                    android:textColor="@color/cl_textcolor_selected"
+                    android:textSize="@dimen/textSize12" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/register_auth_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_toLeftOf="@id/resend_code_btn"
+                    android:background="#ffffff"
+                    android:ems="4"
+                    android:hint="验证码"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/C3"
+                    android:textSize="@dimen/S4" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/BC_2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pwdisvisible_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/icon_follow_clicked" />
+
+                <com.itcalf.renhe.view.ClearableEditText
+                    android:id="@+id/password_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_toLeftOf="@id/pwdisvisible_iv"
+                    android:layout_toRightOf="@id/pwd_tv"
+                    android:background="@null"
+                    android:hint="6-16位字母或数字组合"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/C1"
+                    android:textColorHint="@color/C3"
+                    android:textSize="@dimen/S4" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <com.itcalf.renhe.view.Button
+            android:id="@+id/register_next_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_n_cl_corner_shape"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="下一步"
+            android:textColor="@drawable/archive_editbt_textcolor_selected"
+            android:textSize="@dimen/textSize16" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/read_agree"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_centerVertical="true"
+                android:text="我已阅读并同意"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S5" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/clauseTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/read_agree"
+                android:text="@string/hl_terms_service"
+                android:textColor="@color/CL"
+                android:textSize="@dimen/S5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

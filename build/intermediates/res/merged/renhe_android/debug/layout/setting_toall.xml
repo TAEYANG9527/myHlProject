@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- 通用设置 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/smoothdrag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="开启快速拖动"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_textsize" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/smoothdrag_tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/smoothdrag_tv"
+                android:text="浏览列表时可使用拖动条快速拖动"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_sub_textsize"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:id="@+id/smoothdrag_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/exit_clearcache_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="退出时清除缓存"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_textsize" />
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:id="@+id/exit_clearcache_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+
+        <RelativeLayout
+            android:id="@+id/now_clearcache_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_list_item_bacg"
+            android:clickable="true">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/now_clearcache_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="立即清除缓存"
+                android:textColor="@color/blog_item_nickname_text"
+                android:textSize="@dimen/setting_item_textsize" />
+
+            <com.itcalf.renhe.view.SwitchButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+    </LinearLayout>
+
+</RelativeLayout>

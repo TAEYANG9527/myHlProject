@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_archieve_bcg"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.ClearableEditText
+        android:id="@+id/schoolEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/white"
+        android:hint="输入学校名称"
+        android:padding="15dp" />
+
+    <View
+        android:id="@+id/seleparator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/schoolEt"
+        android:background="@color/separate_line" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seleparator"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/separate_line"
+        android:dividerHeight="1px"
+        android:smoothScrollbar="true">
+
+    </ListView>
+
+</RelativeLayout>

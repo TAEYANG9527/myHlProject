@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.EditText
+            android:id="@+id/inviteWord"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:maxLength="24"
+            android:padding="15dp"
+            android:text="@string/add_friend_purpose_default_tip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/S4" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:id="@+id/add_red_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_bacg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_chat_lucky_money_sysmsg_ic" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="添加红包"
+                android:textColor="@color/black"
+                android:textSize="@dimen/S4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/archieve_goto" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/add_red_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_friend_with_lucky_money_tip"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4" />
+
+    <com.itcalf.renhe.view.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="加好友目的"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/addreasonLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/separate_line"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+</LinearLayout>

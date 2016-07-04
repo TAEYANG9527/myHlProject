@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <ImageView
+            android:id="@+id/pay_result_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upgrade_success" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/pay_result_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_result_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="支付成功"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S2" />
+    </LinearLayout>
+</RelativeLayout>

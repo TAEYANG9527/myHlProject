@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="5"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginLeft="20dp"
+                android:background="#D9D9D9" />
+
+            <LinearLayout
+                android:id="@+id/ly_recommend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center_vertical"
+                    android:text="添加成员"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/search_flag" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_selector">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/message_avoid_bother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="消息免打扰"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/renhe_format_tab_textsize" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/message_avoid_bother_toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:checked="false" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_below="@id/message_avoid_bother" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

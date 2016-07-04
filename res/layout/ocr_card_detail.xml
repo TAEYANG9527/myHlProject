@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mkx_card_detail_top_height"
+                android:background="#A6A6A6"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mkx_card_detail_top_height"
+                    android:background="@drawable/card_background" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:adjustViewBounds="true"
+                    android:background="#d1e0f2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_card_default" />
+
+                <ImageView
+                    android:id="@+id/card_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/card_scan_progress_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/card_scan_progress_shape"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/S4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/ocr_card_detail_info" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

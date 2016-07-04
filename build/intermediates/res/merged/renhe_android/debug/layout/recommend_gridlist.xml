@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/BC_3">
+
+        <RelativeLayout
+            android:id="@+id/skipBtRl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/checkAll_CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="全选"
+                android:textColor="#666666"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/skipBt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/hl_button_color"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="加好友"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S2" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/newfriend_item_diliver"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@id/skipBtRl"
+            android:background="@color/BC_2" />
+
+        <ListView
+            android:id="@+id/newfriend_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/newfriend_item_diliver"
+            android:layout_below="@id/newfriend_tip"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</RelativeLayout>

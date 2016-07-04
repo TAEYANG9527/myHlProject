@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_bacg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/editscrview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLayout"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/book_friend_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/first_enter_renmaiquan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="40dp">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/isbindTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="@string/first_enter_bookfriend1"
+                android:textColor="#656565"
+                android:textSize="19sp" />
+
+            <com.itcalf.renhe.view.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/first_enter_bookfriend2"
+                android:textColor="#656565"
+                android:textSize="16sp" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/bindBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/archieve_edit_bt_selected"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="马上添加"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/renhe_login_button_textsize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

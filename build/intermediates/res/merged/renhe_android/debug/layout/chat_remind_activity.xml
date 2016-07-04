@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_city_edit_bacg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.ClearableEditText
+                android:id="@+id/keyword_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_search"
+                android:drawablePadding="5dp"
+                android:hint="首字母搜索"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/renhe_login_edittext_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/C6_1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:dividerHeight="1px"
+        android:divider="@color/contact_separate_line"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

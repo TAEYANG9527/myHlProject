@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/renhe_login_edittext_textsize" />

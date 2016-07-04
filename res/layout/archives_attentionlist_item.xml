@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bacg" >
+
+    <RelativeLayout
+        android:id="@+id/attenion_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <!-- <com.itcalf.renhe.view.RoundCornerImageView
+            android:id="@+id/headImage"
+            android:layout_width="@dimen/renhe_room_image_wh"
+            android:layout_height="@dimen/renhe_room_image_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar"
+            attr:radiusXY="@dimen/list_item_round_image_radius" /> -->
+        
+        <com.itcalf.renhe.view.RoundImageView
+            android:id="@+id/headImage"
+            android:layout_width="@dimen/renhe_room_image_wh"
+            android:layout_height="@dimen/renhe_room_image_wh"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/headImage"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/renhe_listview_item_name_textsize" />
+
+        <ImageView
+            android:id="@+id/vipImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_marginBottom="@dimen/vip_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/titleTv" />
+
+        <ImageView
+            android:id="@+id/realnameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/titleTv"
+            android:layout_marginBottom="@dimen/realname_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/vipImage" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/infoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titleTv"
+            android:layout_below="@id/titleTv"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/headImage"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/msg_right" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/msid"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C1"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/messageObjectId"
+            style="@style/titleTextSizeWithBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C1"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attenion_rl" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/separate_line" />
+    </RelativeLayout>
+
+</RelativeLayout>

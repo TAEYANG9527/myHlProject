@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itcalf.renhe.view.Button xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/titleTextSizeWithBlack"
+    android:layout_height="70dp"
+    android:background="@drawable/listheadbg"
+    android:gravity="center"
+    android:text="刷新"
+    android:textSize="26sp" />

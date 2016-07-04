@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/headImage"
+                android:layout_width="@dimen/renhe_hall_bottom_image_wh"
+                android:layout_height="@dimen/renhe_hall_bottom_image_wh"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/avatar" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/userAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/_C1"
+                android:textSize="@dimen/S2" />
+
+            <com.itcalf.renhe.view.ClearableEditText
+                android:id="@+id/pwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_edittext_normal_shape"
+                android:paddingRight="5dp"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+                android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+                android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+                android:singleLine="true"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S3" />
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/loginBt"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginTop="@dimen/renhe_login_button_margintop"
+                android:background="@drawable/purple_archieve_edit_bt_selected"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/loginBtnStr"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S3" />
+
+            <RelativeLayout
+                android:id="@+id/forgetpwd_RL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+                android:layout_marginTop="@dimen/S7">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:text="@string/forget_password"
+                    android:textColor="@drawable/button_textcolor_selected"
+                    android:textSize="@dimen/S5" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/changeAccountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:text="@string/change_user"
+                    android:textColor="@drawable/button_textcolor_selected"
+                    android:textSize="@dimen/S5" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/text1"
+                    android:text="@string/login_question"
+                    android:textColor="@color/lightblackColor"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/registerbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_register_bt_selected"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/registerBtnStr"
+        android:textColor="@color/_C3" />
+
+</RelativeLayout>

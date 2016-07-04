@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laiwang.protocol"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <service
+            android:name="com.laiwang.protocol.android.LWPService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.laiwang.protocol.android.LWPService$KernelService"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/LH4"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bacg"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/avatar_img_ll"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <com.itcalf.renhe.view.RoundImageView
+                android:id="@+id/headImage"
+                android:layout_width="@dimen/renhe_room_image_wh"
+                android:layout_height="@dimen/renhe_room_image_wh"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/vipImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/realnameImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/accept_btn"
+                android:layout_width="45dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_im_chat_bt_selected"
+                android:clickable="true"
+                android:focusable="false"
+                android:padding="5dp"
+                android:text="接受"
+                android:textColor="@drawable/archive_editbt_textcolor_selected"
+                android:textSize="@dimen/S7" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/added_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="已添加"
+                android:textColor="@color/C4"
+                android:textSize="@dimen/S6"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/add_rl"
+            android:layout_toRightOf="@id/avatar_img_ll"
+            android:gravity="center_vertical">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/nameTv"
+                style="@style/titleTextSizeWithBlack"
+                android:text="王宁"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/S3" />
+
+            <ImageView
+                android:id="@+id/rightImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/nameTv"
+                android:layout_alignTop="@id/nameTv"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/titleTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_below="@id/nameTv"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师开发工程师"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S6" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/infoTv"
+                style="@style/titleTextSizeWithBlack"
+                android:layout_below="@id/titleTv"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="人和网"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S6" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="67dp"
+        android:background="@color/separate_line" />
+
+</RelativeLayout>

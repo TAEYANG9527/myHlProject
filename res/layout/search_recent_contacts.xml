@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <LinearLayout
+        android:id="@+id/account_pwd_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_shape"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.itcalf.renhe.view.ClearableEditText
+            android:id="@+id/keyword_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/renhe_login_edittext_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider3" />
+
+    <RelativeLayout
+        android:id="@+id/chooseOther_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_list_item_bacg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/chooseOther_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/choose_other_contacts"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/archieve_goto" />
+    </RelativeLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/recent_chat_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BC_3"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/recent_contacts"
+        android:textColor="@color/C2"
+        android:textSize="@dimen/S4" />
+
+    <!--<ListView
+        android:id="@+id/recentContact_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />-->
+
+    <FrameLayout
+        android:id="@+id/recent_chat_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/base_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/conversation_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </FrameLayout>
+
+</LinearLayout>

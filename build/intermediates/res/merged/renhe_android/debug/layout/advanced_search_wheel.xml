@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:gravity="center_horizontal">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/current_select_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="选择"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/wheel_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <select.wheel.widget.WheelView
+                    android:id="@+id/provice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="100dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <select.wheel.widget.WheelView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <select.wheel.widget.WheelView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wheel_ll"
+                android:layout_alignTop="@+id/wheel_ll"
+                android:background="@drawable/layout_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4"
+            android:gravity="center">
+
+            <com.itcalf.renhe.view.Button
+                android:id="@+id/btnOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/advance_surebt_shape"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="确定"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

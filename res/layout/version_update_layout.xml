@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.itcalf.renhe.view.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_update_bg_up_corner_style"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:text="版本更新"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cbcbcb" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/tv_update_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cbcbcb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_update_bg_bottom_left_corner_style"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="#0079ff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#cbcbcb" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_update_bg_bottom_right_corner_style"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="更新"
+            android:textColor="#0079ff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

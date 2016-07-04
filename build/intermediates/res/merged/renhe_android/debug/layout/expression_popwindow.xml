@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_expression_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/hall_list_bacg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+
+    <ImageView
+        android:id="@+id/image_face"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/chat_emo_normal"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/separate_line" />
+
+    <include
+        android:id="@+id/chat_face_container"
+        layout="@layout/chat_face_container"
+        android:visibility="gone" />
+
+</LinearLayout>

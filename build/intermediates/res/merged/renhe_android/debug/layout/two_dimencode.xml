@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/topLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/cirleNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="圈子"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S2" />
+
+                <ImageView
+                    android:id="@+id/showImg"
+                    android:layout_width="@dimen/two_dimencode_iv_width"
+                    android:layout_height="@dimen/two_dimencode_iv_width"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/room_pic_default_bcg" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/share_code_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="扫一扫二维码，快速加入圈子"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topLl">
+
+                <RelativeLayout
+                    android:id="@+id/ll_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/shareTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="点此分享到"
+                        android:textColor="@color/C2"
+                        android:textSize="@dimen/S5" />
+
+                    <LinearLayout
+                        android:id="@+id/share_icon_line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/shareTv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/qqLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/qqiv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/qq_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="QQ"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/weixinLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/weixiniv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/weixin_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="微信"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/renmaiFriendLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/renmaiFriendiv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/renhefriends_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="朋友"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/renmaiQuanLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/renmaiQuaniv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/renmaiquan_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="人脉圈"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/share_icon_line1"
+                        android:layout_below="@id/share_icon_line1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/friendLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/friendiv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/weixingroup_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="朋友圈"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/weiboLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/weiboiv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/weibo_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:maxLength="4"
+                                android:text="微博"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/smsLl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/sms_iv"
+                                android:layout_width="@dimen/circle_qcode_share_icon_width"
+                                android:layout_height="@dimen/circle_qcode_share_icon_width"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/sms_share_selector" />
+
+                            <com.itcalf.renhe.view.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="短信"
+                                android:textColor="@color/C1"
+                                android:textSize="@dimen/S7" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

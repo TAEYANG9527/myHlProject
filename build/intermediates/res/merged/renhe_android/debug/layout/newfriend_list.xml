@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/newfriend_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:background="@color/bg"
+        android:padding="15dp"
+        android:text="新的好友"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/newfriend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newfriend_tip"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/loadingLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newfriend_tip"
+        android:gravity="center"
+        android:paddingTop="60dp">
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/loading_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/loading" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:id="@+id/newfriend_emptytip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:text="没有符合条件的信息"
+        android:visibility="gone" />
+
+</RelativeLayout>

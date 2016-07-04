@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/rmq_item_padding">
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/recommend_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rmq_item_padding"
+            android:layout_marginRight="@dimen/rmq_item_padding"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="你认识他们吗"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/S7" />
+
+        <View
+            android:id="@+id/recommend_seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/rmq_item_padding"
+            android:background="@color/separate_line" />
+
+        <LinearLayout
+            android:id="@+id/recommend_friend_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rmq_item_divider_height"
+        android:background="@color/BC_3" />
+</LinearLayout>

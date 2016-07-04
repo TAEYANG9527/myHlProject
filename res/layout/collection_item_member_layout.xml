@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_list_item_bacg"
+        android:orientation="vertical"
+        android:padding="@dimen/collection_item_padding">
+
+        <include layout="@layout/collection_item_top_layout" />
+
+        <RelativeLayout
+            android:id="@+id/forward_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/collection_content_margin_top"
+            android:background="@drawable/raw_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/collection_content_padding">
+
+            <ImageView
+                android:id="@+id/forward_web_pic_iv"
+                android:layout_width="@dimen/rmq_forward_web_pic_width"
+                android:layout_height="@dimen/rmq_forward_web_pic_width"
+                android:layout_gravity="left"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar" />
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/forward_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/rmq_forward_padding"
+                android:layout_toRightOf="@id/forward_web_pic_iv"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textColor="@color/new_room_item_job_textcolor"
+                android:textSize="@dimen/S6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collection_item_divider_height"
+        android:background="@color/BC_3" />
+</LinearLayout>

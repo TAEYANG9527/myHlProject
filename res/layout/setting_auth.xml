@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hall_list_bacg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <!-- 通用设置 -->
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/add_friend_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="允许加我为好友"
+                android:textColor="@color/_C2"
+                android:textSize="@dimen/S5" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/add_friend_rl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/add_friend_sb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/auth_add_friend" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/add_friend_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/add_friend_sb1"
+                        android:gravity="left"
+                        android:text="所有人"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/add_friend_rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/add_friend_sb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/auth_add_friend" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/add_friend_tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/add_friend_sb2"
+                        android:gravity="left"
+                        android:text="通过实名认证的会员"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/add_friend_seperate3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/add_friend_rl3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/add_friend_sb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/auth_add_friend" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/add_friend_tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/add_friend_sb3"
+                        android:gravity="left"
+                        android:text="付费会员"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 隐私设置 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/BC_3" />
+            <!--
+                 <com.itcalf.renhe.view.TextView
+                android:id="@+id/personal_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="隐私设置"
+                android:textColor="#808080"
+                android:textSize="@dimen/setting_item_textsize" />
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/personal_sb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/personal_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/personal_sb1"
+                        android:gravity="left"
+                        android:text="允许搜索引擎收录我的档案"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/personal_separate_line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/personal_sb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/personal_tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/personal_sb2"
+                        android:gravity="left"
+                        android:text="隐身访问其他会员档案"
+                        android:textColor="@color/blog_item_nickname_text"
+                        android:textSize="@dimen/setting_item_textsize" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/personal_separate_line3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/personal_rl3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/personal_sb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/personal_tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/personal_sb3"
+                        android:gravity="left"
+                        android:text="只允许付费会员查看我的全部档案"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 直接联系设置 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/BC_3" />
+
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" >
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/contact_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直接联系权限"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/setting_item_textsize" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/sign_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="免责声明"
+                    android:textColor="#439af9"
+                    android:textSize="@dimen/setting_item_textsize" />
+            </RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/contact_rl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/contact_sb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contact_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/contact_sb1"
+                        android:gravity="left"
+                        android:text="允许好友查看我的人脉"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/separate_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/contact_rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/contact_sb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contact_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toLeftOf="@id/contact_sb2"
+                        android:gravity="left"
+                        android:text="允许通过认证的猎头获得我的联系方式"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/sign_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/contact_tv2"
+                        android:layout_below="@id/contact_tv2"
+                        android:layout_toLeftOf="@id/contact_sb2"
+                        android:paddingTop="3dp"
+                        android:text="免责声明"
+                        android:textSize="@dimen/S5" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/separate_line" />
+
+                <RelativeLayout
+                    android:id="@+id/contact_rl3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/contact_sb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:checked="false" />
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/contact_tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/contact_sb3"
+                        android:gravity="left"
+                        android:text="打开附近的人脉"
+                        android:textColor="@color/_C1"
+                        android:textSize="@dimen/S4" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

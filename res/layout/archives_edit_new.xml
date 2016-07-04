@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BC_3">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/base_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="基本资料"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+
+            <LinearLayout
+                android:id="@+id/base_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/base_label"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/avartar_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/avartar_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="头像"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_toRightOf="@id/avartar_label"
+                        android:layout_weight="7">
+
+
+                        <ImageView
+                            android:id="@+id/avatar_flag_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.RoundImageView
+                            android:id="@+id/avatar_image"
+                            android:layout_width="@dimen/renhe_new_room_image_wh"
+                            android:layout_height="@dimen/renhe_new_room_image_wh"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/avatar_flag_iv"
+                            android:src="@drawable/avatar" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/name_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/name_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="姓名"
+                        android:textColor="@color/C4"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_toRightOf="@id/name_label"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/name_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/name_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/name_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/sex_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/sex_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="性别"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/sex_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/sex_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/sex_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/sex_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/sex_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/area_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/area_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="地区"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/area_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/area_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/area_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/industry_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/industry_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="行业"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+
+                        <ImageView
+                            android:id="@+id/industry_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/industry_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/industry_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/company_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/company_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="当前公司"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/company_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/company_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/company_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/title_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/title_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="当前职位"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/title_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/title_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/title_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/provide_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/provide_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="能提供"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/provide_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/provide_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/provide_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/provide_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/provide_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/want_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/want_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="想得到"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/want_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/want_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/want_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/want_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/want_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/self_introduction_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/self_introduction_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="个人简介"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/self_introduction_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/self_introduction_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/self_introduction_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/introduction_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/self_introduction_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.itcalf.renhe.view.TextView
+                android:id="@+id/detailed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/base_ll"
+                android:padding="8dp"
+                android:text="详细信息"
+                android:textColor="@color/C2"
+                android:textSize="@dimen/S7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailed_label"
+                android:layout_marginBottom="@dimen/edit_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/work_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/work_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="工作经历"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/work_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/work_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/work_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/work_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/work_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edu_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/edu_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="教育经历"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/edu_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/edu_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/edu_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/edu_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/edu_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/BC_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/specialties_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:background="@drawable/edit_archieve_sub_item_bacg"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <com.itcalf.renhe.view.TextView
+                        android:id="@+id/specialties_label"
+                        style="@style/titleTextSizeWithSmallBlack"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="技能专长"
+                        android:textColor="@color/C3"
+                        android:textSize="@dimen/S4" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/edit_margin"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/specialties_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_flag" />
+
+                        <com.itcalf.renhe.view.TextView
+                            android:id="@+id/specialties_tv"
+                            style="@style/titleTextSizeWithSmallBlack"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/specialties_arrow"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/C1"
+                            android:textSize="@dimen/S4" />
+
+                        <ImageView
+                            android:id="@+id/specialties_empty_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/specialties_arrow"
+                            android:background="@drawable/menu_unread_red_circle_shape"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lv_match"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/no_network_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/icon_signal" />
+
+        <com.itcalf.renhe.view.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_error_message"
+            android:textColor="@color/C3"
+            android:textSize="@dimen/S4" />
+
+    </LinearLayout>
+</RelativeLayout>

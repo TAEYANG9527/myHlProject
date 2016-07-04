@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wm_bg"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/base_tool_bar" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <com.itcalf.renhe.view.ClearableEditText
+            android:id="@+id/mailbox_addrEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_edittext_margintop"
+            android:background="@drawable/csearch_selector"
+            android:hint="邮箱"
+            android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/renhe_login_edittext_textsize" />
+
+        <com.itcalf.renhe.view.ClearableEditText
+            android:id="@+id/mailbox_pwdEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+            android:layout_marginTop="@dimen/renhe_login_edittext_margintop"
+            android:background="@drawable/csearch_selector"
+            android:hint="密码"
+            android:paddingBottom="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:paddingLeft="@dimen/renhe_login_edittext_paddingleft"
+            android:paddingTop="@dimen/renhe_login_edittext_paddingbottom_top"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/renhe_login_edittext_textsize" />
+    </LinearLayout>
+
+    <com.itcalf.renhe.view.TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/mailbox_statement"
+        android:textColor="#1396cc" />
+
+    <com.itcalf.renhe.view.Button
+        android:id="@+id/import_Btn"
+        style="@style/titleTextSizeWithBlack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/renhe_login_edittext_marginleft_right"
+        android:layout_marginRight="@dimen/renhe_login_edittext_marginleft_right"
+        android:background="@drawable/red_bt_selected"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="导入联系人"
+        android:textColor="@drawable/archive_editbt_textcolor_selected"
+        android:textSize="@dimen/renhe_login_button_textsize" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bacg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_txt_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+
+        <com.itcalf.renhe.view.TextView
+            android:id="@+id/title_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BC_3"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="我管理的群"
+            android:textColor="@color/C2"
+            android:textSize="@dimen/S5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/contact_separate_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/listitem_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/LH2"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/circleAvatar_img"
+                android:layout_width="@dimen/A2"
+                android:layout_height="@dimen/A2"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/search_flag"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/left_iv"
+                android:layout_toRightOf="@id/circleAvatar_img"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/circleName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:text="名字"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/S4" />
+
+                <ImageView
+                    android:id="@+id/circleVipImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/circleName_txt"
+                    android:layout_alignTop="@id/circleName_txt"
+                    android:layout_marginBottom="@dimen/vip_margin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/img_margintop"
+                    android:layout_toRightOf="@id/circleName_txt" />
+
+                <com.itcalf.renhe.view.TextView
+                    android:id="@+id/circleCount_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/circleName_txt"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="(50)"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/S4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/circle_list_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="56dp"
+            android:background="@color/BC_1" />
+    </LinearLayout>
+
+</LinearLayout>
