@@ -26,10 +26,12 @@ import com.itcalf.renhe.Constants;
 import com.itcalf.renhe.R;
 import com.itcalf.renhe.bean.HlContactRenheMember;
 import com.itcalf.renhe.cache.CacheManager;
+import com.itcalf.renhe.context.HlEngine;
 import com.itcalf.renhe.context.template.BaseActivity;
 import com.itcalf.renhe.context.wukong.im.ActivityCircleContacts;
+import com.itcalf.renhe.context.wukong.im.ShareWebview;
 import com.itcalf.renhe.dto.MessageBoardOperation;
-import com.itcalf.renhe.po.Contact;
+import com.itcalf.renhe.dto.WebViewContent;
 import com.itcalf.renhe.utils.MaterialDialogsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 import com.itcalf.renhe.view.EditText;
@@ -88,6 +90,7 @@ public class ForwardMessageBoardActivity extends BaseActivity implements EmojiFr
     private int emotionHeight;
     private boolean isEmShow = false;
     private EmojiUtil emojiUtil;
+    private LinearLayout editLl;
     /***********
      * 表情部分END
      *****************/
@@ -141,6 +144,7 @@ public class ForwardMessageBoardActivity extends BaseActivity implements EmojiFr
         contentTitleTv = (TextView) findViewById(R.id.forward_title_tv);
         contentOtherTv = (TextView) findViewById(R.id.forward_other_tv);
         circleSharePicIv = (ImageView) findViewById(R.id.circle_sharePic);
+        editLl = (LinearLayout) findViewById(R.id.editLl);
     }
 
     @Override
@@ -190,6 +194,34 @@ public class ForwardMessageBoardActivity extends BaseActivity implements EmojiFr
         shareId = getIntent().getExtras().getInt("shareId", -1);
         circleId = getIntent().getExtras().getString("circleId");
         sid = getIntent().getExtras().getString("sid");
+
+        if (shareType == Constants.ShareToRenmaiquanType.SHARETO_RENMAIQUAN_TYPE_WEB) {
+            //处理第三方应用（赞服务）分享到和聊
+            String action = getIntent().getAction();
+            if (Constants.OTHER_APP_SHARE_TO_HELIAO_RENMAIQUAN.equals(action)) {//第三方应用（赞服务）分享内容到和聊人脉圈
+                new HlEngine(this, getIntent()).init();
+            }
+            if (shareId < 0) {//从第三方应用分享过来，没有shareId，调用接口帮其获取一个shareid
+                editLl.setVisibility(View.GONE);
+                bottomExpressionLy.setVisibility(View.GONE);
+                String webUrl = getIntent().getStringExtra("webUrl");
+                if (!TextUtils.isEmpty(webUrl)) {
+                    getWebViewContent(webUrl);
+                } else {
+                    ToastUtil.showToast(this, getString(R.string.other_app_share_web_to_renmaiquan_error));
+                    finish();
+                }
+            } else {
+                initShareInfo();
+            }
+        } else {
+            initShareInfo();
+        }
+    }
+
+    private void initShareInfo() {
+        editLl.setVisibility(View.VISIBLE);
+        bottomExpressionLy.setVisibility(View.VISIBLE);
         if (!TextUtils.isEmpty(toForwardContent)) {
             toForwardTv.setText(emojiUtil.getEmotionSpannedString(null, toForwardContent));
         } else {
@@ -267,6 +299,8 @@ public class ForwardMessageBoardActivity extends BaseActivity implements EmojiFr
         switch (id) {
             case 1:
                 return new MaterialDialogsUtil(this).showIndeterminateProgressDialog(R.string.sharing).cancelable(false).build();
+            case 2:
+                return new MaterialDialogsUtil(this).showIndeterminateProgressDialog(R.string.waitting).cancelable(false).build();
             default:
                 return null;
         }
@@ -668,6 +702,30 @@ public class ForwardMessageBoardActivity extends BaseActivity implements EmojiFr
         }.executeOnExecutor(Executors.newCachedThreadPool(), getRenheApplication().getUserInfo().getAdSId(),
                 getRenheApplication().getUserInfo().getSid(), sid + "", content, atMembers);
 
+    }
+
+    private void getWebViewContent(String webUrl) {
+        new ShareWebview.GetWebViewContentTask(this) {
+            public void doPre() {
+                showDialog(2);
+            }
+
+            public void doPost(WebViewContent result) {
+                removeDialog(2);
+                if (null != result && result.getState() == 1) {
+                    shareId = result.getId();
+                    SystemUtils.showKeyBoard(mContentEdt);
+                    initShareInfo();
+//                    shareTitle = result.getTitle();
+//                    shareContent = result.getDescribe();
+//                    if (TextUtils.isEmpty(shareContent))
+//                        shareContent = result.getTitle();
+//                    sharePic = result.getPicUrl();
+                } else {
+                    ToastUtil.showNetworkError(ForwardMessageBoardActivity.this);
+                }
+            }
+        }.executeOnExecutor(Executors.newCachedThreadPool(), webUrl);
     }
 
     @Override

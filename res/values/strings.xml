@@ -875,4 +875,5 @@ qjTmJnfnvg1HSly+sMHRVaoUgiTBP5NAw7ilHou0Zgm9ySgyJLqEV6Iojdn3hlIY
     <string name="add_friend_purpose_default_tip">我想邀请您加入我在和聊上的人脉圈。</string>
     <!--禁言-->
     <string name="chat_silent_state_tip">您已被管理员禁言，请注意您的言论</string>
+    <string name="other_app_share_web_to_renmaiquan_error">分享的网页内容异常，请重试</string>
 </resources>

@@ -1073,6 +1073,12 @@ public class Constants {
     public static final String ARCHIVE_COMPANY_AUTH_URL = "http://heliaom.renhe.cn/enterprise/searchList?keyword=";// +查询内容&viewMemberId=被查询中的memberid
 
     /**
+     * 接受第三方应用（赞服务）分享内容到和聊
+     */
+    public static final String OTHER_APP_SHARE_TO_HELIAO_FRIEND = "heliao.android.intent.action.friend";// 接受第三方应用（赞服务）分享内容到和聊好友
+    public static final String OTHER_APP_SHARE_TO_HELIAO_RENMAIQUAN = "heliao.android.intent.action.renmaiquan";// 接受第三方应用（赞服务）分享内容到和聊人脉圈
+
+    /**
      * GRPC
      * release: heliaorpc.renhe.cn port:8090 对应4g
      * test: heliaorpctest.renhe.cn port:8091 对应4gtest

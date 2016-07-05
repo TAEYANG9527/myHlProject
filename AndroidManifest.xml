@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.itcalf.renhe"
-    android:versionCode="50501"
+    android:versionCode="50502"
     android:versionName="@string/versionname"><!--直接把版本号写死在这是因为三星市场无法识别string文件里面的引用，修改这里的版本号记得要把string文件里的versionname修改为相应版本-->
 
     <supports-screens
@@ -88,7 +88,12 @@
         </activity>
         <activity
             android:name=".context.room.ForwardMessageBoardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="heliao.android.intent.action.renmaiquan" /><!--接受第三方应用（赞服务）分享内容到和聊人脉圈-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!-- 档案 -->
         <activity
             android:name=".context.archives.MyHomeArchivesActivity"
@@ -539,6 +544,10 @@
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="heliao.android.intent.action.friend" /><!--接受第三方应用（赞服务）分享内容到和聊好友-->
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity

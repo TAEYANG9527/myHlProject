@@ -130,8 +130,17 @@ public class ToShareWithRecentContactsActivity extends BaseActivity implements C
         intent = getIntent();
         String action = intent.getAction();
         String type = intent.getType();
-
-        if (Intent.ACTION_SEND.equals(action) && type != null) {//外部应用分享入口
+        if (Constants.OTHER_APP_SHARE_TO_HELIAO_FRIEND.equals(action)) {//第三方应用（赞服务）分享内容到和聊好友
+            new HlEngine(this, intent).init();
+            if (null != getIntent() && null != getIntent().getExtras()) {
+                toForwardContent = getIntent().getExtras().getString("toForwardContent");//正文内容
+                toFrowardPic = getIntent().getExtras().getString("toForwardPic");//图片url
+                shareType = getIntent().getExtras().getInt("type", Constants.ConversationShareType.CONVERSATION_SEND_FROM_SHARE);//和聊支持的类型之一：网页链接
+                toFrowardTitle = getIntent().getExtras().getString("title");//title
+                if (shareType == Constants.ConversationShareType.CONVERSATION_SEND_FROM_WEBVIEW_SHARE)
+                    toForwardObjectId = getIntent().getExtras().getString("toForwardUrl");//网页url
+            }
+        } else if (Intent.ACTION_SEND.equals(action) && type != null) {//外部应用分享入口
             new HlEngine(this, intent).init();
             if ("text/plain".equals(type)) {//外部应用分享文本
                 if (Constants.DEBUG_MODE) {

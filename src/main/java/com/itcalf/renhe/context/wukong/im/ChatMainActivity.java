@@ -3,6 +3,7 @@ package com.itcalf.renhe.context.wukong.im;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.MotionEvent;
+import android.view.View;
 
 import com.alibaba.wukong.im.Conversation;
 import com.itcalf.renhe.R;

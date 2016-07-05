@@ -264,7 +264,7 @@ public class ShareWebview extends PopupWindow {
 		}
 	}
 
-	class GetWebViewContentTask extends BaseAsyncTask<WebViewContent> {
+	public static class GetWebViewContentTask extends BaseAsyncTask<WebViewContent> {
 		private Context mContext;
 
 		public GetWebViewContentTask(Context mContext) {
