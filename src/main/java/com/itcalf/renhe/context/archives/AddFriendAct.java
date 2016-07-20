@@ -37,9 +37,10 @@ import com.itcalf.renhe.utils.DensityUtil;
 import com.itcalf.renhe.utils.MaterialDialogsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 
-import java.util.concurrent.Executors;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+
+import java.util.concurrent.Executors;
 
 /**
  * @author chan

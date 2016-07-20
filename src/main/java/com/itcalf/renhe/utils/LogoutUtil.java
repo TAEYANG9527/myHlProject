@@ -109,6 +109,8 @@ public class LogoutUtil {
                 MANService manService = MANServiceProvider.getService();
                 if (null != manService && null != manService.getMANAnalytics())
                     manService.getMANAnalytics().updateUserAccount("", "");
+                //Growing IO 清空自定义维度
+                StatisticsUtil.clearGrowingIOCS();
                 if (!isKikOutFromBackStack) {
                     Bundle bundle = new Bundle();
                     bundle.putBoolean(Constants.DATA_LOGOUT, true);

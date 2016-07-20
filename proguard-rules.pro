@@ -169,6 +169,9 @@
 -keepclassmembers class com.itcalf.renhe.view.WebViewForIndustryCircle$JSInterfacel {
     <methods>;
 }
+-keepclassmembers class com.itcalf.renhe.view.WebViewCompanyAuthActivity$JSInterfacel {
+    <methods>;
+}
 ####################umeng##################
 -keep class com.umeng.analytics.** {*;}
 -dontwarn com.umeng.analytics.**
@@ -201,8 +204,15 @@
 -keep public class * extends cn.renhe.heliao.idl.base.BaseResponse
 
 #【eventbus】
--keepclassmembers class **{
-    public void onEvent*(**);
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# Only required if you use AsyncExecutor
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
 }
 
 #【okhttp】
@@ -278,7 +288,7 @@
 
 #【Pinyin4j】
 -keep class com.hp.hpl.sparta.** { *; }
--keep class net.sourceforge.pinyin4j.format.** { *; }
+-keep class net.sourceforge.pinyin4j.** { *; }
 
 -dontwarn demo.Pinyin4jAppletDemo
 -keep class demo.Pinyin4jAppletDemo
@@ -324,3 +334,11 @@
 #【MaiKeXun】
 -keep class cn.maketion.ctrl.appencrypt.**{*;}
 -keep class cn.ocrsdk.**{*;}
+
+-keep class android.support.v7.view.menu.MenuBuilder
+
+#【Growing IO SDK】
+-keep class com.growingio.android.sdk.** {
+  public *;
+}
+-dontwarn com.growingio.android.sdk.**

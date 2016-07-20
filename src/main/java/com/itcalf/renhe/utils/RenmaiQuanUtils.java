@@ -833,7 +833,7 @@ public class RenmaiQuanUtils {
                                         getStatusBarHeight(context) - 15);
                     }
                 }
-            }, 50);
+            }, 1000);
         }
     }
 

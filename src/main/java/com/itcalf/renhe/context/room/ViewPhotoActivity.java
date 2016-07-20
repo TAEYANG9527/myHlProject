@@ -7,9 +7,11 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,8 +21,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.google.zxing.Result;
 import com.itcalf.renhe.Constants;
 import com.itcalf.renhe.Constants.BroadCastAction;
 import com.itcalf.renhe.R;
@@ -32,20 +36,27 @@ import com.itcalf.renhe.utils.MaterialDialogsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 import com.itcalf.renhe.widget.photoview.PhotoView;
 import com.itcalf.renhe.widget.photoview.PhotoViewAttacher;
+import com.itcalf.renhe.zxing.decoding.DecodeImageCallback;
+import com.itcalf.renhe.zxing.decoding.DecodeImageThread;
+import com.itcalf.renhe.zxing.ui.ActivityQrcodeResult;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+import com.orhanobut.logger.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class ViewPhotoActivity extends BaseActivity {
 
@@ -64,6 +75,16 @@ public class ViewPhotoActivity extends BaseActivity {
     private LayoutInflater inflater;
     private int DEFAULT_IMAGE;
     private boolean isToCover;
+    private MaterialDialog materialDialog;
+    /**
+     * 识别图中二维码
+     */
+    private TextView recognizeTv;
+    public static final int MSG_DECODE_SUCCEED = 1;
+    public static final int MSG_DECODE_FAIL = 2;
+    private Executor mQrCodeExecutor;
+    private Handler mHandler;
+    private String resultString;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,6 +124,8 @@ public class ViewPhotoActivity extends BaseActivity {
         });
         pager.setCurrentItem(id);
         freshFlag();
+        mQrCodeExecutor = Executors.newSingleThreadExecutor();
+        mHandler = new WeakHandler(this);
     }
 
     private void freshFlag() {
@@ -178,7 +201,9 @@ public class ViewPhotoActivity extends BaseActivity {
             attacher.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    createDialog(imageView);
+//                    createDialog(imageView);
+                    createCustomDialog(imageView);
+                    confignizePhotoQrcode(imageView);
                     return true;
                 }
             });
@@ -342,56 +367,169 @@ public class ViewPhotoActivity extends BaseActivity {
                 return null;
         }
     }
+
     public void createDialog(final ImageView image) {
-        MaterialDialogsUtil materialDialog = new MaterialDialogsUtil(ViewPhotoActivity.this);
-        materialDialog.showSelectList(R.array.photo_choice_items).itemsCallback(new MaterialDialog.ListCallback() {
+        if (null == materialDialogsUtil)
+            materialDialogsUtil = new MaterialDialogsUtil(ViewPhotoActivity.this);
+        materialDialogsUtil.showSelectList(R.array.photo_choice_items).itemsCallback(new MaterialDialog.ListCallback() {
             @Override
             public void onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
                 switch (which) {
                     case 0:
-                        if (image == null) {
-                            ToastUtil.showToast(ViewPhotoActivity.this, "图片不存在");
-                        }
-                        File file = null;
-                        try {
-                            // 4.0+貌似不能直接创建文件，得先创建文件夹，不然会有异常
-                            File f = new File(Constants.CACHE_PATH.PICTUREPATH);
-                            if (!f.exists()) {
-                                f.mkdirs();
-                            } else {
-                                file = new File(Constants.CACHE_PATH.PICTUREPATH + System.currentTimeMillis() + ".png");
-                                FileOutputStream out = new FileOutputStream(file);
-                                BitmapDrawable bmd = (BitmapDrawable) image.getDrawable();
-                                Bitmap bm = bmd.getBitmap();
-                                if (bm != null) {
-                                    bm.compress(Bitmap.CompressFormat.PNG, 100, out);
-                                    ToastUtil.showToast(ViewPhotoActivity.this, "图片已保存" + Constants.CACHE_PATH.PICTUREPATH);
-                                }
-                                out.flush();
-                                out.close();
-                            }
-                        } catch (FileNotFoundException e1) {
-                            e1.printStackTrace();
-                        } catch (IOException e2) {
-                            e2.printStackTrace();
-                        }
-
-                        if (file != null) {
-                            Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-                            Uri uri = Uri.fromFile(file);
-                            intent.setData(uri);
-                            sendBroadcast(intent);
-                        }
+                        savePhoto(image);
                         break;
                     case 1:
+                        if (!TextUtils.isEmpty(text) && text.toString().contains("二维码")) {
+                            if (image == null) {
+                                ToastUtil.showToast(ViewPhotoActivity.this, "图片不存在");
+                            }
+                            Intent intent = new Intent(ViewPhotoActivity.this, ActivityQrcodeResult.class);
+                            Bundle bundle = new Bundle();
+                            bundle.putString("result", resultString);
+                            intent.putExtras(bundle);
+                            startHlActivity(intent);
+                        } else {
+                            break;
+                        }
+                        break;
+                    case 2:
                         break;
                     default:
                         break;
                 }
             }
         });
+        materialDialogsUtil.show();
+    }
+
+    private void savePhoto(ImageView image) {
+        if (image == null) {
+            ToastUtil.showToast(ViewPhotoActivity.this, "图片不存在");
+        }
+        File file = null;
+        try {
+            // 4.0+貌似不能直接创建文件，得先创建文件夹，不然会有异常
+            File f = new File(Constants.CACHE_PATH.PICTUREPATH);
+            if (!f.exists()) {
+                f.mkdirs();
+            } else {
+                file = new File(Constants.CACHE_PATH.PICTUREPATH + System.currentTimeMillis() + ".png");
+                FileOutputStream out = new FileOutputStream(file);
+                BitmapDrawable bmd = (BitmapDrawable) image.getDrawable();
+                Bitmap bm = bmd.getBitmap();
+                if (bm != null) {
+                    bm.compress(Bitmap.CompressFormat.PNG, 100, out);
+                    ToastUtil.showToast(ViewPhotoActivity.this, "图片已保存" + Constants.CACHE_PATH.PICTUREPATH);
+                }
+                out.flush();
+                out.close();
+            }
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        } catch (IOException e2) {
+            e2.printStackTrace();
+        }
+
+        if (file != null) {
+            Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+            Uri uri = Uri.fromFile(file);
+            intent.setData(uri);
+            sendBroadcast(intent);
+        }
+    }
+
+    private void confignizePhotoQrcode(ImageView imageView) {
+        if (imageView == null) {
+//            ToastUtil.showToast(ViewPhotoActivity.this, "图片不存在");
+            return;
+        }
+        BitmapDrawable bmd = (BitmapDrawable) imageView.getDrawable();
+        Bitmap bm = bmd.getBitmap();
+        if (null != mQrCodeExecutor && null != bm) {
+            mQrCodeExecutor.execute(new DecodeImageThread(bm, mDecodeImageCallback));
+        }
+    }
+
+    private void createCustomDialog(final ImageView imageView) {
+        View dialoglayout = inflater.inflate(R.layout.view_photo_dialog_customview, null);
+        materialDialog = materialDialogsUtil.getCustomViewBuilderByView(dialoglayout,
+                0, 0)//不需要确定/取消按钮
+                .canceledOnTouchOutside(true)
+                .build();
+        recognizeTv = (TextView) dialoglayout.findViewById(R.id.recognize_tv);
+        recognizeTv.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewPhotoActivity.this, ActivityQrcodeResult.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("result", resultString);
+                intent.putExtras(bundle);
+                startHlActivity(intent);
+                materialDialog.dismiss();
+            }
+        });
+        dialoglayout.findViewById(R.id.save_tv).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                materialDialog.dismiss();
+                savePhoto(imageView);
+            }
+        });
+        dialoglayout.findViewById(R.id.cancle_tv).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                materialDialog.dismiss();
+            }
+        });
         materialDialog.show();
     }
+
+    private class WeakHandler extends Handler {
+        private WeakReference<ViewPhotoActivity> mWeakQrCodeActivity;
+
+        public WeakHandler(ViewPhotoActivity imagePickerActivity) {
+            super();
+            this.mWeakQrCodeActivity = new WeakReference<>(imagePickerActivity);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+//            ViewPhotoActivity qrCodeActivity = mWeakQrCodeActivity.get();
+            switch (msg.what) {
+                case MSG_DECODE_SUCCEED:
+                    Result result = (Result) msg.obj;
+//                    if (null == result) {
+//                        ToastUtil.showToast(ViewPhotoActivity.this, R.string.recognize_photo_qrcode_error);
+//                    } else {
+                    if (null != result) {
+                        resultString = result.getText();
+                        if (null != recognizeTv)
+                            recognizeTv.setVisibility(View.VISIBLE);
+                    }
+//                    }
+                    break;
+                case MSG_DECODE_FAIL:
+//                    ToastUtil.showToast(ViewPhotoActivity.this, R.string.recognize_photo_qrcode_error);
+                    break;
+            }
+            super.handleMessage(msg);
+        }
+
+    }
+
+    private DecodeImageCallback mDecodeImageCallback = new DecodeImageCallback() {
+        @Override
+        public void decodeSucceed(Result result) {
+            Logger.e("decodeSucceed");
+            mHandler.obtainMessage(MSG_DECODE_SUCCEED, result).sendToTarget();
+        }
+
+        @Override
+        public void decodeFail(int type, String reason) {
+            Logger.e("decodeFail");
+            mHandler.sendEmptyMessage(MSG_DECODE_FAIL);
+        }
+    };
 
     @Override
     protected void onDestroy() {

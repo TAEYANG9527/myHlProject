@@ -33,6 +33,7 @@ import com.itcalf.renhe.eventbusbean.ContactDeleteOrAndEvent;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.orhanobut.logger.Logger;
 
+import org.greenrobot.eventbus.EventBus;
 import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
@@ -43,7 +44,6 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import cn.renhe.heliao.idl.contact.ContactList;
-import de.greenrobot.event.EventBus;
 
 /**
  * 人脉列表工具类，提供人脉本地数据的增删改查等操作
@@ -1092,11 +1092,15 @@ public class HlContactsUtils {
                     String userName = "";
                     String fullPinYin = "";//名字全拼 比如 王宁 是wangning
                     String initialOfFullPinYin = "";//名字单字首字母组合 比如 王宁 是wn
+                    String company = "";//增加通过公司名搜索的功能
+                    String job = "";//增加通过职务名搜索的功能
                     switch (ct.getType()) {
                         case HlContacts.HLCONTACTS_RENHE_MEMBER_TYPE:
                             userName = ct.getHlContactRenheMember().getName();
                             fullPinYin = ct.getHlContactRenheMember().getFullPinYin();
                             initialOfFullPinYin = ct.getHlContactRenheMember().getInitialOfFullPinYin();
+                            company = ct.getHlContactRenheMember().getCompany();
+                            job = ct.getHlContactRenheMember().getTitle();
                             break;
                         case HlContacts.HLCONTACTS_CONTACT_MEMBER_TYPE:
                             userName = ct.getHlContactContactMember().getName();
@@ -1112,7 +1116,9 @@ public class HlContactsUtils {
                     //搜索条件控制
                     if (!TextUtils.isEmpty(userName) && (userName.toUpperCase().startsWith(keyWord.toUpperCase())
                             || initialOfFullPinYin.startsWith(keyWord.toUpperCase())
-                            || fullPinYin.startsWith(keyWord.toUpperCase()))) {
+                            || fullPinYin.startsWith(keyWord.toUpperCase()))
+                            || company.contains(keyWord)
+                            || job.contains(keyWord)) {
                         hlFindResultContactsList.add(ct);
                     }
                 }

@@ -19,12 +19,6 @@ public class ChatNormalTextViewHolder extends ChatViewHolder {
     private String content;//聊天内容
     private AisenChatTextView contentTv;
 
-    public ChatNormalTextViewHolder(Context context, View itemView, RecyclerView chatRecyclerView,
-                                    RecyclerView.Adapter adapter, Conversation conversation) {
-        super(context, itemView, chatRecyclerView, adapter, conversation);
-        contentTv = ((AisenChatTextView) itemView.findViewById(R.id.chat_content_tv));
-    }
-
     @Override
     public void initView(RecyclerHolder holder, Object messageObj, final int position) {
         super.initView(holder, messageObj, position);
@@ -39,6 +33,12 @@ public class ChatNormalTextViewHolder extends ChatViewHolder {
             contentTv.setContent(content);
         else
             contentTv.setText("");
+    }
+
+    public ChatNormalTextViewHolder(Context context, View itemView, RecyclerView chatRecyclerView,
+                                    RecyclerView.Adapter adapter, Conversation conversation) {
+        super(context, itemView, chatRecyclerView, adapter, conversation);
+        contentTv = ((AisenChatTextView) itemView.findViewById(R.id.chat_content_tv));
     }
 
     @Override

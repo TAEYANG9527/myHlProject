@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="versionname">5.5.1.9</string>
+    <string name="versionname">5.5.3.1</string>
     <string name="renhe_copyright">Copyright © 2004-2015 renhe.cn</string>
     <string name="renhe_copyright2">Copyright © Renhe.cn</string>
     <string name="renhe_copyright_line2">All rights reserved.</string>
@@ -876,4 +876,6 @@ qjTmJnfnvg1HSly+sMHRVaoUgiTBP5NAw7ilHou0Zgm9ySgyJLqEV6Iojdn3hlIY
     <!--禁言-->
     <string name="chat_silent_state_tip">您已被管理员禁言，请注意您的言论</string>
     <string name="other_app_share_web_to_renmaiquan_error">分享的网页内容异常，请重试</string>
+    <!--识别图中二维码-->
+    <string name="recognize_photo_qrcode_error">不是有效的二维码照片</string>
 </resources>

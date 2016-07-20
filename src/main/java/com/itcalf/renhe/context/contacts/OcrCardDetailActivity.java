@@ -50,7 +50,9 @@ import cn.ocrsdk.uploadSdk.OcrBackPicture;
 import cn.ocrsdk.uploadSdk.OcrCard;
 import cn.ocrsdk.uploadSdk.OcrErrorCode;
 import cn.ocrsdk.uploadSdk.OcrServer;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Created by wangning on 2015/11/26.
@@ -555,6 +557,8 @@ public class OcrCardDetailActivity extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(FinishOcrActivityEvent event) {
         Logger.e("event bus onEventMainThread 刷新新的好友列表");
         setResult(Constants.MAI_KE_XUN.CARD_DETAIL_RESULT_CODE);

@@ -58,7 +58,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import butterknife.BindView;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * description :分享，最近联系人

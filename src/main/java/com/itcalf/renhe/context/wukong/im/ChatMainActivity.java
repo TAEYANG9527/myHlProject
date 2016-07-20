@@ -13,7 +13,9 @@ import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * description :测试
@@ -76,6 +78,8 @@ public class ChatMainActivity extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(ChangeChatTitleEvent event) {
         setTextValue(event.getTitle());
     }

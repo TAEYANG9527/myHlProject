@@ -134,6 +134,17 @@ public class RenMaiQuanManager {
                                         values.put("picUrl", forwardMessageBoardInfo.getCircleShare().getPicUrl());
                                     }
                                     break;
+                                case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                                    if (null != forwardMessageBoardInfo.getCommunalShare()) {
+                                        values.put("id", forwardMessageBoardInfo.getCommunalShare().getId());
+                                        values.put("name", forwardMessageBoardInfo.getCommunalShare().getName());
+                                        values.put("job", forwardMessageBoardInfo.getCommunalShare().getDescription());
+                                        values.put("company", forwardMessageBoardInfo.getCommunalShare().getCompany());
+                                        values.put("picUrl", forwardMessageBoardInfo.getCommunalShare().getPicUrl());
+                                        values.put("url", forwardMessageBoardInfo.getCommunalShare().getUrl());
+                                        values.put("title", forwardMessageBoardInfo.getCommunalShare().getTitle());
+                                    }
+                                    break;
                                 default:
                                     break;
                             }
@@ -750,6 +761,17 @@ public class RenMaiQuanManager {
                                 cShare.setId(shareCursor.getInt(3));
                                 cShare.setPicUrl(shareCursor.getString(6));
                                 forwardMessageBoardInfo.setCircleShare(cShare);
+                                break;
+                            case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                                MessageBoards.communalShare communalShare = new MessageBoards.communalShare();
+                                communalShare.setId(shareCursor.getInt(3));
+                                communalShare.setTitle(shareCursor.getString(13));
+                                communalShare.setName(shareCursor.getString(8));
+                                communalShare.setDescription(shareCursor.getString(9));
+                                communalShare.setCompany(shareCursor.getString(10));
+                                communalShare.setPicUrl(shareCursor.getString(6));
+                                communalShare.setUrl(shareCursor.getString(4));
+                                forwardMessageBoardInfo.setCommunalShare(communalShare);
                                 break;
 
                             default:

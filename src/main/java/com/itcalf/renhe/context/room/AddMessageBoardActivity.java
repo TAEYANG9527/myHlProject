@@ -364,8 +364,10 @@ public class AddMessageBoardActivity extends BaseActivity implements EmojiFragme
                     MessageBoards.PicList picList1 = new MessageBoards.PicList();
                     picList1.setThumbnailPicUrl(picList.get(i));
                     picList1.setBmiddlePicUrl(picList.get(i));
-                    picList1.setBmiddlePicWidth(Bimp.bmp.get(i).getWidth());
-                    picList1.setBmiddlePicHeight(Bimp.bmp.get(i).getHeight());
+                    if(i < Bimp.bmp.size() && null != Bimp.bmp.get(i)){
+                        picList1.setBmiddlePicWidth(Bimp.bmp.get(i).getWidth());
+                        picList1.setBmiddlePicHeight(Bimp.bmp.get(i).getHeight());
+                    }
                     picArrays[i] = picList1;
                 }
             }

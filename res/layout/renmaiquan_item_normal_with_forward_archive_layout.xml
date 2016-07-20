@@ -67,8 +67,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="1px"
                 android:layout_below="@+id/forward_archive_title_tv"
-                android:layout_marginTop="@dimen/rmq_forward_padding"
                 android:layout_marginBottom="@dimen/rmq_forward_padding"
+                android:layout_marginTop="@dimen/rmq_forward_padding"
                 android:background="@color/separate_line" />
 
 
@@ -87,9 +87,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/rmq_forward_web_pic_width"
                 android:layout_below="@id/seperate_line"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/rmq_forward_padding"
                 android:layout_toRightOf="@id/forward_archive_pic_iv"
-                android:layout_centerVertical="true"
                 android:gravity="center_vertical">
 
                 <com.itcalf.renhe.view.TextView
@@ -97,10 +97,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:singleLine="true"
+                    android:maxLines="2"
                     android:textColor="@color/C1"
-                    android:textSize="@dimen/S6"
-                    />
+                    android:textSize="@dimen/S6" />
 
                 <com.itcalf.renhe.view.TextView
                     android:id="@+id/forward_archive_job_tv"
@@ -110,8 +109,7 @@
                     android:ellipsize="end"
                     android:maxLines="2"
                     android:textColor="@color/C2"
-                    android:textSize="@dimen/S6"
-                    />
+                    android:textSize="@dimen/S6" />
             </RelativeLayout>
         </RelativeLayout>
 

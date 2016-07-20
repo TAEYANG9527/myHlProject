@@ -56,12 +56,12 @@ public class ActivityQrcodeResult extends BaseActivity {
 				if (TextUtils.isEmpty(sid)) {
 					Intent intent = new Intent(this, WebViewActWithTitle.class);
 					intent.putExtra("url", result);
-					startActivity(intent);
+					startHlActivity(intent);
 					finish();
 				} else {
 					Intent intent = new Intent(this, MyHomeArchivesActivity.class);
 					intent.putExtra(MyHomeArchivesActivity.FLAG_INTENT_DATA, sid);
-					startActivity(intent);
+					startHlActivity(intent);
 					finish();
 				}
 			} else if (result.startsWith(Constants.PUBLIC_FILETER_URL.RENHE_CIRCLE)) {
@@ -70,20 +70,20 @@ public class ActivityQrcodeResult extends BaseActivity {
 				if (TextUtils.isEmpty(circleId)) {
 					Intent intent = new Intent(this, WebViewActWithTitle.class);
 					intent.putExtra("url", result);
-					startActivity(intent);
+					startHlActivity(intent);
 					finish();
 				} else {
 					Intent intent = new Intent();
 					intent.putExtra("circleId", circleId);
 					intent.setClass(ActivityQrcodeResult.this, ActivityCircleDetail.class);
-					startActivity(intent);
+					startHlActivity(intent);
 					finish();
 				}
 
 			} else {
 				Intent intent = new Intent(this, WebViewActWithTitle.class);
 				intent.putExtra("url", result);
-				startActivity(intent);
+				startHlActivity(intent);
 				finish();
 			}
 

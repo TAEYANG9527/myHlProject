@@ -93,6 +93,7 @@ import com.itcalf.renhe.utils.ChatUtils;
 import com.itcalf.renhe.utils.DensityUtil;
 import com.itcalf.renhe.utils.NetworkUtil;
 import com.itcalf.renhe.utils.SharedPreferencesUtil;
+import com.itcalf.renhe.utils.ToastUtil;
 import com.itcalf.renhe.view.EditText;
 import com.itcalf.renhe.view.emoji.EmojiFragment;
 import com.itcalf.renhe.view.emoji.ExpressionUtil;
@@ -105,6 +106,9 @@ import com.orhanobut.logger.Logger;
 import org.aisen.android.common.utils.BitmapUtil;
 import org.aisen.android.common.utils.SystemUtils;
 import org.aisen.android.ui.activity.basic.BaseActivity;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -113,8 +117,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import de.greenrobot.event.EventBus;
 
 /**
  * Created by wangning on 2015/10/12.
@@ -536,6 +538,14 @@ public class ChatFragment extends Fragment implements MessageListener, SensorEve
                 chatToUserFace = bundle.getString(ChatMainActivity.CHATTOUSERFACE_ARG);
             isNameExist_net = bundle.getString("isNameExist_net");
         }
+        if (mConversation == null) {
+            if (null != getActivity()) {
+                getActivity().finish();
+                ToastUtil.showToast(getActivity(), "会话消息获取异常，请重试");
+            } else {
+                return;
+            }
+        }
         //初始化emojiFragment
         emotionFragment = EmojiFragment.newInstance();
         Bundle emojiBundle = new Bundle();
@@ -813,6 +823,8 @@ public class ChatFragment extends Fragment implements MessageListener, SensorEve
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(SendMsgSuccessEvent event) {
         com.alibaba.wukong.im.Message message = event.getMessage();
         String msg = "onEventMainThread收到了消息：" + message.messageContent();
@@ -832,6 +844,8 @@ public class ChatFragment extends Fragment implements MessageListener, SensorEve
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(SendFileMsgEvent event) {
         com.alibaba.wukong.im.Message message = event.getMessage();
         Logger.d("onEventMainThread收到了文件消息进度--->>" + message.sendProgress());
@@ -845,6 +859,8 @@ public class ChatFragment extends Fragment implements MessageListener, SensorEve
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(RefreshChatUnreadEvent event) {
         Logger.d("onEventMainThread用于刷新对话未读消息刷新--->>");
         if (null != mConversation && mConversation.type() == Conversation.ConversationType.GROUP)//判断是否有入圈申请,放在这调用是因为要在右上角menu加载完了后才能正常显示请求到的数字
@@ -857,6 +873,8 @@ public class ChatFragment extends Fragment implements MessageListener, SensorEve
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(RefreshChatUserInfoEvent event) {
         Logger.d("onEventMainThread用于刷新，刷新获取user--->>");
         bottomRl.setVisibility(View.VISIBLE);

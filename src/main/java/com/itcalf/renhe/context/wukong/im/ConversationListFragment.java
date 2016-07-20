@@ -40,7 +40,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * 重写的对话列表
@@ -285,6 +287,8 @@ public class ConversationListFragment extends BaseFragment implements Conversati
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(TopImEvent event) {
         if (null != mRecyclerView && null != layoutManager) {
             layoutManager.scrollToPosition(mRecyclerView.getTop());

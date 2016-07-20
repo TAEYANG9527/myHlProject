@@ -55,7 +55,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * @author chan
@@ -379,6 +381,8 @@ public class NewFriendsAct extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(RefreshNewFriendListEvent event) {
         Logger.e("event bus onEventMainThread 刷新新的好友列表");
         if (null != contactslist) {

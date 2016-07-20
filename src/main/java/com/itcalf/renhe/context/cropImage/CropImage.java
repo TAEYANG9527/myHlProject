@@ -91,7 +91,8 @@ public class CropImage extends BaseActivity {
         /**
          * 把图片旋转为正的方向
          */
-        bitmap = rotaingImageView(degree, bitmap);
+        if (null != bitmap)
+            bitmap = rotaingImageView(degree, bitmap);
         return bitmap;
     }
 

@@ -66,6 +66,7 @@ import com.orhanobut.logger.Logger;
 import com.umeng.analytics.MobclickAgent;
 
 import org.aisen.android.common.utils.SystemUtils;
+import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -75,7 +76,6 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 
 import cn.renhe.heliao.idl.money.red.HeliaoRobRed;
-import de.greenrobot.event.EventBus;
 
 /**
  * Created by wangning on 2015/10/13.
@@ -103,6 +103,8 @@ public class ChatUtils {
 
     private AnimationDrawable audioAnimationDrawable;
     private final static int RETRYTIME = 10000;//最新拍/截取的照片
+    private final static int VOLUME_BASE_DB = 60;//基础分贝值
+    private final static int VOLUME_BASE_OFFSET = 5;//分贝值区间偏移量
 
     private static ChatCallBack chatCallBack;
     private LuckyMoneyCallBack luckyMoneyCallBack;
@@ -368,10 +370,18 @@ public class ChatUtils {
          */
         @Override
         public void notifySampleResult(long duration, List<Integer> volumns) {
+//            Logger.d("采样==》" + duration / 1000);
+//            for (Integer vInteger : volumns) {
+//                updateDisplay(Math.round(vInteger / 100));
+//            }
             for (Integer vInteger : volumns) {
-                Logger.d("volumn>>" + vInteger);
-//                updateDisplay((Math.exp(vInteger / 20) * 120) / 2700);
-                updateDisplay(Math.round(vInteger / 100));
+                if (vInteger <= 0) {
+                    continue;
+                }
+                double db = 10 * Math.log10(vInteger * vInteger);
+                if (Constants.TEST_MODE)
+                    System.out.println("分贝值>>>>>" + db);
+                updateDbDisplay(db);
             }
         }
 
@@ -381,6 +391,24 @@ public class ChatUtils {
         }
 
     };
+
+    private void updateDbDisplay(double signalEMA) {
+        if (signalEMA <= VOLUME_BASE_DB) {
+            volume.setImageResource(R.drawable.amp1);
+        } else if (signalEMA > VOLUME_BASE_DB && signalEMA <= VOLUME_BASE_DB + VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp2);
+        } else if (signalEMA > VOLUME_BASE_DB + VOLUME_BASE_OFFSET && signalEMA <= VOLUME_BASE_DB + 2 * VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp3);
+        } else if (signalEMA > VOLUME_BASE_DB + 2 * VOLUME_BASE_OFFSET && signalEMA <= VOLUME_BASE_DB + 3 * VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp4);
+        } else if (signalEMA > VOLUME_BASE_DB + 3 * VOLUME_BASE_OFFSET && signalEMA <= VOLUME_BASE_DB + 4 * VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp5);
+        } else if (signalEMA > VOLUME_BASE_DB + 4 * VOLUME_BASE_OFFSET && signalEMA <= VOLUME_BASE_DB + 5 * VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp6);
+        } else if (signalEMA > VOLUME_BASE_DB + 5 * VOLUME_BASE_OFFSET) {
+            volume.setImageResource(R.drawable.amp7);
+        }
+    }
 
     private void updateDisplay(double signalEMA) {
         if (null == volume)

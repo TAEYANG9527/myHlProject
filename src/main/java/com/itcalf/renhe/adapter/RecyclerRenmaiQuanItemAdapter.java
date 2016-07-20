@@ -24,6 +24,7 @@ import com.itcalf.renhe.viewholder.RenmaiQuanSinglePicViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanWithArchiveForwardViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanWithCircleForwardViewHolder;
+import com.itcalf.renhe.viewholder.RenmaiQuanWithCommunalForwardViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanWithMultiPicForwardViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanWithSinglePicForwardViewHolder;
 import com.itcalf.renhe.viewholder.RenmaiQuanWithTextForwardViewHolder;
@@ -59,6 +60,7 @@ public class RecyclerRenmaiQuanItemAdapter extends BaseRecyclerAdapter<MessageBo
     public static final int ITEM_TYPE_SENDING_MSG_NORMAL_MESSAGE_SINGLE_PIC = 19;//正在发送的人脉圈普通留言，单张图片
     public static final int ITEM_TYPE_SENDING_MSG_NORMAL_MESSAGE_MULTI_PICS = 20;//正在发送的人脉圈普通留言，多张图片
     public static final int ITEM_TYPE_VIP_UPGRADE_TIP = 21;//好友升级会员，文案+单张图片,UI和 type:2 一致
+    public static final int ITEM_TYPE_NORMAL_MESSAGE_COMMUNAL = 22;//普通留言，分享的赞服务店铺
     private final LayoutInflater mLayoutInflater;
     private final Context mContext;
     private ArrayList<MessageBoards.NewNoticeList> datas;
@@ -103,6 +105,8 @@ public class RecyclerRenmaiQuanItemAdapter extends BaseRecyclerAdapter<MessageBo
                 return new RenmaiQuanWithCircleForwardViewHolder(mContext, mLayoutInflater.inflate(R.layout.renmaiquan_item_normal_with_forward_circle_layout, parent, false), renMaiQuanRecyclerView, this);
             case ITEM_TYPE_NORMAL_MESSAGE_ARCHIVE:
                 return new RenmaiQuanWithArchiveForwardViewHolder(mContext, mLayoutInflater.inflate(R.layout.renmaiquan_item_normal_with_forward_archive_layout, parent, false), renMaiQuanRecyclerView, this);
+            case ITEM_TYPE_NORMAL_MESSAGE_COMMUNAL:
+                return new RenmaiQuanWithCommunalForwardViewHolder(mContext, mLayoutInflater.inflate(R.layout.renmaiquan_item_normal_with_forward_archive_layout, parent, false), renMaiQuanRecyclerView, this);
             case ITEM_TYPE_ARCHIVE_TEXT_INFO_UPDATE:
                 break;
             case ITEM_TYPE_ARCHIVE_IMAGE_INFO_UPDATE:
@@ -173,12 +177,14 @@ public class RecyclerRenmaiQuanItemAdapter extends BaseRecyclerAdapter<MessageBo
                         int forwardType = forwardMessageBoardInfo.getType();//转发类型
                         String forwardContent = forwardMessageBoardInfo.getContent();
                         switch (forwardType) {
-                            case 100://网页分享
+                            case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_WEB://网页分享
                                 return ITEM_TYPE_NORMAL_MESSAGE_WITH_WEB_FORWARD;
-                            case 101://档案分享
+                            case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_PROFILE://档案分享
                                 return ITEM_TYPE_NORMAL_MESSAGE_ARCHIVE;
-                            case 102://圈子分享
+                            case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_CIRCLE://圈子分享
                                 return ITEM_TYPE_NORMAL_MESSAGE_CIRCLE;
+                            case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL://赞服务分享
+                                return ITEM_TYPE_NORMAL_MESSAGE_COMMUNAL;
                         }
                         int forwardPicNum = forwardMessageBoardInfo.getPicLists() == null ? 0 : forwardMessageBoardInfo.getPicLists().length;
                         if (forwardPicNum > 1) {//多张图片

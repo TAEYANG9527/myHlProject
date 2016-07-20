@@ -56,7 +56,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Title: SearchResultActivity.java<br>
@@ -601,6 +603,8 @@ public class SearchResultActivity extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(NotifyListRefreshWithPositionEvent event) {
         if (event.getType() == NotifyListRefreshWithPositionEvent.ADVANCE_SEARCH) {
             if (null != mData && mData.size() > event.getPosition()) {

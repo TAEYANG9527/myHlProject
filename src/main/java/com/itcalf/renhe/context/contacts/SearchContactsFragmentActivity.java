@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.itcalf.renhe.R;
-import com.itcalf.renhe.context.fragmentMain.NewContactFragmentVersion;
+import com.itcalf.renhe.context.fragmentMain.NewContactFragment;
 
 /**
  * description :
@@ -23,7 +23,7 @@ public class SearchContactsFragmentActivity extends AppCompatActivity {
     protected TextView mTitleTxt;
     protected Toolbar toolbar;
     protected TextView toolbarTitleTv;
-    private NewContactFragmentVersion newContactFragmentVersion2;
+    private NewContactFragment newContactFragmentVersion2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class SearchContactsFragmentActivity extends AppCompatActivity {
         setMyContentView(R.layout.search_contacts_fragment);
 
         fm = getSupportFragmentManager();
-        newContactFragmentVersion2 = new NewContactFragmentVersion();
+        newContactFragmentVersion2 = new NewContactFragment();
         if (fm != null) {
             FragmentTransaction transaction = fm.beginTransaction();
             Bundle bundle = new Bundle();

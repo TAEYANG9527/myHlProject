@@ -164,7 +164,7 @@ public class ActivityGrpcCircleMemberTwo extends BaseActivity<CircleMember.Circl
 
     /**
      * GRPC 调用的回调方法
-     * <p/>
+     * <p>
      * 成功进入onSuccess
      * 失败进入onFailure
      */
@@ -184,7 +184,7 @@ public class ActivityGrpcCircleMemberTwo extends BaseActivity<CircleMember.Circl
 
     /**
      * GRPC 调用的回调方法
-     * <p/>
+     * <p>
      * 成功进入onSuccess
      * 失败进入onFailure
      */
@@ -203,7 +203,14 @@ public class ActivityGrpcCircleMemberTwo extends BaseActivity<CircleMember.Circl
         }
         for (CircleMember.MemberInfo memberInfo : memberInfoList) {
             //获取拼音首字母
-            String key = PinyinUtil.cn2FirstSpell(PinyinUtil.cn2Spell(memberInfo.getName()).toUpperCase().substring(0, 1));
+            String key = "#";
+            if (!TextUtils.isEmpty(memberInfo.getName())) {
+                if (memberInfo.getName().length() == 1) {
+                    key = memberInfo.getName();
+                } else if (memberInfo.getName().length() > 1) {
+                    key = PinyinUtil.cn2FirstSpell(PinyinUtil.cn2Spell(memberInfo.getName()).toUpperCase().substring(0, 1));
+                }
+            }
             if (mapFormat.get(key) == null) {
                 List<CircleMember.MemberInfo> memberList = new ArrayList<CircleMember.MemberInfo>();
                 mapFormat.put(key, memberList);

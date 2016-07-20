@@ -31,6 +31,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import com.growingio.android.sdk.collection.GrowingIO;
 import com.itcalf.renhe.Constants;
 import com.itcalf.renhe.R;
 import com.itcalf.renhe.context.archives.MyHomeArchivesActivity;
@@ -89,6 +90,8 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
     private ValueCallback<Uri> mUploadMessage;
     private ValueCallback<Uri[]> mUploadCallbackAboveL;
     private final static int FILE_CHOOSER_RESULT_CODE = 3;
+    private WebChromeClient webChromeClient;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -139,6 +142,7 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
         } else {
             setTextValue("和聊");
         }
+        GrowingIO.trackWebView(webView, webChromeClient);
         if (null == loginString) {
             loginString = "";
         }
@@ -210,7 +214,7 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
 //                Toast.makeText(WebViewActWithTitle.this, "Oh no! " + description, Toast.LENGTH_SHORT).show();
             }
         });
-        webView.setWebChromeClient(new WebChromeClient() {
+        webChromeClient = new WebChromeClient() {
 
             @Override
             public void onReceivedTitle(WebView view, String title) {
@@ -239,6 +243,7 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
                     result.cancel();    //一定要cancel，否则会出现各种奇怪问题
                 return true;
             }
+
             // For Android 3.0+
             public void openFileChooser(ValueCallback uploadMsg) {
                 mUploadMessage = uploadMsg;
@@ -283,7 +288,8 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
                         FILE_CHOOSER_RESULT_CODE);
                 return true;
             }
-        });
+        };
+        webView.setWebChromeClient(webChromeClient);
         //表情部分初始化
         replyEt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
@@ -569,6 +575,7 @@ public class WebViewForIndustryCircle extends BaseActivity implements EmojiFragm
         mUploadCallbackAboveL.onReceiveValue(results);
         mUploadCallbackAboveL = null;
     }
+
     /**
      * WebView控制调用相应的WEB页面进行展示。安卓源码当碰到页面有下载链接的时候，点击上去是一点反应都没有的。
      * 原来是因为WebView默认没有开启文件下载的功能，如果要实现文件下载的功能，需要设置WebView的DownloadListener，

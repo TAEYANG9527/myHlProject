@@ -472,6 +472,19 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                             map.put("ForwardMessageBoardInfo_share_note", forwardMessageBoardInfo.getCircleShare().getNote());
                             map.put("ForwardMessageBoardInfo_share_picUrl", forwardMessageBoardInfo.getCircleShare().getPicUrl());// 转发的内容
                             break;
+                        case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                            if (null != forwardMessageBoardInfo.getCommunalShare()) {
+                                map.put("ForwardMessageBoardInfo_share_name",
+                                        forwardMessageBoardInfo.getCommunalShare().getName());
+                                map.put("ForwardMessageBoardInfo_share_job", forwardMessageBoardInfo.getCommunalShare().getDescription());// 转发的内容
+                                map.put("ForwardMessageBoardInfo_share_company",
+                                        forwardMessageBoardInfo.getCommunalShare().getCompany());// 转发的内容
+                                map.put("ForwardMessageBoardInfo_share_picUrl",
+                                        forwardMessageBoardInfo.getCommunalShare().getPicUrl());// 转发的内容
+                                map.put("ForwardMessageBoardInfo_Url", forwardMessageBoardInfo.getCommunalShare().getUrl());// 留言内容中@信息
+                                map.put("ForwardMessageBoardInfo_share_title", forwardMessageBoardInfo.getCommunalShare().getTitle());// 留言内容中@信息
+                            }
+                            break;
                         default:
                             break;
                     }
@@ -511,6 +524,11 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                         case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_CIRCLE:
                             if (!TextUtils.isEmpty(forwardMessageBoardInfo.getCircleShare().getPicUrl())) {
                                 toFrowardPic = forwardMessageBoardInfo.getCircleShare().getPicUrl();
+                            }
+                            break;
+                        case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                            if (!TextUtils.isEmpty(forwardMessageBoardInfo.getCommunalShare().getPicUrl())) {
+                                toFrowardPic = forwardMessageBoardInfo.getCommunalShare().getPicUrl();
                             }
                             break;
                         default:
@@ -913,7 +931,77 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                             }
                         }
                         break;
+                    case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                        viewHolder.rawcontentlayout.setVisibility(View.VISIBLE);
+                        String shareCommunalName = "";
+                        String shareCommunalJob = "";
+                        String shareCommunalCompany = "";
+                        String shareCommunalPicUrl = "";
+                        String shareCommunalUrl = "";
+                        String shareCommunalTitle = "";
+                        if (null != map.get("ForwardMessageBoardInfo_share_name")) {
+                            shareCommunalName = (String) map.get("ForwardMessageBoardInfo_share_name");
+                        }
+                        if (null != map.get("ForwardMessageBoardInfo_share_job")) {
+                            shareCommunalJob = (String) map.get("ForwardMessageBoardInfo_share_job");
+                        }
+                        if (null != map.get("ForwardMessageBoardInfo_share_company")) {
+                            shareCommunalCompany = (String) map.get("ForwardMessageBoardInfo_share_company");
+                        }
+                        if (null != map.get("ForwardMessageBoardInfo_share_picUrl")) {
+                            shareCommunalPicUrl = (String) map.get("ForwardMessageBoardInfo_share_picUrl");
+                        }
+                        if (null != map.get("ForwardMessageBoardInfo_Url")) {
+                            shareCommunalUrl = (String) map.get("ForwardMessageBoardInfo_Url");
+                        }
+                        if (null != map.get("ForwardMessageBoardInfo_share_title")) {
+                            shareCommunalTitle = (String) map.get("ForwardMessageBoardInfo_share_title");
+                        }
+                        shareUrlFinal = shareCommunalUrl;
+                        theSharePic = shareCommunalPicUrl;
+                        viewHolder.forwardShareLl.setVisibility(View.VISIBLE);
+                        viewHolder.rawContentTv.setVisibility(View.GONE);
+                        viewHolder.forwardShareTitle.setVisibility(View.VISIBLE);
+                        viewHolder.forwardShareSeperateLine.setVisibility(View.VISIBLE);
+                        viewHolder.sharePicIv.setVisibility(View.GONE);
+                        viewHolder.circleSharePic.setVisibility(View.VISIBLE);
+                        if (!TextUtils.isEmpty(shareCommunalTitle))
+                            viewHolder.forwardShareTitle.setText(shareCommunalTitle);
+                        else
+                            viewHolder.forwardShareTitle.setText("赞服务");
+                        if (!TextUtils.isEmpty(shareCommunalName)) {
+                            viewHolder.shareContentTv.setVisibility(View.VISIBLE);
+                            viewHolder.shareContentTv.setText(shareCommunalName);
+                        } else {
+                            viewHolder.shareContentTv.setVisibility(View.GONE);
+                        }
+                        if (!TextUtils.isEmpty(shareCommunalJob)) {
+                            viewHolder.forwardShareContentTv.setVisibility(View.VISIBLE);
+                            viewHolder.forwardShareContentTv.setText(shareCommunalJob);
+                        } else {
+                            viewHolder.forwardShareContentTv.setVisibility(View.GONE);
+                        }
+                        if (!TextUtils.isEmpty(shareCommunalCompany)) {
+                            viewHolder.forwardShareContentTv2.setVisibility(View.VISIBLE);
+                            viewHolder.forwardShareContentTv2.setText(shareCommunalCompany);
+                        } else {
+                            viewHolder.forwardShareContentTv2.setVisibility(View.GONE);
+                        }
 
+                        if (!TextUtils.isEmpty(shareCommunalPicUrl)) {
+                            DisplayImageOptions options = new DisplayImageOptions.Builder().showImageOnLoading(R.drawable.avatar)
+                                    .showImageForEmptyUri(R.drawable.avatar).showImageOnFail(R.drawable.avatar).cacheInMemory(false)
+                                    .cacheOnDisk(true).imageScaleType(ImageScaleType.EXACTLY_STRETCHED).considerExifParams(true)
+                                    .build();
+                            ImageLoader imageLoader2 = ImageLoader.getInstance();
+                            try {
+                                imageLoader2.displayImage(shareCommunalPicUrl, viewHolder.circleSharePic, options,
+                                        new AnimateFirstDisplayListener());
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        break;
                     default:
                         forward_content = TransferUrl2Drawable.measureLine(viewHolder.rawContentTv, forward_content,
                                 TransferUrl2Drawable.getScreenWidth(this) - TransferUrl2Drawable.dipToPX(this, 115));
@@ -1875,7 +1963,7 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                                 i.setClass(TwitterShowMessageBoardActivity.this, WebViewActWithTitle.class);
                             }
                             i.putExtra("url", shareUrlFinal);
-                            startActivity(i);
+                            startHlActivity(i);
                         }
                         break;
                     case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_PROFILE:
@@ -1883,7 +1971,7 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                             Intent i = new Intent();
                             i.setClass(TwitterShowMessageBoardActivity.this, MyHomeArchivesActivity.class);
                             i.putExtra(MyHomeArchivesActivity.FLAG_INTENT_DATA, shareUrlFinal);
-                            startActivity(i);
+                            startHlActivity(i);
                         }
                         break;
                     case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_CIRCLE:
@@ -1892,12 +1980,22 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                             Intent i = new Intent();
                             i.setClass(TwitterShowMessageBoardActivity.this, ActivityCircleDetail.class);
                             i.putExtra("circleId", shareUrlFinal);
-                            startActivity(i);
+                            startHlActivity(i);
                         }
                         break;
-
+                    case Constants.RenmaiquanShareType.RENMAIQUAN_TYPE_COMMUNAL:
+                        if (!TextUtils.isEmpty(shareUrlFinal)) {
+                            Intent i = new Intent();
+                            if (shareUrlFinal.contains(Constants.TOPIC_URL)) {
+                                i.setClass(TwitterShowMessageBoardActivity.this, WebViewForIndustryCircle.class);
+                            } else {
+                                i.setClass(TwitterShowMessageBoardActivity.this, WebViewActWithTitle.class);
+                            }
+                            i.putExtra("url", shareUrlFinal);
+                            startHlActivity(i);
+                        }
+                        break;
                     default:
-
                         MobclickAgent.onEvent(TwitterShowMessageBoardActivity.this, "点击人脉圈详情的转发内容");
                         if (loadType == LOAD_TYPE_FROM_CONTENT) {
                             if (null != newNoticeListItem && null != newNoticeListItem.getContentInfo()
@@ -1920,8 +2018,7 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                                     Intent intent = new Intent(TwitterShowMessageBoardActivity.this,
                                             TwitterShowMessageBoardActivity.class);
                                     intent.putExtras(bundle);
-                                    startActivity(intent);
-                                    overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+                                    startHlActivity(intent);
                                 }
                             }
 
@@ -1946,8 +2043,7 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
                                     Intent intent = new Intent(TwitterShowMessageBoardActivity.this,
                                             TwitterShowMessageBoardActivity.class);
                                     intent.putExtras(bundle);
-                                    startActivity(intent);
-                                    overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+                                    startHlActivity(intent);
                                 }
                             }
                         }
@@ -2767,7 +2863,7 @@ public class TwitterShowMessageBoardActivity extends BaseActivity implements Emo
             new AddFriendTask(this, new AddFriendTask.IAddFriendCallBack() {
                 @Override
                 public void onPre() {
-                    showMaterialLoadingDialog(R.string.add_friend_sending,true);
+                    showMaterialLoadingDialog(R.string.add_friend_sending, true);
                 }
 
                 @Override

@@ -49,12 +49,14 @@ import com.itcalf.renhe.utils.RenmaiQuanUtils;
 import com.itcalf.renhe.utils.StatisticsUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executors;
-
-import de.greenrobot.event.EventBus;
 
 /**
  * Created by wangning on 2015/10/12.
@@ -79,7 +81,7 @@ public class RenMaiQuanFragment extends Fragment implements SwipeRefreshLayout.O
     private boolean onLoading = false;
     private ArrayList<MessageBoards.NewNoticeList> addDatasList;
     private boolean isNeedFreshAfterResetCache = false;//在设置里清楚缓存后，是否需要清除缓存后重新载入数据
-//    private long lastRefreshTime;
+    //    private long lastRefreshTime;
     //工具初始化
     private RenMaiQuanManager renMaiQuanManager;
     private AddNewMsgManager addNewMsgManager;
@@ -698,6 +700,8 @@ public class RenMaiQuanFragment extends Fragment implements SwipeRefreshLayout.O
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(TopRmqEvent event) {
         if (null != mRecyclerView && null != layoutManager) {
             layoutManager.scrollToPosition(mRecyclerView.getTop());

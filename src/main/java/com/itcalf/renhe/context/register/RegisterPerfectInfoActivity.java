@@ -39,6 +39,7 @@ import com.itcalf.renhe.utils.ManifestUtil;
 import com.itcalf.renhe.utils.NetworkUtil;
 import com.itcalf.renhe.utils.PushUtil;
 import com.itcalf.renhe.utils.RequestDialog;
+import com.itcalf.renhe.utils.StatisticsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 import com.itcalf.renhe.view.Button;
 
@@ -318,6 +319,8 @@ public class RegisterPerfectInfoActivity extends BaseActivity {
                     if (null != manService && null != manService.getMANAnalytics())
                         // 注册用户埋点
                         manService.getMANAnalytics().userRegister(result.getSid());
+                    //Growing IO 设置自定义维度
+                    StatisticsUtil.setGrowingIOCS();
                 } else if (2 == result.getState()) {
                     //资料完善成功，并且是需要导入通讯录功能的渠道号；
                 } else {

@@ -10,7 +10,7 @@ import com.itcalf.renhe.view.Button;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * Created by wangning on 2016/5/16.

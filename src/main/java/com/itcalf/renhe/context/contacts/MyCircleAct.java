@@ -143,7 +143,8 @@ public class MyCircleAct extends BaseActivity {
         }
         if (null != getIntent().getSerializableExtra("shareImagePathList")) {
             shareImagePathList = (ArrayList<String>) getIntent().getSerializableExtra("shareImagePathList");
-            sendPicUri = Uri.parse(getIntent().getStringExtra("picUri"));
+            if (null != getIntent().getStringExtra("picUri"))
+                sendPicUri = Uri.parse(getIntent().getStringExtra("picUri"));
         }
         if (shareType == ConversationShareType.CONVERSATION_SEND_FROM_FILE_FORWARD) {//来自文件转发
             if (getIntent().getSerializableExtra("message") != null) {
@@ -383,8 +384,7 @@ public class MyCircleAct extends BaseActivity {
                             // String key =
                             // conversation.privateExtension("circleId");
                             String key = conversation.extension("circleId");
-                            if (key != null && key != "") {
-                            } else {
+                            if (TextUtils.isEmpty(key)) {
                                 key = "0";// 默认圈号
                             }
                             circleBean.setNumber(Integer.parseInt(key));// 圈号,由本地服务器端传给IM云返回，key值

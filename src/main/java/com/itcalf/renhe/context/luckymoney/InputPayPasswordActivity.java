@@ -20,7 +20,9 @@ import com.jungly.gridpasswordview.GridPasswordView;
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.renhe.heliao.idl.money.trade.HeliaoTrade;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Created by wangning on 2016/5/13.
@@ -199,6 +201,8 @@ public class InputPayPasswordActivity extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(FinishPayPasswordActivity event) {
         if (type != Constants.PAY_PASSWORD_SET.SET_TYPE_RESET_SURE_NEW_PASSWORD)
             finish();

@@ -34,6 +34,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.growingio.android.sdk.collection.GrowingIO;
 import com.itcalf.renhe.Constants;
 import com.itcalf.renhe.R;
 import com.itcalf.renhe.context.pay.PayUtil;
@@ -78,7 +79,7 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
     private ValueCallback<Uri[]> mUploadCallbackAboveL;
     private final static int FILE_CHOOSER_RESULT_CODE = 1;
     private boolean toAuth;//是否是企业验证、默认是企业查询\
-
+    private String authFee;//充值金额
     private String payPassword;//余额支付时输入的密码
     private Enterprise.EnterpriseSearchPayOrderResponse enterpriseSearchPayOrderResponse;//服务端返回的支付数据
     private PayBizType payBizType;//发起支付的业务类型
@@ -139,71 +140,7 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
         } else {
             setTextValue("和聊");
         }
-        if (null == loginString) {
-            loginString = "";
-        }
-        url = url + loginString;
-        Logger.d("正在打开网址：" + url);
-        webView.loadUrl(url);//"http://www.renhe.cn/forgot.html"
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (!url.startsWith("heliaoapp")) {
-                    if (!url.equals(WebViewCompanyAuthActivity.this.url)) {
-                        isShare += "false";
-                    }
-                    Logger.d("正在进入子网页：" + url);
-                    if ((url.contains(FORBID_BROWSER_URL) || url.contains(FORBID_BROWSER_URL_ZANFUWU)) && !list.contains(shareBean)) {
-                        list.add(0, shareBean);
-                    }
-                    if (!url.contains(FORBID_BROWSER_URL) && !url.contains(FORBID_BROWSER_URL_ZANFUWU) && !list.contains(openWithBrowserBean)) {
-                        list.add(openWithBrowserBean);
-                    } else if ((url.contains(FORBID_BROWSER_URL) || url.contains(FORBID_BROWSER_URL_ZANFUWU)) && list.contains(openWithBrowserBean)) {
-                        list.remove(openWithBrowserBean);
-                    }
-                    pupAdapter.notifyDataSetChanged();
-//                    view.loadUrl(url);// 使用当前WebView处理跳转
-                    if (!url.endsWith(".jpg") && !url.endsWith(".png")) {
-                        WebViewCompanyAuthActivity.this.url = url;
-                    }
-                    if (url.contains("download")) {
-                        Uri uri = Uri.parse(url);
-                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        startActivity(intent);
-                        return true;
-                    }
-                }
-
-                return false;//true表示此事件在此处被处理，不需要再广播
-            }
-
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                super.onPageStarted(view, url, favicon);
-                Logger.d("onPageStarted");
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                Logger.d("onPageFinished");
-                setTextValue(view.getTitle());
-                WebViewCompanyAuthActivity.this.url = url;
-            }
-
-            @Override
-            public void onLoadResource(WebView view, String url) {
-                super.onLoadResource(view, url);
-            }
-
-            //转向错误时的处理
-            @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-//                Toast.makeText(WebViewActWithTitle.this, "Oh no! " + description, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        webView.setWebChromeClient(new WebChromeClient() {
+        WebChromeClient webChromeClient = new WebChromeClient() {
 
             @Override
             public void onReceivedTitle(WebView view, String title) {
@@ -322,7 +259,73 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
                         }).cancelable(true);
                 materialDialogsUtil.show();
             }
+        };
+        GrowingIO.trackWebView(webView, webChromeClient);
+        if (null == loginString) {
+            loginString = "";
+        }
+        url = url + loginString;
+        Logger.d("正在打开网址：" + url);
+        webView.loadUrl(url);//"http://www.renhe.cn/forgot.html"
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (!url.startsWith("heliaoapp")) {
+                    if (!url.equals(WebViewCompanyAuthActivity.this.url)) {
+                        isShare += "false";
+                    }
+                    Logger.d("正在进入子网页：" + url);
+                    if ((url.contains(FORBID_BROWSER_URL) || url.contains(FORBID_BROWSER_URL_ZANFUWU)) && !list.contains(shareBean)) {
+                        list.add(0, shareBean);
+                    }
+                    if (!url.contains(FORBID_BROWSER_URL) && !url.contains(FORBID_BROWSER_URL_ZANFUWU) && !list.contains(openWithBrowserBean)) {
+                        list.add(openWithBrowserBean);
+                    } else if ((url.contains(FORBID_BROWSER_URL) || url.contains(FORBID_BROWSER_URL_ZANFUWU)) && list.contains(openWithBrowserBean)) {
+                        list.remove(openWithBrowserBean);
+                    }
+                    pupAdapter.notifyDataSetChanged();
+//                    view.loadUrl(url);// 使用当前WebView处理跳转
+                    if (!url.endsWith(".jpg") && !url.endsWith(".png")) {
+                        WebViewCompanyAuthActivity.this.url = url;
+                    }
+                    if (url.contains("download")) {
+                        Uri uri = Uri.parse(url);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                        return true;
+                    }
+                }
+
+                return false;//true表示此事件在此处被处理，不需要再广播
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                Logger.d("onPageStarted");
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                Logger.d("onPageFinished");
+                setTextValue(view.getTitle());
+                WebViewCompanyAuthActivity.this.url = url;
+            }
+
+            @Override
+            public void onLoadResource(WebView view, String url) {
+                super.onLoadResource(view, url);
+            }
+
+            //转向错误时的处理
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                Toast.makeText(WebViewActWithTitle.this, "Oh no! " + description, Toast.LENGTH_SHORT).show();
+            }
         });
+
+        webView.setWebChromeClient(webChromeClient);
 
         boolean isShareable = getIntent().getBooleanExtra("shareable", true);
         pupAdapter = new PupAdapter();
@@ -413,10 +416,10 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
      * 余额充值
      */
 
-    private void enterpriseSearchPayOrder() {
+    private void enterpriseSearchPayOrder(String fee) {
         if (checkGrpcBeforeInvoke(ID_TASK_PAYORDER)) {
             showMaterialLoadingDialog(R.string.waitting, true);
-            grpcController.enterpriseSearchPayOrder(ID_TASK_PAYORDER);
+            grpcController.enterpriseSearchPayOrder(ID_TASK_PAYORDER, fee);
         }
     }
 
@@ -503,7 +506,7 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
 
     @Override
     public void onPayPasswordRetry() {
-        enterpriseSearchPayOrder();
+        enterpriseSearchPayOrder(authFee);
     }
 
     @Override
@@ -664,12 +667,13 @@ public class WebViewCompanyAuthActivity extends BaseActivity implements PayUtil.
 
         // 1、充值
         @JavascriptInterface
-        public void recharge(boolean flag) {//true表示可以充值
-            Logger.e("flag++" + flag);
+        public void recencyRecharge(boolean flag, final String fee) {//true表示可以充值    , fee 代表的是 金额
+            Logger.e("flag++" + flag + ",fee++" + fee);
+            authFee = fee;
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    enterpriseSearchPayOrder();
+                    enterpriseSearchPayOrder(fee);
                 }
             });
         }

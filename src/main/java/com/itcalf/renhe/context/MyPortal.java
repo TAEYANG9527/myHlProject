@@ -29,6 +29,7 @@ import com.itcalf.renhe.dto.UserInfo;
 import com.itcalf.renhe.utils.ManifestUtil;
 import com.itcalf.renhe.utils.PushUtil;
 import com.itcalf.renhe.utils.SharedPreferencesUtil;
+import com.itcalf.renhe.utils.StatisticsUtil;
 import com.umeng.analytics.AnalyticsConfig;
 import com.umeng.analytics.MobclickAgent;
 import com.xys.shortcut_lib.ShortcutSuperUtils;
@@ -174,6 +175,8 @@ public class MyPortal extends BaseActivity {
         MANService manService = MANServiceProvider.getService();
         if (null != manService && null != manService.getMANAnalytics())
             manService.getMANAnalytics().updateUserAccount(userInfo.getName(), userInfo.getId() + "");
+        //Growing IO 设置自定义维度
+        StatisticsUtil.setGrowingIOCS();
         //处理从notification、外部浏览器点击圈子、档案URL链接跳转到和聊app之后的intent
         Intent browserIntent = getIntent();
         String data = browserIntent.getDataString();

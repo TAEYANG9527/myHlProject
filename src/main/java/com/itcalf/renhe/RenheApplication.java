@@ -23,6 +23,7 @@ import com.alibaba.wukong.auth.AuthInfo;
 import com.alibaba.wukong.auth.AuthService;
 import com.alibaba.wukong.im.IMEngine;
 import com.alibaba.wukong.im.MessageService;
+import com.growingio.android.sdk.collection.GrowingIO;
 import com.itcalf.renhe.cache.CacheManager;
 import com.itcalf.renhe.command.IContactCommand;
 import com.itcalf.renhe.command.IMessageBoardCommand;
@@ -189,6 +190,8 @@ public class RenheApplication extends GlobalContext {
         SharedPreferencesUtil.config(this);
         //初始化阿里云统计sdk
         initAlibabaSdk();
+        //初始化Growing IO统计sdk
+        initGrowingIOSdk();
     }
 
     /**
@@ -205,7 +208,7 @@ public class RenheApplication extends GlobalContext {
     /**
      * 初始化AlibabaSDK
      * * 启动移动推送包含两个步骤，首先你需要在应用中初始化AlibabaSDK。 然后通过AlibabaSDK去获得到移动推送服务实例，并初始化移动推送。
-     * <p>
+     * <p/>
      * （为确保AlibabaSDK加载正常，请你在成功返回的回调方法中初始化移动推送。）
      */
     private void initAlibabaSdk() {
@@ -313,6 +316,12 @@ public class RenheApplication extends GlobalContext {
                 new AddNewDeviceTokenTask(getApplicationContext()).executeOnExecutor(Executors.newCachedThreadPool());
             }
         }
+    }
+
+    private void initGrowingIOSdk() {
+        GrowingIO.startTracing(this, "9d93ef6e6116508d");
+        GrowingIO.setScheme("growing.33ae89cb4958b725");
+        GrowingIO.getInstance().setChannel(ManifestUtil.getChannel(getApplicationContext()));
     }
 
     public static void initImageLoader(Context context) {

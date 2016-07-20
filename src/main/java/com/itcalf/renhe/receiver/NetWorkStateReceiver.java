@@ -10,7 +10,7 @@ import com.itcalf.renhe.Constants;
 import com.itcalf.renhe.RenheApplication;
 import com.itcalf.renhe.eventbusbean.RefreshChatUserInfoEvent;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * Created by wangning on 2016/6/23.

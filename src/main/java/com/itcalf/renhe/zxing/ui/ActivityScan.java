@@ -12,8 +12,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.hardware.Camera;
-import android.hardware.Camera.PictureCallback;
-import android.hardware.Camera.PreviewCallback;
 import android.hardware.Camera.Size;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -22,7 +20,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -54,9 +51,9 @@ import com.itcalf.renhe.utils.MaterialDialogsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 import com.itcalf.renhe.view.Button;
 import com.itcalf.renhe.zxing.camera.CameraManager;
-import com.itcalf.renhe.zxing.card.FileUtil;
 import com.itcalf.renhe.zxing.decoding.CaptureActivityHandler;
 import com.itcalf.renhe.zxing.decoding.InactivityTimer;
+import com.itcalf.renhe.zxing.decoding.QrUtils;
 import com.itcalf.renhe.zxing.decoding.RGBLuminanceSource;
 import com.itcalf.renhe.zxing.view.ViewfinderView;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -93,6 +90,11 @@ public class ActivityScan extends BaseActivity implements View.OnClickListener, 
     private static final int PARSE_BARCODE_SUC = 300;
     private static final int PARSE_BARCODE_FAIL = 303;
     private MaterialDialogsUtil materialDialogsUtil;
+
+    private byte[] mData;
+    private int mWidth;
+    private int mHeight;
+    private static final int MAX_PICTURE_PIXEL = 256;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,7 +154,8 @@ public class ActivityScan extends BaseActivity implements View.OnClickListener, 
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-
+            if (null != mData)
+                mData = null;
             if (null != materialDialogsUtil)
                 materialDialogsUtil.dismiss();
             switch (msg.what) {
@@ -171,7 +174,7 @@ public class ActivityScan extends BaseActivity implements View.OnClickListener, 
      */
     private void onResultHandler(String resultString, Bitmap bitmap) {
         if (TextUtils.isEmpty(resultString)) {
-            Toast.makeText(ActivityScan.this, "不是有效的二维码照片!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ActivityScan.this, getString(R.string.recognize_photo_qrcode_error), Toast.LENGTH_SHORT).show();
             return;
         } else {
             Intent intent = new Intent(ActivityScan.this, ActivityQrcodeResult.class);
@@ -394,43 +397,56 @@ public class ActivityScan extends BaseActivity implements View.OnClickListener, 
             switch (requestCode) {
                 case 1:
                     Uri uri = data.getData();
-                    if (!TextUtils.isEmpty(uri.getAuthority())) {
-                        Cursor cursor = getContentResolver().query(uri, new String[]{MediaStore.Images.Media.DATA}, null, null,
-                                null);
-                        if (null == cursor) {
-                            return;
-                        }
-                        cursor.moveToFirst();
-                        photo_path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
-                        if (photo_path.endsWith("jpg") || photo_path.endsWith(".JPG") || photo_path.endsWith("png")) {
+//                    if (!TextUtils.isEmpty(uri.getAuthority())) {
+//                        Cursor cursor = getContentResolver().query(uri, new String[]{MediaStore.Images.Media.DATA}, null, null,
+//                                null);
+                    Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+                    if (null == cursor) {
+                        return;
+                    }
+                    cursor.moveToFirst();
+//                        photo_path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+                    photo_path = cursor.getString(1);
+                    cursor.close();
+                    if (photo_path.endsWith("jpg") || photo_path.endsWith(".JPG") || photo_path.endsWith("png")) {
 
-                            if (isQrcode) {
-                                materialDialogsUtil = new MaterialDialogsUtil(this);
-                                materialDialogsUtil.showIndeterminateProgressDialog(R.string.scaning).cancelable(false).build();
-                                materialDialogsUtil.show();
+                        if (isQrcode) {
+                            materialDialogsUtil = new MaterialDialogsUtil(this);
+                            materialDialogsUtil.showIndeterminateProgressDialog(R.string.scaning).cancelable(true).build();
+                            materialDialogsUtil.show();
 
-                                new Thread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        Result result = scanningImage(photo_path);
-                                        if (result != null) {
-                                            Message m = mHandler.obtainMessage();
-                                            m.what = PARSE_BARCODE_SUC;
-                                            m.obj = result.getText();
-                                            mHandler.sendMessage(m);
-                                        } else {
-                                            Message m = mHandler.obtainMessage();
-                                            m.what = PARSE_BARCODE_FAIL;
-                                            m.obj = "不是有效的二维码照片!";
-                                            mHandler.sendMessage(m);
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (null == mData) {
+                                        if (!TextUtils.isEmpty(photo_path)) {
+                                            Bitmap bitmap = QrUtils.decodeSampledBitmapFromFile(photo_path, MAX_PICTURE_PIXEL, MAX_PICTURE_PIXEL);
+                                            mData = QrUtils.getYUV420sp(bitmap.getWidth(), bitmap.getHeight(), bitmap,true);
+                                            mWidth = bitmap.getWidth();
+                                            mHeight = bitmap.getHeight();
                                         }
                                     }
-                                }).start();
-                            }
-                        } else {
-                            ToastUtil.showToast(ActivityScan.this, "你选择的不是有效的图片");
+                                    Result result = QrUtils.decodeImage(mData, mWidth, mHeight);
+
+//                                        Result result = scanningImage(photo_path);
+                                    if (result != null) {
+                                        Message m = mHandler.obtainMessage();
+                                        m.what = PARSE_BARCODE_SUC;
+                                        m.obj = result.getText();
+                                        mHandler.sendMessage(m);
+                                    } else {
+                                        Message m = mHandler.obtainMessage();
+                                        m.what = PARSE_BARCODE_FAIL;
+                                        m.obj = getString(R.string.recognize_photo_qrcode_error);
+                                        mHandler.sendMessage(m);
+                                    }
+                                }
+                            }).start();
                         }
+                    } else {
+                        ToastUtil.showToast(ActivityScan.this, "你选择的不是有效的图片");
                     }
+//                    }
                     break;
 
             }
@@ -648,5 +664,9 @@ public class ActivityScan extends BaseActivity implements View.OnClickListener, 
             }
         }).cancelable(false);
         materialDialogsUtil.show();
+    }
+
+    public Handler getCaptureActivityHandler() {
+        return handler;
     }
 }

@@ -41,7 +41,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Created by wangning on 2016/5/30.
@@ -410,6 +412,8 @@ public class MobileContactsActivity extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(ContactDeleteOrAndEvent event) {
         if (event.getType() == ContactDeleteOrAndEvent.CONTACT_EVENT_TYPE_DELETE) {
             if (HlContactsUtils.deleteContactsMapItem(hlContactsMap, event.getSid()) > 0) {

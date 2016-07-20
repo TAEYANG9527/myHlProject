@@ -58,7 +58,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public class FindMoreConnectionsAct extends BaseActivity {
 
@@ -518,6 +520,8 @@ public class FindMoreConnectionsAct extends BaseActivity {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(NotifyListRefreshWithPositionEvent event) {
         if (event.getType() == NotifyListRefreshWithPositionEvent.RENMAI_SEARCH_MORE) {
             if (null != moreList && moreList.size() > event.getPosition()) {

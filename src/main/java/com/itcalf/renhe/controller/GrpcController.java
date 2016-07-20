@@ -1156,7 +1156,7 @@ public class GrpcController extends BaseGrpcController {
      * 余额充值订单
      */
 
-    public void enterpriseSearchPayOrder(final int taskId) {
+    public void enterpriseSearchPayOrder(final int taskId, final String fee) {
         Logger.e("开始 余额充值订单--->taskId:" + taskId);
         sendRequest(taskId, "余额充值订单", new ObserverCallback() {
             @Override
@@ -1165,6 +1165,7 @@ public class GrpcController extends BaseGrpcController {
                         .withDeadlineAfter(BaseGrpcController.GRPC_TIME_OUT_SECONDS, TimeUnit.SECONDS);
                 Enterprise.EnterpriseSearchPayOrderRequest request = Enterprise.EnterpriseSearchPayOrderRequest.newBuilder()
                         .setBase(baseRequest)
+                        .setFee(fee)
                         .build();
                 stub.enterpriseSearchPayOrder(request, observer);
             }

@@ -33,7 +33,9 @@ import java.util.Map;
 
 import butterknife.BindView;
 import cn.renhe.heliao.idl.money.trade.HeliaoTrade;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * 红包详情页，红包被抢详情
@@ -153,6 +155,8 @@ public class MyWalletDetailActivity extends BaseActivity implements SwipeRefresh
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(FinishActivityEvent event) {
 //        finish();
         onRefresh();
@@ -194,6 +198,11 @@ public class MyWalletDetailActivity extends BaseActivity implements SwipeRefresh
                 } else {
                     if (page == 1)
                         emptyLl.setVisibility(View.VISIBLE);
+                    else if (page > 1) {
+                        footerView.setVisibility(View.VISIBLE);
+                        footerPb.setVisibility(View.GONE);
+                        footerTipTv.setText(getString(R.string.recyclerview_footer_hint_end));
+                    }
                 }
                 mSwipeRefreshLayout.setRefreshing(false);
             } else if (result instanceof HeliaoTrade.MemberBalanceResponse) {
@@ -254,8 +263,8 @@ public class MyWalletDetailActivity extends BaseActivity implements SwipeRefresh
         cantCrashTv = (TextView) header.findViewById(R.id.cant_crash_tv);
         cantCrashLl = (LinearLayout) header.findViewById(R.id.cant_crash_ll);
         emptyLl = (LinearLayout) header.findViewById(R.id.empty_ll);
-        Logger.e("robDetailLv==>"+robDetailLv);
-        Logger.e("header==>"+header);
+        Logger.e("robDetailLv==>" + robDetailLv);
+        Logger.e("header==>" + header);
         robDetailLv.addHeaderView(header, null, false);
     }
 

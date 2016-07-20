@@ -169,7 +169,11 @@ public class RenMaiQuanTask extends AsyncTask<Object, Void, MessageBoards> {
                         }
                     }
                 }
-                renMaiQuanManager.insert(result);//将新增的数据插入数据库
+                try {
+                    renMaiQuanManager.insert(result);//将新增的数据插入数据库
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 //根据max、min从数据库取出相应数量的数据用于显示
                 MessageBoards cacheResult = renMaiQuanManager.getMessageBoardsFromCursor(result.getMinRank(), result.getMaxRank(), Constants.RENMAIQUAN_CONSTANTS.REQUEST_COUNT);
                 MessageBoards.NewNoticeList[] cacheNoticeList = cacheResult.getNewNoticeList();

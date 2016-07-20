@@ -36,7 +36,7 @@ public class SQLiteStore {
     public static class RenheSQLiteOpenHelper extends SQLiteOpenHelper {
 
         private static final String DATABASE_NAME = DBNAME;
-        private static final int DATABASE_VERSION = 3;
+        private static final int DATABASE_VERSION = 4;
         public static final String TABLE_RENMAIQUAN = "renmaiquan";
         public static final String TABLE_RENMAIQUAN_CONTENT = "renmaiquan_content_v2";
         public static final String TABLE_RENMAIQUAN_AT_MEMBER = "renmaiquan_at_member";
@@ -117,7 +117,8 @@ public class SQLiteStore {
 
         private static final String SQL_CREATE_TABLE_SHARE = "create table if not exists " + TABLE_RENMAIQUAN_SHARE
                 + " (_id INTEGER PRIMARY KEY AUTOINCREMENT," + "objectId TEXT," + "type INTEGER," + "id INTEGER,url TEXT,"
-                + "content TEXT,picUrl TEXT," + "profileSid TEXT,name TEXT,job TEXT,company TEXT,note TEXT,sid TEXT)";
+                + "content TEXT,picUrl TEXT," + "profileSid TEXT,name TEXT,job TEXT,company TEXT,note TEXT,sid TEXT,"
+                + "title TEXT)";
 
         private static final String SQL_CREATE_TABLE_RECOMMEND_FRIEND = "create table if not exists "
                 + TABLE_RENMAIQUAN_RECOMMEND_FRIEND + " (_id INTEGER PRIMARY KEY AUTOINCREMENT," + "objectId TEXT,"
@@ -152,6 +153,8 @@ public class SQLiteStore {
                     db.execSQL("ALTER TABLE " + TABLE_RENMAIQUAN + " ADD COLUMN url TEXT");
                 case 2:
                     db.execSQL("ALTER TABLE " + TABLE_RENMAIQUAN + " ADD COLUMN friendState INTEGER");
+                case 3:
+                    db.execSQL("ALTER TABLE " + TABLE_RENMAIQUAN_SHARE + " ADD COLUMN title TEXT");
                     break;
                 default:
                     break;

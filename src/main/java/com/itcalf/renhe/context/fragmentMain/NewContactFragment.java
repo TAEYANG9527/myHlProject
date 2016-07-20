@@ -77,13 +77,15 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import cn.renhe.heliao.idl.contact.ContactList;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * 新版人脉列表
  * Created by wangning on 2016/3/8.
  */
-public class NewContactFragmentVersion extends BaseFragment {
+public class NewContactFragment extends BaseFragment {
     /**
      * UI
      */
@@ -1146,6 +1148,8 @@ public class NewContactFragmentVersion extends BaseFragment {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(TopContactEvent event) {
         if (null != mContactsListView) {
             mContactsListView.setSelection(mContactsListView.getTop());
@@ -1158,6 +1162,8 @@ public class NewContactFragmentVersion extends BaseFragment {
      *
      * @param event
      */
+    //在Android的主线程中运行
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(ContactDeleteOrAndEvent event) {
         if (event.getType() == ContactDeleteOrAndEvent.CONTACT_EVENT_TYPE_ADD) {
             if (isUIInited)

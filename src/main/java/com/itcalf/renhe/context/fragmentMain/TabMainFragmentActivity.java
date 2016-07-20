@@ -103,7 +103,7 @@ import cn.ocrsdk.uploadSdk.OcrErrorCode;
 import cn.ocrsdk.uploadSdk.OcrServer;
 import cn.renhe.heliao.idl.member.MyModuleNotice;
 import cn.renhe.heliao.idl.notice.HeliaoNotice;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 public class TabMainFragmentActivity extends AppCompatActivity implements OnPageChangeListener, OnClickListener, Callback {
 
@@ -367,7 +367,7 @@ public class TabMainFragmentActivity extends AppCompatActivity implements OnPage
         RenheApplication.getInstance().setLogOut(0);
         RenheApplication.getInstance().addActivity(this);
         ConversationListFragment tab1 = new ConversationListFragment();//和聊Fragment页面
-        NewContactFragmentVersion tab2 = new NewContactFragmentVersion();//人脉Fragment页面
+        NewContactFragment tab2 = new NewContactFragment();//人脉Fragment页面
         RenMaiQuanFragment tab3 = new RenMaiQuanFragment();//人脉圈Fragment页面
         MyFragment tab4 = new MyFragment();//我Fragment页面
 

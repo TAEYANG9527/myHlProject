@@ -444,6 +444,7 @@ public class MessageBoards implements Serializable {
         private webShare webShare;
         private circleShare circleShare;
         private profileShare profileShare;
+        private communalShare communalShare;
 
         public boolean isForwardRenhe() {
             return isForwardRenhe;
@@ -541,6 +542,13 @@ public class MessageBoards implements Serializable {
             this.webShare = websShare;
         }
 
+        public communalShare getCommunalShare() {
+            return communalShare;
+        }
+
+        public void setCommunalShare(communalShare communalShare) {
+            this.communalShare = communalShare;
+        }
     }
 
     public static class webShare implements Serializable {
@@ -633,6 +641,7 @@ public class MessageBoards implements Serializable {
 
     }
 
+
     public static class profileShare implements Serializable {
 
         /**
@@ -685,6 +694,86 @@ public class MessageBoards implements Serializable {
             this.picUrl = picUrl;
         }
 
+    }
+
+    public static class communalShare implements Serializable {
+
+        /**
+         *
+         */
+        private static final long serialVersionUID = 1L;
+        private int id;// int 网页分享ID
+        private String content;// String 分享的那句话 (可以为空)
+        private String title;// String 分享的标题 (可以为空)
+        private String description;// String 分享体里面的描述或者职务 (可以为空)
+        private String company;// String 分享体里面的公司 (可以为空)
+        private String name;// String 分享体里面的名字 (可以为空)
+        private String picUrl;// String 圈子图标url
+        private String url;// String 网页链接
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getContent() {
+            return content;
+        }
+
+        public void setContent(String content) {
+            this.content = content;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getCompany() {
+            return company;
+        }
+
+        public void setCompany(String company) {
+            this.company = company;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPicUrl() {
+            return picUrl;
+        }
+
+        public void setPicUrl(String picUrl) {
+            this.picUrl = picUrl;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
     }
 
     public static class AtMemmber implements Serializable {

@@ -233,6 +233,7 @@ public class ConversationViewHolder extends RecyclerHolder {
                 mentionBotherTv.setVisibility(View.GONE);
             }
         } else {
+            mentionBotherTv.setVisibility(View.GONE);
             if (unreadCount > 0) {
                 mentionTv.setVisibility(View.VISIBLE);
                 if(unreadCount > 99){

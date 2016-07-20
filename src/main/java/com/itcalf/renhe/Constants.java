@@ -12,7 +12,7 @@ public class Constants {
     // TODO 开发用，发布时置为false
     public static final boolean DEBUG_MODE = true;// 应用内各种日志打印的开关，debug版本为true，release版本为false
     // TODO 开发用，发布时置为false
-    public static final boolean HTTP_DEBUG_MODE = false;// 网络请求主机地址开关，debug版本为true，release版本为false
+    public static final boolean HTTP_DEBUG_MODE = true;// 网络请求主机地址开关，debug版本为true，release版本为false
 
     public static final boolean TEST_MODE = DEBUG_MODE;// release版本删除该字段，检查程序中是否存在测试代码，这个字段是在应用内功能摸你测试时使用，防止添加了测试代码，之后忘记去掉
 
@@ -259,9 +259,9 @@ public class Constants {
         public static final String GET_FAXIAN = getUrl() + "notice/renmaiquanFound.shtml";
         public static final String PREPUBLISH_MESSAGEBOARD = getUrl() + "v6/messageboard/prePublishMessageBoard.shtml";
         public static final String UPLOAD_PHOTO = getUrl() + "v2/messageboard/uploadMessageboardPhoto.shtml";
-        public static final String VIEW_FULLBOARD = getUrl() + "v9/messageboard/viewFullMessageBoard.shtml";
+        public static final String VIEW_FULLBOARD = getUrl() + "v10/messageboard/viewFullMessageBoard.shtml";
         public static final String VIEW_FULLUNBOARD = getUrl() + "notice/v9/viewNotice.shtml";
-        public static final String PERSONAL_RENMAIQUAN = getUrl() + "v7/messageboard/list.shtml";
+        public static final String PERSONAL_RENMAIQUAN = getUrl() + "v10/messageboard/list.shtml";
         public static final String CHECK_UNREAD_MSG = getUrl() + "notice/renmaiquanHasNewAfterTime.shtml";
         public static final String ADD_RECOMMEND_INDUSTRYS = getUrl() + "member/selectMemberCategory.shtml";
         public static final String DELETE_RENMAIQUAN_MSG = getUrl() + "messageboard/deleteMessageBoard.shtml";
@@ -277,7 +277,7 @@ public class Constants {
         public static final String HOT_SEARCH_LIST = getUrl() + "member/hotSearchList.shtml";
         public static final String MEMBER_COVER_LIST = getUrl() + "editprofile/profileCoverDefaultList.shtml";
         public static final String UPLOAD_MEMBER_COVER_LIST = getUrl() + "editprofile/uploadProfileCoverImageWithDefault.shtml";
-        public static final String GET_RENMAIQUAN_V3 = getUrl() + "notice/v11/renmaiquan.shtml";
+        public static final String GET_RENMAIQUAN_V3 = getUrl() + "notice/v12/renmaiquan.shtml";
 
         public static final String GET_TOUTIAO_LIST = getUrl() + "toutiao/showToutiao.shtml";
         public static final String LOAD_CONVERSATION_INFO = getUrl() + "conversation/loadConversationInfo.shtml";
@@ -402,6 +402,8 @@ public class Constants {
         public static final String AD_UPLOAD_ADCOVER = getUrl() + "ad/uploadAdCover.shtml";
         //余额支付
         public static final String PAY_BY_BALANCE = getUrl() + "pay/balance.shtml";
+        //第三方应用分享网页到和聊人脉圈
+        public static final String OTHER_APP_SHARETO_RMQ = getUrl() + "share/source.shtml";
     }
 
     public static class Prefs {
@@ -543,6 +545,7 @@ public class Constants {
         public static final int RENMAIQUAN_TYPE_WEB = 100;
         public static final int RENMAIQUAN_TYPE_PROFILE = 101;
         public static final int RENMAIQUAN_TYPE_CIRCLE = 102;
+        public static final int RENMAIQUAN_TYPE_COMMUNAL = 103;//赞服务分享
     }
 
     /**
@@ -854,12 +857,12 @@ public class Constants {
      * Scope 是 OAuth2.0 授权机制中 authorize 接口的一个参数。通过 Scope，平台将开放更多的微博
      * 核心功能给开发者，同时也加强用户隐私保护，提升了用户体验，用户在新 OAuth2.0 授权页中有权利
      * 选择赋予应用的功能。
-     * <p/>
+     * <p>
      * 我们通过新浪微博开放平台-->管理中心-->我的应用-->接口管理处，能看到我们目前已有哪些接口的
      * 使用权限，高级权限需要进行申请。
-     * <p/>
+     * <p>
      * 目前 Scope 支持传入多个 Scope 权限，用逗号分隔。
-     * <p/>
+     * <p>
      * 有关哪些 OpenAPI 需要权限申请，请查看：http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI
      * 关于 Scope 概念及注意事项，请查看：http://open.weibo.com/wiki/Scope
      */

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.itcalf.renhe"
-    android:versionCode="50502"
+    android:versionCode="50503"
     android:versionName="@string/versionname"><!--直接把版本号写死在这是因为三星市场无法识别string文件里面的引用，修改这里的版本号记得要把string文件里的versionname修改为相应版本-->
 
     <supports-screens
@@ -40,6 +40,15 @@
                 <data
                     android:host="m.renhe.cn"
                     android:scheme="heliaoapp" />
+            </intent-filter>
+
+            <!--Growing IO sdk require-->
+            <intent-filter>
+                <data android:scheme="growing.33ae89cb4958b725" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
         <activity

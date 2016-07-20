@@ -328,7 +328,10 @@ public class ActivityCircleDetail extends BaseActivity {
 
     private void initView() {
         isMaster = cinfo.isCreator();//是否是圈主
-        userConversationName = cinfo.getMemberList()[0].getName();//用户名
+        if (cinfo.getMemberList().length > 0)
+            userConversationName = cinfo.getMemberList()[0].getName();//用户名
+        else
+            userConversationName = "";
         imConversationId = cinfo.getImConversationId();//圈子会话id
         circleNumb = "" + cinfo.getId();//圈子id
         circleName = cinfo.getName();//圈名

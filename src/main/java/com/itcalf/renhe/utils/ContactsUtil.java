@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.renhe.heliao.idl.contact.ImportContact;
-import de.greenrobot.event.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * @author Chan

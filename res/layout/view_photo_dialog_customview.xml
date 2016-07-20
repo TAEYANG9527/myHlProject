@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_corner_shape"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/save_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/list_item_bacg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/md_listitem_vertical_margin"
+        android:paddingLeft="@dimen/md_listitem_margin_left"
+        android:paddingRight="@dimen/md_dialog_frame_margin"
+        android:paddingTop="@dimen/md_listitem_vertical_margin"
+        android:text="保存"
+        android:textSize="@dimen/md_listitem_textsize" />
+
+    <TextView
+        android:id="@+id/recognize_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/list_item_bacg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/md_listitem_vertical_margin"
+        android:paddingLeft="@dimen/md_listitem_margin_left"
+        android:paddingRight="@dimen/md_dialog_frame_margin"
+        android:paddingTop="@dimen/md_listitem_vertical_margin"
+        android:text="识别图中二维码"
+        android:textSize="@dimen/md_listitem_textsize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cancle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/list_item_bacg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/md_listitem_vertical_margin"
+        android:paddingLeft="@dimen/md_listitem_margin_left"
+        android:paddingRight="@dimen/md_dialog_frame_margin"
+        android:paddingTop="@dimen/md_listitem_vertical_margin"
+        android:text="取消"
+        android:textSize="@dimen/md_listitem_textsize" />
+
+</LinearLayout>

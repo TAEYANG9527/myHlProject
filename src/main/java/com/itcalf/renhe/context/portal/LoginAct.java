@@ -38,6 +38,7 @@ import com.itcalf.renhe.dto.UserInfo;
 import com.itcalf.renhe.utils.MaterialDialogsUtil;
 import com.itcalf.renhe.utils.NetworkUtil;
 import com.itcalf.renhe.utils.PushUtil;
+import com.itcalf.renhe.utils.StatisticsUtil;
 import com.itcalf.renhe.utils.ToastUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.umeng.analytics.MobclickAgent;
@@ -326,6 +327,8 @@ public class LoginAct extends BaseActivity {
                     MANService manService = MANServiceProvider.getService();
                     if (null != manService && null != manService.getMANAnalytics())
                         manService.getMANAnalytics().updateUserAccount(result.getName(), result.getId() + "");
+                    //Growing IO 设置自定义维度
+                    StatisticsUtil.setGrowingIOCS();
                 } else if (2 == result.getState()) {// 手机号码登录而且未走完注册流程的，需要跳到完善注册资料的页面（会继续返回mobile字段）
                 } else if (-1 == result.getState()) {
                     ToastUtil.showErrorToast(LoginAct.this, getResources().getString(R.string.user_error));
